@@ -1,0 +1,71 @@
+/* 
+  Localizable.strings
+  CourseProject
+
+  Created by Anastasiya Laptseva on 7.07.22.
+  
+*/
+
+"tarotSpreadsMenu" = "Таро расклады";
+"descriptionMenu" = "Описание";
+"preservationMenu" = "Сохранения";
+"videoMenu" = "Видео";
+"settingsMenu" = "Настройки";
+
+"buttomMapOfDay" = "Карта дня";
+
+/*
+ Cards collections
+ */
+"major_arcane_title" = "Старшие арканы";
+"figure_cards_title" = "Фигурные карты";
+"numberical_cards_title" = "Числовые карты";
+"angel_title" = "Числа ангелов";
+
+/*
+ TarotSpreads
+ */
+"onEveryDaySpread" = "На каждый день";
+"lovelySpread" = "Вокзал на двоих(расклад на любовь)";
+"situationSpread" = "Кельтский крест(разбор конкретной ситуации)";
+"healthySpread" = "Расклад на здоровье";
+"financialSpread" = "Полная чаша(расклад на финансы)";
+"personalGrowthSpread" = "Путь(личностный рост)";
+"choiceSpread" = "Выбор";
+/*
+ Settings
+ */
+
+"language" = "Язык";
+"theme" = "Темы";
+"english" = "Английский";
+"russian" = "Русский";
+"light" = "Светлая";
+"dark" = "Темная";
+"sounds" = "Звуки";
+"on" = "Вкл";
+"off" = "Выкл";
+
+/*
+ Tarot
+ */
+
+"financialSpread_title" = "Финансовый расклад";
+"onEveryDaySpread_title" = "На каждый день";
+"lovelySpread_title" = "Расклад на любовь";
+"choiseSpread_title" = "Расклад Выбор";
+"healthySpread_title" = "Расклад на здоровье";
+"personalGrowthSpread_title" = "Личностный рост";
+"celticCrossSpread_title" = "Кельтский крест\n(на ситуацию)";
+//"choiceSpread_title" = "Выбор";
+"buttonTarotMake" = "Сделать расклад";
+"buttonTarotWrite" = "Читать описание";
+
+/*
+ Bottom menu
+ */
+
+"home_button" = "Главная";
+"add_question_button" = "Задать вопрос";
+"consultation_button" = "Заказать консультацию";
+"cards_button" = "Купить карты";

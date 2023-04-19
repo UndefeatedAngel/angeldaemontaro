@@ -1,0 +1,1367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6220E1329EFD2C300EAA3BC /* promo.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C6220E1229EFD2C300EAA3BC /* promo.MOV */; };
+		C6220E1529EFD60400EAA3BC /* UIViewController+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6220E1429EFD60400EAA3BC /* UIViewController+Video.swift */; };
+		C6220E1729EFDAA300EAA3BC /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6220E1629EFDAA300EAA3BC /* UIViewController+Navigation.swift */; };
+		C6220E1A29EFFB6600EAA3BC /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6220E1929EFFB6600EAA3BC /* Appearance.swift */; };
+		C6FB5E2229ED738D00172CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5E2129ED738D00172CAE /* AppDelegate.swift */; };
+		C6FB5E2429ED738D00172CAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5E2329ED738D00172CAE /* SceneDelegate.swift */; };
+		C6FB5E2629ED738D00172CAE /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5E2529ED738D00172CAE /* MainTabBarViewController.swift */; };
+		C6FB5E2929ED738D00172CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E2729ED738D00172CAE /* Main.storyboard */; };
+		C6FB5E2C29ED738D00172CAE /* angeldaemontaro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5E2A29ED738D00172CAE /* angeldaemontaro.xcdatamodeld */; };
+		C6FB5E2E29ED738F00172CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E2D29ED738F00172CAE /* Assets.xcassets */; };
+		C6FB5E3129ED738F00172CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E2F29ED738F00172CAE /* LaunchScreen.storyboard */; };
+		C6FB5E3C29ED738F00172CAE /* angeldaemontaroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5E3B29ED738F00172CAE /* angeldaemontaroTests.swift */; };
+		C6FB5E4629ED738F00172CAE /* angeldaemontaroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5E4529ED738F00172CAE /* angeldaemontaroUITests.swift */; };
+		C6FB5E4829ED738F00172CAE /* angeldaemontaroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5E4729ED738F00172CAE /* angeldaemontaroUITestsLaunchTests.swift */; };
+		C6FB5E8429ED745700172CAE /* AngelNumbersLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E5B29ED745700172CAE /* AngelNumbersLocalizable.strings */; };
+		C6FB5E8729ED745700172CAE /* FigureCardsLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E6129ED745700172CAE /* FigureCardsLocalizable.strings */; };
+		C6FB5E8829ED745700172CAE /* NumeralCardsLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E6329ED745700172CAE /* NumeralCardsLocalizable.strings */; };
+		C6FB5E8929ED745700172CAE /* MajorArcanaLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E6529ED745700172CAE /* MajorArcanaLocalizable.strings */; };
+		C6FB5E8A29ED745700172CAE /* ChoiseLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E6B29ED745700172CAE /* ChoiseLocalizable.strings */; };
+		C6FB5E8B29ED745700172CAE /* PersonalGrowthLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E6D29ED745700172CAE /* PersonalGrowthLocalizable.strings */; };
+		C6FB5E8C29ED745700172CAE /* OnEveryDayLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E6F29ED745700172CAE /* OnEveryDayLocalizable.strings */; };
+		C6FB5E8D29ED745700172CAE /* FinansialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E7129ED745700172CAE /* FinansialLocalizable.strings */; };
+		C6FB5E8E29ED745700172CAE /* HealthyLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E7329ED745700172CAE /* HealthyLocalizable.strings */; };
+		C6FB5E8F29ED745700172CAE /* СelticCrossLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E7529ED745700172CAE /* СelticCrossLocalizable.strings */; };
+		C6FB5E9029ED745700172CAE /* LovelyLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E7729ED745700172CAE /* LovelyLocalizable.strings */; };
+		C6FB5E9129ED745700172CAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E8129ED745700172CAE /* Localizable.strings */; };
+		C6FB5EE529ED749700172CAE /* queenOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E9529ED749700172CAE /* queenOfCups.m4a */; };
+		C6FB5EE629ED749700172CAE /* knightOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E9629ED749700172CAE /* knightOfPentacles.m4a */; };
+		C6FB5EE729ED749700172CAE /* knightOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E9729ED749700172CAE /* knightOfSwords.m4a */; };
+		C6FB5EE829ED749700172CAE /* queenOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E9829ED749700172CAE /* queenOfPentacles.m4a */; };
+		C6FB5EE929ED749700172CAE /* pageOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E9929ED749700172CAE /* pageOfWands.m4a */; };
+		C6FB5EEA29ED749700172CAE /* knightOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E9A29ED749700172CAE /* knightOfWands.m4a */; };
+		C6FB5EEB29ED749700172CAE /* queenOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E9B29ED749700172CAE /* queenOfSwords.m4a */; };
+		C6FB5EEC29ED749700172CAE /* pageOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E9C29ED749700172CAE /* pageOfPentacles.m4a */; };
+		C6FB5EED29ED749700172CAE /* kingOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E9D29ED749700172CAE /* kingOfPentacles.m4a */; };
+		C6FB5EEE29ED749700172CAE /* pageOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E9E29ED749700172CAE /* pageOfCups.m4a */; };
+		C6FB5EEF29ED749700172CAE /* queenOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5E9F29ED749700172CAE /* queenOfWands.m4a */; };
+		C6FB5EF029ED749700172CAE /* kingOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EA029ED749700172CAE /* kingOfSwords.m4a */; };
+		C6FB5EF129ED749700172CAE /* kingOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EA129ED749700172CAE /* kingOfWands.m4a */; };
+		C6FB5EF229ED749700172CAE /* knightOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EA229ED749700172CAE /* knightOfCups.m4a */; };
+		C6FB5EF329ED749700172CAE /* kingOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EA329ED749700172CAE /* kingOfCups.m4a */; };
+		C6FB5EF429ED749700172CAE /* pageOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EA429ED749700172CAE /* pageOfSwords.m4a */; };
+		C6FB5EF529ED749700172CAE /* fiveOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EA629ED749700172CAE /* fiveOfWands.m4a */; };
+		C6FB5EF629ED749700172CAE /* sixOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EA729ED749700172CAE /* sixOfPentacles.m4a */; };
+		C6FB5EF729ED749700172CAE /* tenOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EA829ED749700172CAE /* tenOfSwords.m4a */; };
+		C6FB5EF829ED749700172CAE /* threeOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EA929ED749700172CAE /* threeOfWands.m4a */; };
+		C6FB5EF929ED749700172CAE /* twoOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EAA29ED749700172CAE /* twoOfCups.m4a */; };
+		C6FB5EFA29ED749700172CAE /* aceOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EAB29ED749700172CAE /* aceOfCups.m4a */; };
+		C6FB5EFB29ED749700172CAE /* sixOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EAC29ED749700172CAE /* sixOfCups.m4a */; };
+		C6FB5EFC29ED749700172CAE /* nineOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EAD29ED749700172CAE /* nineOfWands.m4a */; };
+		C6FB5EFD29ED749700172CAE /* fourOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EAE29ED749700172CAE /* fourOfPentacles.m4a */; };
+		C6FB5EFE29ED749700172CAE /* sixOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EAF29ED749700172CAE /* sixOfWands.m4a */; };
+		C6FB5EFF29ED749700172CAE /* sixOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EB029ED749700172CAE /* sixOfSwords.m4a */; };
+		C6FB5F0029ED749700172CAE /* tenOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EB129ED749700172CAE /* tenOfWands.m4a */; };
+		C6FB5F0129ED749700172CAE /* eightOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EB229ED749700172CAE /* eightOfSwords.m4a */; };
+		C6FB5F0229ED749700172CAE /* eightOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EB329ED749700172CAE /* eightOfCups.m4a */; };
+		C6FB5F0329ED749700172CAE /* twoOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EB429ED749700172CAE /* twoOfWands.m4a */; };
+		C6FB5F0429ED749700172CAE /* sevenOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EB529ED749700172CAE /* sevenOfWands.m4a */; };
+		C6FB5F0529ED749700172CAE /* nineOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EB629ED749700172CAE /* nineOfSwords.m4a */; };
+		C6FB5F0629ED749700172CAE /* threeOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EB729ED749700172CAE /* threeOfSwords.m4a */; };
+		C6FB5F0729ED749700172CAE /* sevenOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EB829ED749700172CAE /* sevenOfCups.m4a */; };
+		C6FB5F0829ED749700172CAE /* fiveOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EB929ED749700172CAE /* fiveOfSwords.m4a */; };
+		C6FB5F0929ED749700172CAE /* threeOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EBA29ED749700172CAE /* threeOfCups.m4a */; };
+		C6FB5F0A29ED749700172CAE /* threeOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EBB29ED749700172CAE /* threeOfPentacles.m4a */; };
+		C6FB5F0B29ED749700172CAE /* aceOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EBC29ED749700172CAE /* aceOfPentacles.m4a */; };
+		C6FB5F0C29ED749700172CAE /* nineOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EBD29ED749700172CAE /* nineOfCups.m4a */; };
+		C6FB5F0D29ED749700172CAE /* sevenOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EBE29ED749700172CAE /* sevenOfPentacles.m4a */; };
+		C6FB5F0E29ED749700172CAE /* aceOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EBF29ED749700172CAE /* aceOfWands.m4a */; };
+		C6FB5F0F29ED749700172CAE /* tenOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EC029ED749700172CAE /* tenOfPentacles.m4a */; };
+		C6FB5F1029ED749700172CAE /* tenOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EC129ED749700172CAE /* tenOfCups.m4a */; };
+		C6FB5F1129ED749700172CAE /* fourOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EC229ED749700172CAE /* fourOfWands.m4a */; };
+		C6FB5F1229ED749700172CAE /* twoOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EC329ED749700172CAE /* twoOfPentacles.m4a */; };
+		C6FB5F1329ED749700172CAE /* fourOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EC429ED749700172CAE /* fourOfSwords.m4a */; };
+		C6FB5F1429ED749700172CAE /* aceOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EC529ED749700172CAE /* aceOfSwords.m4a */; };
+		C6FB5F1529ED749700172CAE /* fiveOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EC629ED749700172CAE /* fiveOfCups.m4a */; };
+		C6FB5F1629ED749700172CAE /* eightOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EC729ED749700172CAE /* eightOfPentacles.m4a */; };
+		C6FB5F1729ED749700172CAE /* eightOfWands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EC829ED749700172CAE /* eightOfWands.m4a */; };
+		C6FB5F1829ED749700172CAE /* fiveOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EC929ED749700172CAE /* fiveOfPentacles.m4a */; };
+		C6FB5F1929ED749700172CAE /* nineOfPentacles.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ECA29ED749700172CAE /* nineOfPentacles.m4a */; };
+		C6FB5F1A29ED749700172CAE /* fourOfCups.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ECB29ED749700172CAE /* fourOfCups.m4a */; };
+		C6FB5F1B29ED749700172CAE /* sevenOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ECC29ED749700172CAE /* sevenOfSwords.m4a */; };
+		C6FB5F1C29ED749700172CAE /* twoOfSwords.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ECD29ED749700172CAE /* twoOfSwords.m4a */; };
+		C6FB5F1D29ED749700172CAE /* deathCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ECF29ED749700172CAE /* deathCard.m4a */; };
+		C6FB5F1E29ED749700172CAE /* justiceCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ED029ED749700172CAE /* justiceCard.m4a */; };
+		C6FB5F1F29ED749700172CAE /* wheelOfFortune.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ED129ED749700172CAE /* wheelOfFortune.m4a */; };
+		C6FB5F2029ED749700172CAE /* lovesCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ED229ED749700172CAE /* lovesCard.m4a */; };
+		C6FB5F2129ED749700172CAE /* strengthCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ED329ED749700172CAE /* strengthCard.m4a */; };
+		C6FB5F2229ED749700172CAE /* moderationCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ED429ED749700172CAE /* moderationCard.m4a */; };
+		C6FB5F2329ED749700172CAE /* sunCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ED529ED749700172CAE /* sunCard.m4a */; };
+		C6FB5F2429ED749700172CAE /* chariotCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ED629ED749700172CAE /* chariotCard.m4a */; };
+		C6FB5F2529ED749700172CAE /* fool.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ED729ED749700172CAE /* fool.m4a */; };
+		C6FB5F2629ED749700172CAE /* highpriestessCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ED829ED749700172CAE /* highpriestessCard.m4a */; };
+		C6FB5F2729ED749700172CAE /* doomsdayCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5ED929ED749700172CAE /* doomsdayCard.m4a */; };
+		C6FB5F2829ED749700172CAE /* emperorCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EDA29ED749700172CAE /* emperorCard.m4a */; };
+		C6FB5F2929ED749700172CAE /* hangedCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EDB29ED749700172CAE /* hangedCard.m4a */; };
+		C6FB5F2A29ED749700172CAE /* hermitCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EDC29ED749700172CAE /* hermitCard.m4a */; };
+		C6FB5F2B29ED749700172CAE /* magicianCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EDD29ED749700172CAE /* magicianCard.m4a */; };
+		C6FB5F2C29ED749700172CAE /* towerCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EDE29ED749700172CAE /* towerCard.m4a */; };
+		C6FB5F2D29ED749700172CAE /* worldCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EDF29ED749700172CAE /* worldCard.m4a */; };
+		C6FB5F2E29ED749700172CAE /* empressCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EE029ED749700172CAE /* empressCard.m4a */; };
+		C6FB5F2F29ED749700172CAE /* devilCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EE129ED749700172CAE /* devilCard.m4a */; };
+		C6FB5F3029ED749700172CAE /* starCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EE229ED749700172CAE /* starCard.m4a */; };
+		C6FB5F3129ED749700172CAE /* moonCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EE329ED749700172CAE /* moonCard.m4a */; };
+		C6FB5F3229ED749700172CAE /* hierophantCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EE429ED749700172CAE /* hierophantCard.m4a */; };
+		C6FB5F3A29EEB0A700172CAE /* CardsOfDayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F3929EEB0A700172CAE /* CardsOfDayScreenViewController.swift */; };
+		C6FB5F3D29EEB41500172CAE /* UIViewController+TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F3C29EEB41500172CAE /* UIViewController+TabBar.swift */; };
+		C6FB5F3F29EEB49500172CAE /* AngelScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F3E29EEB49500172CAE /* AngelScreenViewController.swift */; };
+		C6FB5F4129EEB4B300172CAE /* TarotsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F4029EEB4B300172CAE /* TarotsScreenViewController.swift */; };
+		C6FB5F4329EEB4C200172CAE /* VideoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F4229EEB4C200172CAE /* VideoScreenViewController.swift */; };
+		C6FB5F4729EEB59900172CAE /* HighPriestess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5F4629EEB59900172CAE /* HighPriestess.storyboard */; };
+		C6FB5F4929EEB5CD00172CAE /* HighPriestessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F4829EEB5CD00172CAE /* HighPriestessViewController.swift */; };
+		C6FB5F4C29EEB71100172CAE /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F4B29EEB71100172CAE /* UIViewController+Storyboard.swift */; };
+		C6FB5F4E29EEBA9100172CAE /* CardOfDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5F4D29EEBA9100172CAE /* CardOfDay.storyboard */; };
+		C6FB5F5029EEBBFF00172CAE /* Angels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5F4F29EEBBFF00172CAE /* Angels.storyboard */; };
+		C6FB5F5229EEBC5600172CAE /* Tarots.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5F5129EEBC5600172CAE /* Tarots.storyboard */; };
+		C6FB5F5429EEBC9600172CAE /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5F5329EEBC9600172CAE /* Video.storyboard */; };
+		C6FB5F5629EEBE1B00172CAE /* UITabBarViewController+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F5529EEBE1B00172CAE /* UITabBarViewController+Animations.swift */; };
+		C6FB5F5929EEC17400172CAE /* TabNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F5829EEC17400172CAE /* TabNavigationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6FB5E3829ED738F00172CAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FB5E1629ED738D00172CAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6FB5E1D29ED738D00172CAE;
+			remoteInfo = angeldaemontaro;
+		};
+		C6FB5E4229ED738F00172CAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FB5E1629ED738D00172CAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6FB5E1D29ED738D00172CAE;
+			remoteInfo = angeldaemontaro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C6220E1229EFD2C300EAA3BC /* promo.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = promo.MOV; sourceTree = "<group>"; };
+		C6220E1429EFD60400EAA3BC /* UIViewController+Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Video.swift"; sourceTree = "<group>"; };
+		C6220E1629EFDAA300EAA3BC /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		C6220E1929EFFB6600EAA3BC /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		C6FB5E1E29ED738D00172CAE /* angeldaemontaro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = angeldaemontaro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FB5E2129ED738D00172CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6FB5E2329ED738D00172CAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C6FB5E2529ED738D00172CAE /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		C6FB5E2829ED738D00172CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6FB5E2B29ED738D00172CAE /* angeldaemontaro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = angeldaemontaro.xcdatamodel; sourceTree = "<group>"; };
+		C6FB5E2D29ED738F00172CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6FB5E3029ED738F00172CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6FB5E3229ED738F00172CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6FB5E3729ED738F00172CAE /* angeldaemontaroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = angeldaemontaroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FB5E3B29ED738F00172CAE /* angeldaemontaroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = angeldaemontaroTests.swift; sourceTree = "<group>"; };
+		C6FB5E4129ED738F00172CAE /* angeldaemontaroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = angeldaemontaroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FB5E4529ED738F00172CAE /* angeldaemontaroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = angeldaemontaroUITests.swift; sourceTree = "<group>"; };
+		C6FB5E4729ED738F00172CAE /* angeldaemontaroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = angeldaemontaroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C6FB5E5C29ED745700172CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AngelNumbersLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E5E29ED745700172CAE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AngelNumbersLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E6229ED745700172CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FigureCardsLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E6429ED745700172CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NumeralCardsLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E6629ED745700172CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MajorArcanaLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E6729ED745700172CAE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/FigureCardsLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E6829ED745700172CAE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/NumeralCardsLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E6929ED745700172CAE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MajorArcanaLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E6C29ED745700172CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ChoiseLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E6E29ED745700172CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PersonalGrowthLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E7029ED745700172CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OnEveryDayLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E7229ED745700172CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FinansialLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E7429ED745700172CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HealthyLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E7629ED745700172CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/СelticCrossLocalizable.strings"; sourceTree = "<group>"; };
+		C6FB5E7829ED745700172CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LovelyLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E7929ED745700172CAE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ChoiseLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E7A29ED745700172CAE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/PersonalGrowthLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E7B29ED745700172CAE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/OnEveryDayLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E7C29ED745700172CAE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/FinansialLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E7D29ED745700172CAE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/HealthyLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E7E29ED745700172CAE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = "ru.lproj/СelticCrossLocalizable.strings"; sourceTree = "<group>"; };
+		C6FB5E7F29ED745700172CAE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LovelyLocalizable.strings; sourceTree = "<group>"; };
+		C6FB5E8229ED745700172CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C6FB5E8329ED745700172CAE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C6FB5E9529ED749700172CAE /* queenOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = queenOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5E9629ED749700172CAE /* knightOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = knightOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5E9729ED749700172CAE /* knightOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = knightOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5E9829ED749700172CAE /* queenOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = queenOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5E9929ED749700172CAE /* pageOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pageOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5E9A29ED749700172CAE /* knightOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = knightOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5E9B29ED749700172CAE /* queenOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = queenOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5E9C29ED749700172CAE /* pageOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pageOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5E9D29ED749700172CAE /* kingOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = kingOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5E9E29ED749700172CAE /* pageOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pageOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5E9F29ED749700172CAE /* queenOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = queenOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5EA029ED749700172CAE /* kingOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = kingOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5EA129ED749700172CAE /* kingOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = kingOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5EA229ED749700172CAE /* knightOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = knightOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5EA329ED749700172CAE /* kingOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = kingOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5EA429ED749700172CAE /* pageOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pageOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5EA629ED749700172CAE /* fiveOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fiveOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5EA729ED749700172CAE /* sixOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sixOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5EA829ED749700172CAE /* tenOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tenOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5EA929ED749700172CAE /* threeOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = threeOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5EAA29ED749700172CAE /* twoOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = twoOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5EAB29ED749700172CAE /* aceOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = aceOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5EAC29ED749700172CAE /* sixOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sixOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5EAD29ED749700172CAE /* nineOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nineOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5EAE29ED749700172CAE /* fourOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fourOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5EAF29ED749700172CAE /* sixOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sixOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5EB029ED749700172CAE /* sixOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sixOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5EB129ED749700172CAE /* tenOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tenOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5EB229ED749700172CAE /* eightOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = eightOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5EB329ED749700172CAE /* eightOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = eightOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5EB429ED749700172CAE /* twoOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = twoOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5EB529ED749700172CAE /* sevenOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sevenOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5EB629ED749700172CAE /* nineOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nineOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5EB729ED749700172CAE /* threeOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = threeOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5EB829ED749700172CAE /* sevenOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sevenOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5EB929ED749700172CAE /* fiveOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fiveOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5EBA29ED749700172CAE /* threeOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = threeOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5EBB29ED749700172CAE /* threeOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = threeOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5EBC29ED749700172CAE /* aceOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = aceOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5EBD29ED749700172CAE /* nineOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nineOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5EBE29ED749700172CAE /* sevenOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sevenOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5EBF29ED749700172CAE /* aceOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = aceOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5EC029ED749700172CAE /* tenOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tenOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5EC129ED749700172CAE /* tenOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tenOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5EC229ED749700172CAE /* fourOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fourOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5EC329ED749700172CAE /* twoOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = twoOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5EC429ED749700172CAE /* fourOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fourOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5EC529ED749700172CAE /* aceOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = aceOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5EC629ED749700172CAE /* fiveOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fiveOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5EC729ED749700172CAE /* eightOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = eightOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5EC829ED749700172CAE /* eightOfWands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = eightOfWands.m4a; sourceTree = "<group>"; };
+		C6FB5EC929ED749700172CAE /* fiveOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fiveOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5ECA29ED749700172CAE /* nineOfPentacles.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nineOfPentacles.m4a; sourceTree = "<group>"; };
+		C6FB5ECB29ED749700172CAE /* fourOfCups.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fourOfCups.m4a; sourceTree = "<group>"; };
+		C6FB5ECC29ED749700172CAE /* sevenOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sevenOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5ECD29ED749700172CAE /* twoOfSwords.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = twoOfSwords.m4a; sourceTree = "<group>"; };
+		C6FB5ECF29ED749700172CAE /* deathCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = deathCard.m4a; sourceTree = "<group>"; };
+		C6FB5ED029ED749700172CAE /* justiceCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = justiceCard.m4a; sourceTree = "<group>"; };
+		C6FB5ED129ED749700172CAE /* wheelOfFortune.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheelOfFortune.m4a; sourceTree = "<group>"; };
+		C6FB5ED229ED749700172CAE /* lovesCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = lovesCard.m4a; sourceTree = "<group>"; };
+		C6FB5ED329ED749700172CAE /* strengthCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = strengthCard.m4a; sourceTree = "<group>"; };
+		C6FB5ED429ED749700172CAE /* moderationCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = moderationCard.m4a; sourceTree = "<group>"; };
+		C6FB5ED529ED749700172CAE /* sunCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sunCard.m4a; sourceTree = "<group>"; };
+		C6FB5ED629ED749700172CAE /* chariotCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = chariotCard.m4a; sourceTree = "<group>"; };
+		C6FB5ED729ED749700172CAE /* fool.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fool.m4a; sourceTree = "<group>"; };
+		C6FB5ED829ED749700172CAE /* highpriestessCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = highpriestessCard.m4a; sourceTree = "<group>"; };
+		C6FB5ED929ED749700172CAE /* doomsdayCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = doomsdayCard.m4a; sourceTree = "<group>"; };
+		C6FB5EDA29ED749700172CAE /* emperorCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = emperorCard.m4a; sourceTree = "<group>"; };
+		C6FB5EDB29ED749700172CAE /* hangedCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hangedCard.m4a; sourceTree = "<group>"; };
+		C6FB5EDC29ED749700172CAE /* hermitCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hermitCard.m4a; sourceTree = "<group>"; };
+		C6FB5EDD29ED749700172CAE /* magicianCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = magicianCard.m4a; sourceTree = "<group>"; };
+		C6FB5EDE29ED749700172CAE /* towerCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = towerCard.m4a; sourceTree = "<group>"; };
+		C6FB5EDF29ED749700172CAE /* worldCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = worldCard.m4a; sourceTree = "<group>"; };
+		C6FB5EE029ED749700172CAE /* empressCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = empressCard.m4a; sourceTree = "<group>"; };
+		C6FB5EE129ED749700172CAE /* devilCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = devilCard.m4a; sourceTree = "<group>"; };
+		C6FB5EE229ED749700172CAE /* starCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = starCard.m4a; sourceTree = "<group>"; };
+		C6FB5EE329ED749700172CAE /* moonCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = moonCard.m4a; sourceTree = "<group>"; };
+		C6FB5EE429ED749700172CAE /* hierophantCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hierophantCard.m4a; sourceTree = "<group>"; };
+		C6FB5F3929EEB0A700172CAE /* CardsOfDayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsOfDayScreenViewController.swift; sourceTree = "<group>"; };
+		C6FB5F3C29EEB41500172CAE /* UIViewController+TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TabBar.swift"; sourceTree = "<group>"; };
+		C6FB5F3E29EEB49500172CAE /* AngelScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngelScreenViewController.swift; sourceTree = "<group>"; };
+		C6FB5F4029EEB4B300172CAE /* TarotsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotsScreenViewController.swift; sourceTree = "<group>"; };
+		C6FB5F4229EEB4C200172CAE /* VideoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoScreenViewController.swift; sourceTree = "<group>"; };
+		C6FB5F4629EEB59900172CAE /* HighPriestess.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HighPriestess.storyboard; sourceTree = "<group>"; };
+		C6FB5F4829EEB5CD00172CAE /* HighPriestessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighPriestessViewController.swift; sourceTree = "<group>"; };
+		C6FB5F4B29EEB71100172CAE /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		C6FB5F4D29EEBA9100172CAE /* CardOfDay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardOfDay.storyboard; sourceTree = "<group>"; };
+		C6FB5F4F29EEBBFF00172CAE /* Angels.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Angels.storyboard; sourceTree = "<group>"; };
+		C6FB5F5129EEBC5600172CAE /* Tarots.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tarots.storyboard; sourceTree = "<group>"; };
+		C6FB5F5329EEBC9600172CAE /* Video.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
+		C6FB5F5529EEBE1B00172CAE /* UITabBarViewController+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarViewController+Animations.swift"; sourceTree = "<group>"; };
+		C6FB5F5829EEC17400172CAE /* TabNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6FB5E1B29ED738D00172CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6FB5E3429ED738F00172CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6FB5E3E29ED738F00172CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6220E1129EFD2B900EAA3BC /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				C6220E1229EFD2C300EAA3BC /* promo.MOV */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		C6220E1829EFFB5300EAA3BC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				C6220E1929EFFB6600EAA3BC /* Appearance.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		C6FB5E1529ED738D00172CAE = {
+			isa = PBXGroup;
+			children = (
+				C6FB5E2029ED738D00172CAE /* angeldaemontaro */,
+				C6FB5E3A29ED738F00172CAE /* angeldaemontaroTests */,
+				C6FB5E4429ED738F00172CAE /* angeldaemontaroUITests */,
+				C6FB5E1F29ED738D00172CAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6FB5E1F29ED738D00172CAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5E1E29ED738D00172CAE /* angeldaemontaro.app */,
+				C6FB5E3729ED738F00172CAE /* angeldaemontaroTests.xctest */,
+				C6FB5E4129ED738F00172CAE /* angeldaemontaroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6FB5E2029ED738D00172CAE /* angeldaemontaro */ = {
+			isa = PBXGroup;
+			children = (
+				C6220E1829EFFB5300EAA3BC /* Global */,
+				C6FB5F5729EEC16200172CAE /* Templates */,
+				C6FB5F3B29EEB0BA00172CAE /* Extentions */,
+				C6FB5E9229ED749700172CAE /* Media */,
+				C6FB5E5929ED745700172CAE /* Localizations */,
+				C6FB5E5429ED73F800172CAE /* Screens */,
+				C6FB5E2129ED738D00172CAE /* AppDelegate.swift */,
+				C6FB5E2329ED738D00172CAE /* SceneDelegate.swift */,
+				C6FB5E2D29ED738F00172CAE /* Assets.xcassets */,
+				C6FB5E2F29ED738F00172CAE /* LaunchScreen.storyboard */,
+				C6FB5E3229ED738F00172CAE /* Info.plist */,
+				C6FB5E2A29ED738D00172CAE /* angeldaemontaro.xcdatamodeld */,
+			);
+			path = angeldaemontaro;
+			sourceTree = "<group>";
+		};
+		C6FB5E3A29ED738F00172CAE /* angeldaemontaroTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5E3B29ED738F00172CAE /* angeldaemontaroTests.swift */,
+			);
+			path = angeldaemontaroTests;
+			sourceTree = "<group>";
+		};
+		C6FB5E4429ED738F00172CAE /* angeldaemontaroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5E4529ED738F00172CAE /* angeldaemontaroUITests.swift */,
+				C6FB5E4729ED738F00172CAE /* angeldaemontaroUITestsLaunchTests.swift */,
+			);
+			path = angeldaemontaroUITests;
+			sourceTree = "<group>";
+		};
+		C6FB5E5429ED73F800172CAE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5F4529EEB57C00172CAE /* HighPriestess */,
+				C6FB5F4429EEB56B00172CAE /* Profile */,
+				C6FB5F3829EEB08400172CAE /* Video */,
+				C6FB5F3729EEB07F00172CAE /* Tarots */,
+				C6FB5F3629EEB07800172CAE /* Angels */,
+				C6FB5F3529EEB06E00172CAE /* CardOfDay */,
+				C6FB5F3329ED757500172CAE /* Main */,
+				C6FB5E5729ED740A00172CAE /* Settings */,
+				C6FB5E5629ED740300172CAE /* Tarot */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C6FB5E5629ED740300172CAE /* Tarot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tarot;
+			sourceTree = "<group>";
+		};
+		C6FB5E5729ED740A00172CAE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C6FB5E5929ED745700172CAE /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5E5A29ED745700172CAE /* AngelCards */,
+				C6FB5E6029ED745700172CAE /* Cards */,
+				C6FB5E6A29ED745700172CAE /* TarotSpreads */,
+				C6FB5E8029ED745700172CAE /* Main */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		C6FB5E5A29ED745700172CAE /* AngelCards */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5E5B29ED745700172CAE /* AngelNumbersLocalizable.strings */,
+			);
+			path = AngelCards;
+			sourceTree = "<group>";
+		};
+		C6FB5E6029ED745700172CAE /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5E6129ED745700172CAE /* FigureCardsLocalizable.strings */,
+				C6FB5E6329ED745700172CAE /* NumeralCardsLocalizable.strings */,
+				C6FB5E6529ED745700172CAE /* MajorArcanaLocalizable.strings */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		C6FB5E6A29ED745700172CAE /* TarotSpreads */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5E6B29ED745700172CAE /* ChoiseLocalizable.strings */,
+				C6FB5E6D29ED745700172CAE /* PersonalGrowthLocalizable.strings */,
+				C6FB5E6F29ED745700172CAE /* OnEveryDayLocalizable.strings */,
+				C6FB5E7129ED745700172CAE /* FinansialLocalizable.strings */,
+				C6FB5E7329ED745700172CAE /* HealthyLocalizable.strings */,
+				C6FB5E7529ED745700172CAE /* СelticCrossLocalizable.strings */,
+				C6FB5E7729ED745700172CAE /* LovelyLocalizable.strings */,
+			);
+			path = TarotSpreads;
+			sourceTree = "<group>";
+		};
+		C6FB5E8029ED745700172CAE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5E8129ED745700172CAE /* Localizable.strings */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C6FB5E9229ED749700172CAE /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				C6220E1129EFD2B900EAA3BC /* Video */,
+				C6FB5E9329ED749700172CAE /* Audio */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		C6FB5E9329ED749700172CAE /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5E9429ED749700172CAE /* figure */,
+				C6FB5EA529ED749700172CAE /* numeral */,
+				C6FB5ECE29ED749700172CAE /* major */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		C6FB5E9429ED749700172CAE /* figure */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5E9529ED749700172CAE /* queenOfCups.m4a */,
+				C6FB5E9629ED749700172CAE /* knightOfPentacles.m4a */,
+				C6FB5E9729ED749700172CAE /* knightOfSwords.m4a */,
+				C6FB5E9829ED749700172CAE /* queenOfPentacles.m4a */,
+				C6FB5E9929ED749700172CAE /* pageOfWands.m4a */,
+				C6FB5E9A29ED749700172CAE /* knightOfWands.m4a */,
+				C6FB5E9B29ED749700172CAE /* queenOfSwords.m4a */,
+				C6FB5E9C29ED749700172CAE /* pageOfPentacles.m4a */,
+				C6FB5E9D29ED749700172CAE /* kingOfPentacles.m4a */,
+				C6FB5E9E29ED749700172CAE /* pageOfCups.m4a */,
+				C6FB5E9F29ED749700172CAE /* queenOfWands.m4a */,
+				C6FB5EA029ED749700172CAE /* kingOfSwords.m4a */,
+				C6FB5EA129ED749700172CAE /* kingOfWands.m4a */,
+				C6FB5EA229ED749700172CAE /* knightOfCups.m4a */,
+				C6FB5EA329ED749700172CAE /* kingOfCups.m4a */,
+				C6FB5EA429ED749700172CAE /* pageOfSwords.m4a */,
+			);
+			path = figure;
+			sourceTree = "<group>";
+		};
+		C6FB5EA529ED749700172CAE /* numeral */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5EA629ED749700172CAE /* fiveOfWands.m4a */,
+				C6FB5EA729ED749700172CAE /* sixOfPentacles.m4a */,
+				C6FB5EA829ED749700172CAE /* tenOfSwords.m4a */,
+				C6FB5EA929ED749700172CAE /* threeOfWands.m4a */,
+				C6FB5EAA29ED749700172CAE /* twoOfCups.m4a */,
+				C6FB5EAB29ED749700172CAE /* aceOfCups.m4a */,
+				C6FB5EAC29ED749700172CAE /* sixOfCups.m4a */,
+				C6FB5EAD29ED749700172CAE /* nineOfWands.m4a */,
+				C6FB5EAE29ED749700172CAE /* fourOfPentacles.m4a */,
+				C6FB5EAF29ED749700172CAE /* sixOfWands.m4a */,
+				C6FB5EB029ED749700172CAE /* sixOfSwords.m4a */,
+				C6FB5EB129ED749700172CAE /* tenOfWands.m4a */,
+				C6FB5EB229ED749700172CAE /* eightOfSwords.m4a */,
+				C6FB5EB329ED749700172CAE /* eightOfCups.m4a */,
+				C6FB5EB429ED749700172CAE /* twoOfWands.m4a */,
+				C6FB5EB529ED749700172CAE /* sevenOfWands.m4a */,
+				C6FB5EB629ED749700172CAE /* nineOfSwords.m4a */,
+				C6FB5EB729ED749700172CAE /* threeOfSwords.m4a */,
+				C6FB5EB829ED749700172CAE /* sevenOfCups.m4a */,
+				C6FB5EB929ED749700172CAE /* fiveOfSwords.m4a */,
+				C6FB5EBA29ED749700172CAE /* threeOfCups.m4a */,
+				C6FB5EBB29ED749700172CAE /* threeOfPentacles.m4a */,
+				C6FB5EBC29ED749700172CAE /* aceOfPentacles.m4a */,
+				C6FB5EBD29ED749700172CAE /* nineOfCups.m4a */,
+				C6FB5EBE29ED749700172CAE /* sevenOfPentacles.m4a */,
+				C6FB5EBF29ED749700172CAE /* aceOfWands.m4a */,
+				C6FB5EC029ED749700172CAE /* tenOfPentacles.m4a */,
+				C6FB5EC129ED749700172CAE /* tenOfCups.m4a */,
+				C6FB5EC229ED749700172CAE /* fourOfWands.m4a */,
+				C6FB5EC329ED749700172CAE /* twoOfPentacles.m4a */,
+				C6FB5EC429ED749700172CAE /* fourOfSwords.m4a */,
+				C6FB5EC529ED749700172CAE /* aceOfSwords.m4a */,
+				C6FB5EC629ED749700172CAE /* fiveOfCups.m4a */,
+				C6FB5EC729ED749700172CAE /* eightOfPentacles.m4a */,
+				C6FB5EC829ED749700172CAE /* eightOfWands.m4a */,
+				C6FB5EC929ED749700172CAE /* fiveOfPentacles.m4a */,
+				C6FB5ECA29ED749700172CAE /* nineOfPentacles.m4a */,
+				C6FB5ECB29ED749700172CAE /* fourOfCups.m4a */,
+				C6FB5ECC29ED749700172CAE /* sevenOfSwords.m4a */,
+				C6FB5ECD29ED749700172CAE /* twoOfSwords.m4a */,
+			);
+			path = numeral;
+			sourceTree = "<group>";
+		};
+		C6FB5ECE29ED749700172CAE /* major */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5ECF29ED749700172CAE /* deathCard.m4a */,
+				C6FB5ED029ED749700172CAE /* justiceCard.m4a */,
+				C6FB5ED129ED749700172CAE /* wheelOfFortune.m4a */,
+				C6FB5ED229ED749700172CAE /* lovesCard.m4a */,
+				C6FB5ED329ED749700172CAE /* strengthCard.m4a */,
+				C6FB5ED429ED749700172CAE /* moderationCard.m4a */,
+				C6FB5ED529ED749700172CAE /* sunCard.m4a */,
+				C6FB5ED629ED749700172CAE /* chariotCard.m4a */,
+				C6FB5ED729ED749700172CAE /* fool.m4a */,
+				C6FB5ED829ED749700172CAE /* highpriestessCard.m4a */,
+				C6FB5ED929ED749700172CAE /* doomsdayCard.m4a */,
+				C6FB5EDA29ED749700172CAE /* emperorCard.m4a */,
+				C6FB5EDB29ED749700172CAE /* hangedCard.m4a */,
+				C6FB5EDC29ED749700172CAE /* hermitCard.m4a */,
+				C6FB5EDD29ED749700172CAE /* magicianCard.m4a */,
+				C6FB5EDE29ED749700172CAE /* towerCard.m4a */,
+				C6FB5EDF29ED749700172CAE /* worldCard.m4a */,
+				C6FB5EE029ED749700172CAE /* empressCard.m4a */,
+				C6FB5EE129ED749700172CAE /* devilCard.m4a */,
+				C6FB5EE229ED749700172CAE /* starCard.m4a */,
+				C6FB5EE329ED749700172CAE /* moonCard.m4a */,
+				C6FB5EE429ED749700172CAE /* hierophantCard.m4a */,
+			);
+			path = major;
+			sourceTree = "<group>";
+		};
+		C6FB5F3329ED757500172CAE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5E2529ED738D00172CAE /* MainTabBarViewController.swift */,
+				C6FB5E2729ED738D00172CAE /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C6FB5F3529EEB06E00172CAE /* CardOfDay */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5F3929EEB0A700172CAE /* CardsOfDayScreenViewController.swift */,
+				C6FB5F4D29EEBA9100172CAE /* CardOfDay.storyboard */,
+			);
+			path = CardOfDay;
+			sourceTree = "<group>";
+		};
+		C6FB5F3629EEB07800172CAE /* Angels */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5F3E29EEB49500172CAE /* AngelScreenViewController.swift */,
+				C6FB5F4F29EEBBFF00172CAE /* Angels.storyboard */,
+			);
+			path = Angels;
+			sourceTree = "<group>";
+		};
+		C6FB5F3729EEB07F00172CAE /* Tarots */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5F4029EEB4B300172CAE /* TarotsScreenViewController.swift */,
+				C6FB5F5129EEBC5600172CAE /* Tarots.storyboard */,
+			);
+			path = Tarots;
+			sourceTree = "<group>";
+		};
+		C6FB5F3829EEB08400172CAE /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5F4229EEB4C200172CAE /* VideoScreenViewController.swift */,
+				C6FB5F5329EEBC9600172CAE /* Video.storyboard */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		C6FB5F3B29EEB0BA00172CAE /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5F3C29EEB41500172CAE /* UIViewController+TabBar.swift */,
+				C6FB5F4B29EEB71100172CAE /* UIViewController+Storyboard.swift */,
+				C6FB5F5529EEBE1B00172CAE /* UITabBarViewController+Animations.swift */,
+				C6220E1429EFD60400EAA3BC /* UIViewController+Video.swift */,
+				C6220E1629EFDAA300EAA3BC /* UIViewController+Navigation.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		C6FB5F4429EEB56B00172CAE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C6FB5F4529EEB57C00172CAE /* HighPriestess */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5F4629EEB59900172CAE /* HighPriestess.storyboard */,
+				C6FB5F4829EEB5CD00172CAE /* HighPriestessViewController.swift */,
+			);
+			path = HighPriestess;
+			sourceTree = "<group>";
+		};
+		C6FB5F5729EEC16200172CAE /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB5F5829EEC17400172CAE /* TabNavigationController.swift */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6FB5E1D29ED738D00172CAE /* angeldaemontaro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6FB5E4B29ED738F00172CAE /* Build configuration list for PBXNativeTarget "angeldaemontaro" */;
+			buildPhases = (
+				C6FB5E1A29ED738D00172CAE /* Sources */,
+				C6FB5E1B29ED738D00172CAE /* Frameworks */,
+				C6FB5E1C29ED738D00172CAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = angeldaemontaro;
+			productName = angeldaemontaro;
+			productReference = C6FB5E1E29ED738D00172CAE /* angeldaemontaro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6FB5E3629ED738F00172CAE /* angeldaemontaroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6FB5E4E29ED738F00172CAE /* Build configuration list for PBXNativeTarget "angeldaemontaroTests" */;
+			buildPhases = (
+				C6FB5E3329ED738F00172CAE /* Sources */,
+				C6FB5E3429ED738F00172CAE /* Frameworks */,
+				C6FB5E3529ED738F00172CAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6FB5E3929ED738F00172CAE /* PBXTargetDependency */,
+			);
+			name = angeldaemontaroTests;
+			productName = angeldaemontaroTests;
+			productReference = C6FB5E3729ED738F00172CAE /* angeldaemontaroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C6FB5E4029ED738F00172CAE /* angeldaemontaroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6FB5E5129ED738F00172CAE /* Build configuration list for PBXNativeTarget "angeldaemontaroUITests" */;
+			buildPhases = (
+				C6FB5E3D29ED738F00172CAE /* Sources */,
+				C6FB5E3E29ED738F00172CAE /* Frameworks */,
+				C6FB5E3F29ED738F00172CAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6FB5E4329ED738F00172CAE /* PBXTargetDependency */,
+			);
+			name = angeldaemontaroUITests;
+			productName = angeldaemontaroUITests;
+			productReference = C6FB5E4129ED738F00172CAE /* angeldaemontaroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6FB5E1629ED738D00172CAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					C6FB5E1D29ED738D00172CAE = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					C6FB5E3629ED738F00172CAE = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C6FB5E1D29ED738D00172CAE;
+					};
+					C6FB5E4029ED738F00172CAE = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C6FB5E1D29ED738D00172CAE;
+					};
+				};
+			};
+			buildConfigurationList = C6FB5E1929ED738D00172CAE /* Build configuration list for PBXProject "angeldaemontaro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = C6FB5E1529ED738D00172CAE;
+			productRefGroup = C6FB5E1F29ED738D00172CAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6FB5E1D29ED738D00172CAE /* angeldaemontaro */,
+				C6FB5E3629ED738F00172CAE /* angeldaemontaroTests */,
+				C6FB5E4029ED738F00172CAE /* angeldaemontaroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6FB5E1C29ED738D00172CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6FB5E8429ED745700172CAE /* AngelNumbersLocalizable.strings in Resources */,
+				C6FB5F1129ED749700172CAE /* fourOfWands.m4a in Resources */,
+				C6FB5F0229ED749700172CAE /* eightOfCups.m4a in Resources */,
+				C6FB5F2329ED749700172CAE /* sunCard.m4a in Resources */,
+				C6FB5F5429EEBC9600172CAE /* Video.storyboard in Resources */,
+				C6FB5F3029ED749700172CAE /* starCard.m4a in Resources */,
+				C6FB5F1829ED749700172CAE /* fiveOfPentacles.m4a in Resources */,
+				C6FB5EF729ED749700172CAE /* tenOfSwords.m4a in Resources */,
+				C6FB5F3129ED749700172CAE /* moonCard.m4a in Resources */,
+				C6FB5EFF29ED749700172CAE /* sixOfSwords.m4a in Resources */,
+				C6FB5F3229ED749700172CAE /* hierophantCard.m4a in Resources */,
+				C6FB5F4729EEB59900172CAE /* HighPriestess.storyboard in Resources */,
+				C6FB5E8F29ED745700172CAE /* СelticCrossLocalizable.strings in Resources */,
+				C6FB5F2529ED749700172CAE /* fool.m4a in Resources */,
+				C6FB5F4E29EEBA9100172CAE /* CardOfDay.storyboard in Resources */,
+				C6FB5EFB29ED749700172CAE /* sixOfCups.m4a in Resources */,
+				C6FB5F2E29ED749700172CAE /* empressCard.m4a in Resources */,
+				C6FB5EF929ED749700172CAE /* twoOfCups.m4a in Resources */,
+				C6FB5F0B29ED749700172CAE /* aceOfPentacles.m4a in Resources */,
+				C6FB5F0029ED749700172CAE /* tenOfWands.m4a in Resources */,
+				C6FB5F0D29ED749700172CAE /* sevenOfPentacles.m4a in Resources */,
+				C6FB5EEF29ED749700172CAE /* queenOfWands.m4a in Resources */,
+				C6FB5EF029ED749700172CAE /* kingOfSwords.m4a in Resources */,
+				C6FB5E8A29ED745700172CAE /* ChoiseLocalizable.strings in Resources */,
+				C6FB5F1429ED749700172CAE /* aceOfSwords.m4a in Resources */,
+				C6FB5F1729ED749700172CAE /* eightOfWands.m4a in Resources */,
+				C6FB5E3129ED738F00172CAE /* LaunchScreen.storyboard in Resources */,
+				C6FB5EEB29ED749700172CAE /* queenOfSwords.m4a in Resources */,
+				C6FB5F1229ED749700172CAE /* twoOfPentacles.m4a in Resources */,
+				C6FB5F2729ED749700172CAE /* doomsdayCard.m4a in Resources */,
+				C6FB5F2929ED749700172CAE /* hangedCard.m4a in Resources */,
+				C6FB5F0A29ED749700172CAE /* threeOfPentacles.m4a in Resources */,
+				C6FB5F1629ED749700172CAE /* eightOfPentacles.m4a in Resources */,
+				C6FB5F2029ED749700172CAE /* lovesCard.m4a in Resources */,
+				C6FB5EF829ED749700172CAE /* threeOfWands.m4a in Resources */,
+				C6FB5E8829ED745700172CAE /* NumeralCardsLocalizable.strings in Resources */,
+				C6FB5E9029ED745700172CAE /* LovelyLocalizable.strings in Resources */,
+				C6FB5EEC29ED749700172CAE /* pageOfPentacles.m4a in Resources */,
+				C6FB5F2D29ED749700172CAE /* worldCard.m4a in Resources */,
+				C6FB5EED29ED749700172CAE /* kingOfPentacles.m4a in Resources */,
+				C6FB5F2C29ED749700172CAE /* towerCard.m4a in Resources */,
+				C6FB5F2429ED749700172CAE /* chariotCard.m4a in Resources */,
+				C6FB5F1C29ED749700172CAE /* twoOfSwords.m4a in Resources */,
+				C6FB5EF629ED749700172CAE /* sixOfPentacles.m4a in Resources */,
+				C6FB5F2B29ED749700172CAE /* magicianCard.m4a in Resources */,
+				C6FB5F2229ED749700172CAE /* moderationCard.m4a in Resources */,
+				C6FB5EE929ED749700172CAE /* pageOfWands.m4a in Resources */,
+				C6FB5EE729ED749700172CAE /* knightOfSwords.m4a in Resources */,
+				C6FB5EE629ED749700172CAE /* knightOfPentacles.m4a in Resources */,
+				C6FB5F2829ED749700172CAE /* emperorCard.m4a in Resources */,
+				C6FB5F1029ED749700172CAE /* tenOfCups.m4a in Resources */,
+				C6FB5EFD29ED749700172CAE /* fourOfPentacles.m4a in Resources */,
+				C6FB5F0E29ED749700172CAE /* aceOfWands.m4a in Resources */,
+				C6FB5F0929ED749700172CAE /* threeOfCups.m4a in Resources */,
+				C6FB5F5029EEBBFF00172CAE /* Angels.storyboard in Resources */,
+				C6FB5F1B29ED749700172CAE /* sevenOfSwords.m4a in Resources */,
+				C6FB5F1A29ED749700172CAE /* fourOfCups.m4a in Resources */,
+				C6FB5EF129ED749700172CAE /* kingOfWands.m4a in Resources */,
+				C6FB5E8C29ED745700172CAE /* OnEveryDayLocalizable.strings in Resources */,
+				C6220E1329EFD2C300EAA3BC /* promo.MOV in Resources */,
+				C6FB5EF429ED749700172CAE /* pageOfSwords.m4a in Resources */,
+				C6FB5EFE29ED749700172CAE /* sixOfWands.m4a in Resources */,
+				C6FB5EEA29ED749700172CAE /* knightOfWands.m4a in Resources */,
+				C6FB5E2E29ED738F00172CAE /* Assets.xcassets in Resources */,
+				C6FB5F1929ED749700172CAE /* nineOfPentacles.m4a in Resources */,
+				C6FB5E8D29ED745700172CAE /* FinansialLocalizable.strings in Resources */,
+				C6FB5F0129ED749700172CAE /* eightOfSwords.m4a in Resources */,
+				C6FB5E2929ED738D00172CAE /* Main.storyboard in Resources */,
+				C6FB5F1E29ED749700172CAE /* justiceCard.m4a in Resources */,
+				C6FB5F1F29ED749700172CAE /* wheelOfFortune.m4a in Resources */,
+				C6FB5F0729ED749700172CAE /* sevenOfCups.m4a in Resources */,
+				C6FB5EE829ED749700172CAE /* queenOfPentacles.m4a in Resources */,
+				C6FB5F0529ED749700172CAE /* nineOfSwords.m4a in Resources */,
+				C6FB5EEE29ED749700172CAE /* pageOfCups.m4a in Resources */,
+				C6FB5E8E29ED745700172CAE /* HealthyLocalizable.strings in Resources */,
+				C6FB5F0C29ED749700172CAE /* nineOfCups.m4a in Resources */,
+				C6FB5F2629ED749700172CAE /* highpriestessCard.m4a in Resources */,
+				C6FB5F0829ED749700172CAE /* fiveOfSwords.m4a in Resources */,
+				C6FB5F1329ED749700172CAE /* fourOfSwords.m4a in Resources */,
+				C6FB5E8729ED745700172CAE /* FigureCardsLocalizable.strings in Resources */,
+				C6FB5E9129ED745700172CAE /* Localizable.strings in Resources */,
+				C6FB5F2129ED749700172CAE /* strengthCard.m4a in Resources */,
+				C6FB5EF329ED749700172CAE /* kingOfCups.m4a in Resources */,
+				C6FB5F5229EEBC5600172CAE /* Tarots.storyboard in Resources */,
+				C6FB5EF529ED749700172CAE /* fiveOfWands.m4a in Resources */,
+				C6FB5EFC29ED749700172CAE /* nineOfWands.m4a in Resources */,
+				C6FB5F1D29ED749700172CAE /* deathCard.m4a in Resources */,
+				C6FB5F0329ED749700172CAE /* twoOfWands.m4a in Resources */,
+				C6FB5EFA29ED749700172CAE /* aceOfCups.m4a in Resources */,
+				C6FB5F2A29ED749700172CAE /* hermitCard.m4a in Resources */,
+				C6FB5F1529ED749700172CAE /* fiveOfCups.m4a in Resources */,
+				C6FB5F0F29ED749700172CAE /* tenOfPentacles.m4a in Resources */,
+				C6FB5F2F29ED749700172CAE /* devilCard.m4a in Resources */,
+				C6FB5EF229ED749700172CAE /* knightOfCups.m4a in Resources */,
+				C6FB5EE529ED749700172CAE /* queenOfCups.m4a in Resources */,
+				C6FB5F0429ED749700172CAE /* sevenOfWands.m4a in Resources */,
+				C6FB5F0629ED749700172CAE /* threeOfSwords.m4a in Resources */,
+				C6FB5E8B29ED745700172CAE /* PersonalGrowthLocalizable.strings in Resources */,
+				C6FB5E8929ED745700172CAE /* MajorArcanaLocalizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6FB5E3529ED738F00172CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6FB5E3F29ED738F00172CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6FB5E1A29ED738D00172CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6FB5E2629ED738D00172CAE /* MainTabBarViewController.swift in Sources */,
+				C6FB5F4929EEB5CD00172CAE /* HighPriestessViewController.swift in Sources */,
+				C6FB5F3F29EEB49500172CAE /* AngelScreenViewController.swift in Sources */,
+				C6FB5F5929EEC17400172CAE /* TabNavigationController.swift in Sources */,
+				C6FB5F3A29EEB0A700172CAE /* CardsOfDayScreenViewController.swift in Sources */,
+				C6FB5E2C29ED738D00172CAE /* angeldaemontaro.xcdatamodeld in Sources */,
+				C6220E1729EFDAA300EAA3BC /* UIViewController+Navigation.swift in Sources */,
+				C6FB5F5629EEBE1B00172CAE /* UITabBarViewController+Animations.swift in Sources */,
+				C6FB5F4C29EEB71100172CAE /* UIViewController+Storyboard.swift in Sources */,
+				C6220E1529EFD60400EAA3BC /* UIViewController+Video.swift in Sources */,
+				C6FB5E2229ED738D00172CAE /* AppDelegate.swift in Sources */,
+				C6220E1A29EFFB6600EAA3BC /* Appearance.swift in Sources */,
+				C6FB5F4329EEB4C200172CAE /* VideoScreenViewController.swift in Sources */,
+				C6FB5F3D29EEB41500172CAE /* UIViewController+TabBar.swift in Sources */,
+				C6FB5F4129EEB4B300172CAE /* TarotsScreenViewController.swift in Sources */,
+				C6FB5E2429ED738D00172CAE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6FB5E3329ED738F00172CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6FB5E3C29ED738F00172CAE /* angeldaemontaroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6FB5E3D29ED738F00172CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6FB5E4829ED738F00172CAE /* angeldaemontaroUITestsLaunchTests.swift in Sources */,
+				C6FB5E4629ED738F00172CAE /* angeldaemontaroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6FB5E3929ED738F00172CAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6FB5E1D29ED738D00172CAE /* angeldaemontaro */;
+			targetProxy = C6FB5E3829ED738F00172CAE /* PBXContainerItemProxy */;
+		};
+		C6FB5E4329ED738F00172CAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6FB5E1D29ED738D00172CAE /* angeldaemontaro */;
+			targetProxy = C6FB5E4229ED738F00172CAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6FB5E2729ED738D00172CAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E2829ED738D00172CAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6FB5E2F29ED738F00172CAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E3029ED738F00172CAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C6FB5E5B29ED745700172CAE /* AngelNumbersLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E5C29ED745700172CAE /* en */,
+				C6FB5E5E29ED745700172CAE /* ru */,
+			);
+			name = AngelNumbersLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		C6FB5E6129ED745700172CAE /* FigureCardsLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E6229ED745700172CAE /* en */,
+				C6FB5E6729ED745700172CAE /* ru */,
+			);
+			name = FigureCardsLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		C6FB5E6329ED745700172CAE /* NumeralCardsLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E6429ED745700172CAE /* en */,
+				C6FB5E6829ED745700172CAE /* ru */,
+			);
+			name = NumeralCardsLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		C6FB5E6529ED745700172CAE /* MajorArcanaLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E6629ED745700172CAE /* en */,
+				C6FB5E6929ED745700172CAE /* ru */,
+			);
+			name = MajorArcanaLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		C6FB5E6B29ED745700172CAE /* ChoiseLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E6C29ED745700172CAE /* en */,
+				C6FB5E7929ED745700172CAE /* ru */,
+			);
+			name = ChoiseLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		C6FB5E6D29ED745700172CAE /* PersonalGrowthLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E6E29ED745700172CAE /* en */,
+				C6FB5E7A29ED745700172CAE /* ru */,
+			);
+			name = PersonalGrowthLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		C6FB5E6F29ED745700172CAE /* OnEveryDayLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E7029ED745700172CAE /* en */,
+				C6FB5E7B29ED745700172CAE /* ru */,
+			);
+			name = OnEveryDayLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		C6FB5E7129ED745700172CAE /* FinansialLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E7229ED745700172CAE /* en */,
+				C6FB5E7C29ED745700172CAE /* ru */,
+			);
+			name = FinansialLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		C6FB5E7329ED745700172CAE /* HealthyLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E7429ED745700172CAE /* en */,
+				C6FB5E7D29ED745700172CAE /* ru */,
+			);
+			name = HealthyLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		C6FB5E7529ED745700172CAE /* СelticCrossLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E7629ED745700172CAE /* en */,
+				C6FB5E7E29ED745700172CAE /* ru */,
+			);
+			name = "СelticCrossLocalizable.strings";
+			sourceTree = "<group>";
+		};
+		C6FB5E7729ED745700172CAE /* LovelyLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E7829ED745700172CAE /* en */,
+				C6FB5E7F29ED745700172CAE /* ru */,
+			);
+			name = LovelyLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		C6FB5E8129ED745700172CAE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6FB5E8229ED745700172CAE /* en */,
+				C6FB5E8329ED745700172CAE /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6FB5E4929ED738F00172CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6FB5E4A29ED738F00172CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6FB5E4C29ED738F00172CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9MH47K8PQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = angeldaemontaro/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Angel Daemon Taro";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angeldaemon.taro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6FB5E4D29ED738F00172CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9MH47K8PQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = angeldaemontaro/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Angel Daemon Taro";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angeldaemon.taro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C6FB5E4F29ED738F00172CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AngelDaemon.angeldaemontaroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/angeldaemontaro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/angeldaemontaro";
+			};
+			name = Debug;
+		};
+		C6FB5E5029ED738F00172CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AngelDaemon.angeldaemontaroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/angeldaemontaro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/angeldaemontaro";
+			};
+			name = Release;
+		};
+		C6FB5E5229ED738F00172CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AngelDaemon.angeldaemontaroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = angeldaemontaro;
+			};
+			name = Debug;
+		};
+		C6FB5E5329ED738F00172CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AngelDaemon.angeldaemontaroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = angeldaemontaro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6FB5E1929ED738D00172CAE /* Build configuration list for PBXProject "angeldaemontaro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6FB5E4929ED738F00172CAE /* Debug */,
+				C6FB5E4A29ED738F00172CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6FB5E4B29ED738F00172CAE /* Build configuration list for PBXNativeTarget "angeldaemontaro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6FB5E4C29ED738F00172CAE /* Debug */,
+				C6FB5E4D29ED738F00172CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6FB5E4E29ED738F00172CAE /* Build configuration list for PBXNativeTarget "angeldaemontaroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6FB5E4F29ED738F00172CAE /* Debug */,
+				C6FB5E5029ED738F00172CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6FB5E5129ED738F00172CAE /* Build configuration list for PBXNativeTarget "angeldaemontaroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6FB5E5229ED738F00172CAE /* Debug */,
+				C6FB5E5329ED738F00172CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C6FB5E2A29ED738D00172CAE /* angeldaemontaro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C6FB5E2B29ED738D00172CAE /* angeldaemontaro.xcdatamodel */,
+			);
+			currentVersion = C6FB5E2B29ED738D00172CAE /* angeldaemontaro.xcdatamodel */;
+			path = angeldaemontaro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C6FB5E1629ED738D00172CAE /* Project object */;
+}

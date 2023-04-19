@@ -1,0 +1,71 @@
+/* 
+  Localizable.strings
+  CourseProject
+
+  Created by Anastasiya Laptseva on 7.07.22.
+  
+*/
+
+"tarotSpreadsMenu" = "Tarot Spreads";
+"descriptionMenu" = "Description";
+"preservationMenu" = "Preservation";
+"videoMenu" = "Video";
+"settingsMenu" = "Settings";
+
+"buttomMapOfDay" = "Map of the day";
+
+/*
+ Cards collections
+ */
+"major_arcane_title" = "Major Arcane";
+"figure_cards_title" = "Figure Cards";
+"numberical_cards_title" = "Numerical Cards";
+"angel_title" = "Angel Numbers";
+
+/*
+ TarotSpreads
+ */
+"onEveryDaySpread" = "On every day";
+"lovelySpread" = "Station for two(layout for love)";
+"situationSpread" = "Celtic cross(analysis of a specific situation)";
+"healthySpread" = "Alignment for health";
+"financialSpread" = "Full bowl (layout for finance)";
+"personalGrowthSpread" = "Path (personal growth)";
+"choiceSpread" = "Сhoose";
+
+/*
+ Settings
+ */
+
+"language" = "Language";
+"theme" = "Themes";
+"english" = "English";
+"russian" = "Russian";
+"light" = "Light";
+"dark" = "Dark";
+"sounds" = "Sounds";
+"on" = "On";
+"off" = "Off";
+
+/*
+ Tarot
+ */
+
+"financialSpread_title" = "Financial Spread";
+"onEveryDaySpread_title" = "Every Day Spread";
+"lovelySpread_title" = "Lovely Spread";
+"choiseSpread_title" = "Choise Spread";
+"healthySpread_title" = "Healthy Spread";
+"personalGrowthSpread_title" = "Personal Growth Spread";
+"celticCrossSpread_title" = "Celtic Cross Spread\n(situation)";
+"buttonTarotMake" = "Make Tarot";
+"buttonTarotWrite" = "Write Tarot";
+
+/*
+ Bottom menu
+ */
+
+"home_button" = "Home";
+"add_question_button" = "Question";
+"consultation_button" = "Consultation";
+"cards_button" = "Buy a cards";
