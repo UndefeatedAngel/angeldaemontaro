@@ -13,10 +13,10 @@ class MainTabBarViewController: UITabBarController {
         super.viewDidLoad()
         delegate = self
         
-        guard let cardOfDay = createViewController("CardOfDay", "cardOfDaysSB") else { return }
-        guard let angels = createViewController("Angels", "angelsSB") else { return }
-        guard let tarots = createViewController("Tarots", "tarotsSB") else { return }
-        guard let video = createViewController("Video", "videoSB") else { return }
+        let cardOfDay = StoryboardScene.CardOfDay.cardOfDaysSB.instantiate()
+        let angels = StoryboardScene.Angels.angelsSB.instantiate()
+        let tarots = StoryboardScene.Tarots.tarotsSB.instantiate()
+        let video = StoryboardScene.Video.videoSB.instantiate()
         
         viewControllers = [cardOfDay, tarots, angels, video]
     }
@@ -24,10 +24,9 @@ class MainTabBarViewController: UITabBarController {
 
 extension MainTabBarViewController: UITabBarControllerDelegate {
     
-    func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func tabBarController(_ tabBarController: UITabBarController,
+                          animationControllerForTransitionFrom fromVC: UIViewController,
+                          to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return AnimationSwipe(viewControllers: tabBarController.viewControllers)
     }
 }
-
-
-

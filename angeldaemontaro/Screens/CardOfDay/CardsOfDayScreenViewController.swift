@@ -18,8 +18,7 @@ class CardsOfDayScreenViewController: UIViewController {
     }
     
     @IBAction func highPriecessClick(_ sender: Any) {
-        
-        guard let controller = createViewController("HighPriestess", "highPriestessSB") else { return }
+        let controller = StoryboardScene.HighPriestess.highPriestessSB.instantiate()
         controller.modalPresentationStyle = .fullScreen
         self.present(controller, animated: true)
     }
@@ -27,6 +26,4 @@ class CardsOfDayScreenViewController: UIViewController {
     @IBAction func profileClick(_ sender: Any) {
         
     }
-    
-    
 }

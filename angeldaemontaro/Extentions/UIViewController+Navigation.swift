@@ -8,16 +8,13 @@
 import UIKit
 
 extension UIViewController {
-    func setupNavBackButton(){
+    func setupNavBackButton() {
         let button = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(actionBack))
-        //TODO: Theme
-        button.tintColor = self.traitCollection.userInterfaceStyle == .dark ? .white : .black
         self.navigationItem.leftBarButtonItems = [button]
     }
     
     @objc
-    func actionBack()
-    {
+    func actionBack() {
         self.dismiss(animated: true)
     }
     

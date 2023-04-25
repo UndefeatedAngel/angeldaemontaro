@@ -56,8 +56,8 @@ extension UITabBarController {
 
         func getIndex(forViewController vc: UIViewController) -> Int? {
             guard let vcs = self.viewControllers else { return nil }
-            for (index, thisVC) in vcs.enumerated() {
-                if thisVC == vc { return index }
+            for (index, thisVC) in vcs.enumerated() where thisVC == vc {
+                return index
             }
             return nil
         }

@@ -1,0 +1,27 @@
+input_dir: angeldaemontaro
+output_dir: angeldaemontaro/Helpers/Generated/
+xcassets:
+  - inputs:
+    - Resources/Images.xcassets
+    - Resources/Colors.xcassets
+    outputs:
+      - templateName: swift4
+        output: Assets.swift
+        params:
+          enumName: Assets
+ib:
+  inputs: .
+  outputs:
+    - templateName: scenes-swift4
+      output: StoryboardScene.swift
+      params:
+        ignoreTargetModule: true
+    - templateName: segues-swift4
+      output: StoryboardSegue.swift
+strings:
+  inputs: Localizations/Main/en.lproj/Localizable.strings
+  outputs:
+    templateName: flat-swift4
+    output: R.swift
+    params:
+      enumName: R

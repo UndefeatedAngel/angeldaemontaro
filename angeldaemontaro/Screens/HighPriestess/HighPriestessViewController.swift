@@ -10,31 +10,178 @@ import AVKit
 import AVFoundation
 
 class HighPriestessViewController: UIViewController {
+    
     @IBOutlet weak var videoPlayerView: UIView!
     @IBOutlet weak var videoActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var descriptionTextView: UITextView!
-    @IBOutlet weak var buyConsultation: UIButton!
-    @IBOutlet weak var openSite: UIButton!
-    @IBOutlet weak var social1: UIButton!
-    @IBOutlet weak var social2: UIButton!
-    @IBOutlet weak var social3: UIButton!
-    @IBOutlet weak var social4: UIButton!
+    @IBOutlet weak var consultationButton: UIButton! {
+        didSet {
+            consultationButton.layer.masksToBounds = true
+            consultationButton.layer.cornerRadius = 10
+            consultationButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
+            consultationButton.setTitle("Заказать консультацию", for: .normal)
+            consultationButton.addTarget(
+                self,
+                action: #selector(onClickConsultationButton),
+                for: .touchUpInside)
+        }
+    }
+    @IBOutlet weak var openSiteButton: UIButton! {
+        didSet {
+            openSiteButton.layer.masksToBounds = true
+            openSiteButton.layer.cornerRadius = 10
+            openSiteButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
+            openSiteButton.setTitle("Посетить сайт", for: .normal)
+            openSiteButton.addTarget(
+                self,
+                action: #selector(onClickOpenSiteButton),
+                for: .touchUpInside)
+        }
+    }
+    @IBOutlet weak var socialStackView: UIStackView!
+    
+    @IBOutlet weak var pauseButton: UIButton!
+    var buttonsSocial = [[]]
+    var isPauseVideo: Bool = false
+    var player: AVPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addNavTitle(text: "Жрица")
+        addNavTitle(text: "Верховная жрица")
         setupVideo()
         setupNavBackButton()
+        setupTextView()
+        setupSocial()
+        updateTheme()
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(finishVideoPlayer),
+            name: Notification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(foreroundAction),
+            name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     
+    // MARK: Setup Video
     private func setupVideo() {
+        pauseButton.setImage(UIImage(), for: .normal)
         videoActivityIndicator.startAnimating()
-        if let player = attachVideo(name: "promo", extention: "MOV", view: videoPlayerView) {
-            player.isMuted = false
-            player.volume = 1.0
+        if let avPlayer = attachVideo(name: "promo", extention: "MOV", view: videoPlayerView) {
+            avPlayer.isMuted = false
+            avPlayer.volume = 1.0
+            player = avPlayer
             videoActivityIndicator.stopAnimating()
         }
     }
     
+    // MARK: Setup TextView
+    private func setupTextView() {
+        let text = R.highprietessDescription
+        descriptionTextView.text = text
+        descriptionTextView.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
+    }
+    
+    // MARK: Setup Social
+    private func setupSocial() {
+        let tiktok = ["tiktok", "https://tiktok.com/@angel.daemon.taro"]
+        let youtube = ["youtube", "https://youtube.com/channel/UCIukCEupRBzhdsOTa7RLdMA"]
+        let zen = ["zen", "https://zen.yandex.ru/profile/editor/id/62beeb66396f275a086435f2"]
+        let facebook  = ["facebook", "https://www.facebook.com/profile.php?id=100082897029310"]
+        let instagram = ["instagram", "https://instagram.com/_angel_daemon_taro_?igshid=YmMyMTA2M2Y="]
+        let telegram  = ["telegram", "https://t.me/anlel_daemon_taro"]
+        buttonsSocial = [tiktok, youtube, zen, facebook, instagram, telegram]
+        
+        for tarSocial in 0..<buttonsSocial.count {
+            let socialButton = UIButton(type: .custom)
+            if let name = buttonsSocial[tarSocial][0] as? String {
+                socialButton.setImage(UIImage(named: name), for: .normal)
+                socialButton.tag = tarSocial
+                socialButton.addTarget(
+                    self,
+                    action: #selector(onClickSocialButton),
+                    for: .touchUpInside)
+                socialStackView.addArrangedSubview(socialButton)
+            }
+        }
+    }
+    
+    // MARK: Update Theme
+    private func updateTheme() {
+        let isDark = traitCollection.userInterfaceStyle == .dark
+        
+        let colorWhite = isDark ? UIColor.white : UIColor.black
+        let colorDark = isDark ? UIColor.black : UIColor.white
+        
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: colorWhite,
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 28, weight: .bold)
+        ]
+        
+        navigationItem.leftBarButtonItems?[0].tintColor = colorWhite
+        descriptionTextView.textColor = colorWhite
+        
+        consultationButton.tintColor = colorDark
+        consultationButton.backgroundColor = colorWhite
+        
+        openSiteButton.tintColor = colorDark
+        openSiteButton.backgroundColor = colorWhite
+    }
+    
+    // MARK: Click Actions
+    @objc
+    private func onClickSocialButton(sender: UIButton) {
+        if let urlString = buttonsSocial[sender.tag][1] as? String {
+            UIApplication.shared.open(URL(string: urlString)!)
+        }
+    }
+    
+    @objc
+    private func onClickConsultationButton(sender: UIButton) {
+        UIApplication.shared.open(URL(string: "https://t.me/angeldaemontaro_bot")!)
+    }
+    
+    @objc
+    private func onClickOpenSiteButton(sender: UIButton) {
+        UIApplication.shared.open(URL(string: "https://angeldaemontaro.com/")!)
+    }
+    
+    @objc
+    private func finishVideoPlayer() {
+        guard let avPlayer = player else { return }
+        
+        pauseButton.setImage(Assets.Images.playerPlay.image, for: .normal)
+        avPlayer.seek(to: .zero)
+        isPauseVideo = true
+    }
+    
+    @objc
+    private func foreroundAction() {
+        guard let avPlayer = player, isPauseVideo == false else { return }
+        
+        avPlayer.play()
+    }
+    
+    @IBAction func onClickPause(_ sender: Any) {
+        guard let avPlayer = player else { return }
+        
+        if isPauseVideo {
+            pauseButton.setImage(UIImage(), for: .normal)
+            avPlayer.play()
+        } else {
+            pauseButton.setImage(Assets.Images.playerPlay.image, for: .normal)
+            avPlayer.pause()
+        }
+        
+        isPauseVideo = !isPauseVideo
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        updateTheme()
+    }
 }
