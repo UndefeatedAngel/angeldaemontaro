@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choise View Controller-->
+        <scene sceneID="EY7-eH-p1m">
+            <objects>
+                <viewController storyboardIdentifier="ChoiseViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W4O-Yk-6GY" customClass="ChoiseViewController" customModule="angeldaemontaro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nRY-Ul-sou">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="rZn-Ae-H38" userLabel="imageView2">
+                                <rect key="frame" x="177" y="368" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="XNm-Iv-hfT"/>
+                                    <constraint firstAttribute="height" constant="100" id="jbh-d2-1rf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-2P-Kgc" userLabel="imageView5">
+                                <rect key="frame" x="293" y="58" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="JnG-zf-QGo"/>
+                                    <constraint firstAttribute="height" constant="100" id="OuE-S2-n46"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="dan-2l-0IB" userLabel="imageView3">
+                                <rect key="frame" x="77" y="118" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="c1H-VJ-Gem"/>
+                                    <constraint firstAttribute="height" constant="100" id="pUa-d2-qBV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="Cp2-MU-SVR" userLabel="imageView1">
+                                <rect key="frame" x="185" y="88" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2Pk-9E-TUT"/>
+                                    <constraint firstAttribute="height" constant="100" id="N9U-gO-lsZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="Gq8-UO-pre" userLabel="imageView7">
+                                <rect key="frame" x="27" y="228" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qmT-kx-JBh"/>
+                                    <constraint firstAttribute="width" constant="100" id="r3D-kc-qZy"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="me1-AO-QAT" userLabel="imageView4">
+                                <rect key="frame" x="77" y="338" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="a7Q-nq-6Wv"/>
+                                    <constraint firstAttribute="width" constant="100" id="naf-Nd-VpZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="1gr-t8-HTB" userLabel="imageView6">
+                                <rect key="frame" x="277" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="fVj-P5-9hw"/>
+                                    <constraint firstAttribute="height" constant="100" id="kW9-RA-uIO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w0S-UD-lIV"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="me1-AO-QAT" firstAttribute="top" secondItem="Gq8-UO-pre" secondAttribute="bottom" constant="10" id="0Fw-Ue-NqO"/>
+                            <constraint firstItem="me1-AO-QAT" firstAttribute="leading" secondItem="Gq8-UO-pre" secondAttribute="trailing" constant="-50" id="187-sG-AjH"/>
+                            <constraint firstItem="Cp2-MU-SVR" firstAttribute="top" secondItem="gb1-2P-Kgc" secondAttribute="bottom" constant="-70" id="1kP-Kh-GBD"/>
+                            <constraint firstItem="gb1-2P-Kgc" firstAttribute="top" secondItem="w0S-UD-lIV" secondAttribute="top" constant="10" id="4AM-cd-day"/>
+                            <constraint firstItem="rZn-Ae-H38" firstAttribute="leading" secondItem="me1-AO-QAT" secondAttribute="trailing" id="BGl-Y3-Ov7"/>
+                            <constraint firstItem="Cp2-MU-SVR" firstAttribute="leading" secondItem="dan-2l-0IB" secondAttribute="trailing" constant="8" symbolic="YES" id="CaI-lJ-jTw"/>
+                            <constraint firstItem="1gr-t8-HTB" firstAttribute="top" secondItem="rZn-Ae-H38" secondAttribute="bottom" constant="-70" id="MVC-RM-8sQ"/>
+                            <constraint firstItem="dan-2l-0IB" firstAttribute="leading" secondItem="Gq8-UO-pre" secondAttribute="trailing" constant="-50" id="OgX-qI-HZA"/>
+                            <constraint firstItem="Gq8-UO-pre" firstAttribute="centerX" secondItem="w0S-UD-lIV" secondAttribute="centerX" constant="-130" id="TFa-Qi-oik"/>
+                            <constraint firstItem="gb1-2P-Kgc" firstAttribute="leading" secondItem="Cp2-MU-SVR" secondAttribute="trailing" constant="8" symbolic="YES" id="TeE-A1-aaj"/>
+                            <constraint firstItem="rZn-Ae-H38" firstAttribute="top" secondItem="me1-AO-QAT" secondAttribute="bottom" constant="-70" id="YEE-rM-f9g"/>
+                            <constraint firstItem="dan-2l-0IB" firstAttribute="top" secondItem="Cp2-MU-SVR" secondAttribute="bottom" constant="-70" id="gBD-bk-z10"/>
+                            <constraint firstItem="1gr-t8-HTB" firstAttribute="leading" secondItem="rZn-Ae-H38" secondAttribute="trailing" id="m1w-Io-V2r"/>
+                            <constraint firstItem="Gq8-UO-pre" firstAttribute="top" secondItem="dan-2l-0IB" secondAttribute="bottom" constant="10" id="qbJ-ZG-Ov4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DTy-Is-aKr"/>
+                    <connections>
+                        <outlet property="imageView1" destination="Cp2-MU-SVR" id="8Cb-rm-4KL"/>
+                        <outlet property="imageView2" destination="rZn-Ae-H38" id="yU1-jW-eFI"/>
+                        <outlet property="imageView3" destination="dan-2l-0IB" id="Q6o-E8-iiW"/>
+                        <outlet property="imageView4" destination="me1-AO-QAT" id="Ogf-bW-NOv"/>
+                        <outlet property="imageView5" destination="gb1-2P-Kgc" id="hk0-66-mKs"/>
+                        <outlet property="imageView6" destination="1gr-t8-HTB" id="bD3-ul-MUn"/>
+                        <outlet property="imageView7" destination="Gq8-UO-pre" id="7P7-oH-y8R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQb-5x-IDj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="2743"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shirt" width="500" height="650"/>
+    </resources>
+</document>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mi5-IQ-iDB">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -148,8 +148,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76x-Iv-2LC" userLabel="LayoutCenter">
                                         <rect key="frame" x="0.0" y="180" width="390" height="539"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirtLight" translatesAutoresizingMaskIntoConstraints="NO" id="pde-G8-IzP">
-                                                <rect key="frame" x="95" y="89.666666666666686" width="200" height="300"/>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="pde-G8-IzP">
+                                                <rect key="frame" x="95" y="119.66666666666669" width="200" height="300"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="TFS-tL-hsQ"/>
                                                     <constraint firstAttribute="width" constant="200" id="clA-5V-oaz"/>
@@ -158,8 +158,8 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="pde-G8-IzP" firstAttribute="centerY" secondItem="76x-Iv-2LC" secondAttribute="centerY" id="7wg-pi-bAk"/>
                                             <constraint firstItem="pde-G8-IzP" firstAttribute="centerX" secondItem="76x-Iv-2LC" secondAttribute="centerX" id="hqr-49-0Ot"/>
-                                            <constraint firstItem="pde-G8-IzP" firstAttribute="centerY" secondItem="76x-Iv-2LC" secondAttribute="centerY" constant="-30" id="zmP-jB-ypS"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -184,8 +184,10 @@
                     <tabBarItem key="tabBarItem" title="Main" image="mainTabBar" selectedImage="mainTabBar" id="Zrf-N7-pJB"/>
                     <navigationItem key="navigationItem" id="Zot-KP-zB9"/>
                     <connections>
+                        <outlet property="cardImageView" destination="pde-G8-IzP" id="u6j-sB-D6K"/>
                         <outlet property="highPriestessButton" destination="gqk-jr-Ao8" id="33U-h1-Yzo"/>
                         <outlet property="profileButton" destination="kjV-iX-nqe" id="hp1-ZW-KyY"/>
+                        <segue destination="Nfy-uh-DAy" kind="show" identifier="cardSegue" animates="NO" id="V22-pc-DlK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jH6-Dd-Ivh" sceneMemberID="firstResponder"/>
@@ -208,13 +210,64 @@
             </objects>
             <point key="canvasLocation" x="1331" y="-284"/>
         </scene>
+        <!--CardsOfDayDetail-->
+        <scene sceneID="fCn-5o-gKR">
+            <objects>
+                <viewController title="CardsOfDayDetail" id="Nfy-uh-DAy" customClass="CardDetailViewController" customModule="angeldaemontaro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wwl-RY-xTb">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="zE7-Ha-Gr3" userLabel="background">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="QOP-DG-3rQ">
+                                <rect key="frame" x="95" y="390.66666666666674" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="0oe-ax-q4x"/>
+                                    <constraint firstAttribute="width" constant="200" id="YdB-tV-Mhc"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9d-BK-rjG" userLabel="DescriptionTextView">
+                                <rect key="frame" x="10" y="401" width="370" height="399"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IDv-OD-0j8"/>
+                        <constraints>
+                            <constraint firstItem="IDv-OD-0j8" firstAttribute="trailing" secondItem="I9d-BK-rjG" secondAttribute="trailing" constant="10" id="Dqc-K9-zdB"/>
+                            <constraint firstItem="zE7-Ha-Gr3" firstAttribute="leading" secondItem="Wwl-RY-xTb" secondAttribute="leading" id="RbA-FD-hbp"/>
+                            <constraint firstItem="zE7-Ha-Gr3" firstAttribute="top" secondItem="Wwl-RY-xTb" secondAttribute="top" id="YHf-Ci-o0u"/>
+                            <constraint firstItem="QOP-DG-3rQ" firstAttribute="centerX" secondItem="IDv-OD-0j8" secondAttribute="centerX" id="agA-as-dhN"/>
+                            <constraint firstAttribute="bottom" secondItem="zE7-Ha-Gr3" secondAttribute="bottom" id="evQ-To-FkO"/>
+                            <constraint firstItem="QOP-DG-3rQ" firstAttribute="centerY" secondItem="IDv-OD-0j8" secondAttribute="centerY" priority="750" constant="90" id="g0d-hv-7sn"/>
+                            <constraint firstItem="IDv-OD-0j8" firstAttribute="bottom" secondItem="I9d-BK-rjG" secondAttribute="bottom" constant="10" id="l31-4W-VIx"/>
+                            <constraint firstItem="I9d-BK-rjG" firstAttribute="leading" secondItem="IDv-OD-0j8" secondAttribute="leading" constant="10" id="lPD-gL-PhM"/>
+                            <constraint firstAttribute="trailing" secondItem="zE7-Ha-Gr3" secondAttribute="trailing" id="qvD-Na-Fdg"/>
+                            <constraint firstItem="I9d-BK-rjG" firstAttribute="top" secondItem="IDv-OD-0j8" secondAttribute="top" constant="310" id="xYJ-8U-Wgb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Main" image="mainTabBar" selectedImage="mainTabBar" id="k7m-wM-Hl4"/>
+                    <navigationItem key="navigationItem" id="72U-ux-nEP"/>
+                    <connections>
+                        <outlet property="cardImageView" destination="QOP-DG-3rQ" id="bFD-em-xRu"/>
+                        <outlet property="descriptionTextView" destination="I9d-BK-rjG" id="9T5-TI-fsL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mrg-I3-9su" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2955" y="-284"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="360" height="640"/>
         <image name="highPriecess" width="32" height="32"/>
         <image name="mainTabBar" width="32" height="32"/>
         <image name="manProfile" width="32" height="32"/>
-        <image name="shirtLight" width="333.33334350585938" height="433.33334350585938"/>
+        <image name="shirt" width="333.33334350585938" height="433.33334350585938"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -6,10 +6,12 @@
   
 */
 
+"cardsOfDayMenu" = "Карта дня";
 "tarotSpreadsMenu" = "Таро расклады";
+"angelsMenu" = "Числа ангелов";
+"videoMenu" = "Видео";
 "descriptionMenu" = "Описание";
 "preservationMenu" = "Сохранения";
-"videoMenu" = "Видео";
 "settingsMenu" = "Настройки";
 
 "buttomMapOfDay" = "Карта дня";
@@ -20,7 +22,6 @@
 "major_arcane_title" = "Старшие арканы";
 "figure_cards_title" = "Фигурные карты";
 "numberical_cards_title" = "Числовые карты";
-"angel_title" = "Числа ангелов";
 
 /*
  TarotSpreads

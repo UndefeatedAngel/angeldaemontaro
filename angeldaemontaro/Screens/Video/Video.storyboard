@@ -15,12 +15,29 @@
                     <view key="view" contentMode="scaleToFill" id="8iM-bF-UTJ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWq-kK-YZB">
+                                <rect key="frame" x="45" y="116" width="300" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="5vP-XB-sLu"/>
+                                    <constraint firstAttribute="height" constant="200" id="6yL-GY-8be"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tSe-Pa-kMy"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="CWq-kK-YZB" firstAttribute="centerX" secondItem="tSe-Pa-kMy" secondAttribute="centerX" id="JFP-EB-z98"/>
+                            <constraint firstItem="CWq-kK-YZB" firstAttribute="top" secondItem="tSe-Pa-kMy" secondAttribute="top" constant="25" id="rUJ-Wt-8dZ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Video" image="videoTabBar" selectedImage="videoTabBar" id="W7m-Ac-A1a"/>
                     <navigationItem key="navigationItem" id="gKd-BW-7nc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="viewForVideo" destination="CWq-kK-YZB" id="Zna-VB-ee4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHS-lw-M1e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -29,7 +46,6 @@
         <!--Tab Navigation Controller-->
         <scene sceneID="abZ-VG-yuk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W7v-np-mxi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="videoSB" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hhs-r9-JJC" customClass="TabNavigationController" customModule="angeldaemontaro" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z68-ki-S0l">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -39,12 +55,16 @@
                         <segue destination="N5G-lb-gWE" kind="relationship" relationship="rootViewController" id="otc-hI-9fw"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W7v-np-mxi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-275" y="32"/>
         </scene>
     </scenes>
     <resources>
         <image name="videoTabBar" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

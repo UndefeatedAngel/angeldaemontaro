@@ -13,6 +13,36 @@
 		C6220E1529EFD60400EAA3BC /* UIViewController+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6220E1429EFD60400EAA3BC /* UIViewController+Video.swift */; };
 		C6220E1729EFDAA300EAA3BC /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6220E1629EFDAA300EAA3BC /* UIViewController+Navigation.swift */; };
 		C6220E1A29EFFB6600EAA3BC /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6220E1929EFFB6600EAA3BC /* Appearance.swift */; };
+		C6A08DEE29F7D9ED004D1FCE /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A08DED29F7D9ED004D1FCE /* CardDetailViewController.swift */; };
+		C6B4180D29FBB042000FB62A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4180C29FBB042000FB62A /* Settings.swift */; };
+		C6B4180F29FBB3A6000FB62A /* AVPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4180E29FBB3A5000FB62A /* AVPlayerManager.swift */; };
+		C6B4181229FBBECA000FB62A /* configCardsDay.json in Resources */ = {isa = PBXBuildFile; fileRef = C6B4181129FBBECA000FB62A /* configCardsDay.json */; };
+		C6B4181429FBBF12000FB62A /* CardsDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4181329FBBF12000FB62A /* CardsDayModel.swift */; };
+		C6B4181629FBC3E0000FB62A /* UITextView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4181529FBC3E0000FB62A /* UITextView+Animation.swift */; };
+		C6B4181829FBDF10000FB62A /* configTarotSpreads.json in Resources */ = {isa = PBXBuildFile; fileRef = C6B4181729FBDF10000FB62A /* configTarotSpreads.json */; };
+		C6B4183829FBE10E000FB62A /* TarotDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4181A29FBE10E000FB62A /* TarotDescriptionViewController.swift */; };
+		C6B4183929FBE10E000FB62A /* BaseTarotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4181C29FBE10E000FB62A /* BaseTarotViewController.swift */; };
+		C6B4183A29FBE10E000FB62A /* PersonalGrowthStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B4181E29FBE10E000FB62A /* PersonalGrowthStoryboard.storyboard */; };
+		C6B4183B29FBE10E000FB62A /* PersonalGrowthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4181F29FBE10E000FB62A /* PersonalGrowthViewController.swift */; };
+		C6B4183C29FBE10E000FB62A /* HealthyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4182129FBE10E000FB62A /* HealthyViewController.swift */; };
+		C6B4183D29FBE10E000FB62A /* HealthyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B4182229FBE10E000FB62A /* HealthyStoryboard.storyboard */; };
+		C6B4183E29FBE10E000FB62A /* ChoiseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B4182429FBE10E000FB62A /* ChoiseStoryboard.storyboard */; };
+		C6B4183F29FBE10E000FB62A /* ChoiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4182529FBE10E000FB62A /* ChoiseViewController.swift */; };
+		C6B4184029FBE10E000FB62A /* BaseSpreadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4182629FBE10E000FB62A /* BaseSpreadModel.swift */; };
+		C6B4184129FBE10E000FB62A /* LovelyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B4182829FBE10E000FB62A /* LovelyStoryboard.storyboard */; };
+		C6B4184229FBE10E000FB62A /* LovelyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4182929FBE10E000FB62A /* LovelyViewController.swift */; };
+		C6B4184329FBE10E000FB62A /* TarotContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4182A29FBE10E000FB62A /* TarotContainerViewController.swift */; };
+		C6B4184429FBE10E000FB62A /* FinansialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4182C29FBE10E000FB62A /* FinansialViewController.swift */; };
+		C6B4184529FBE10E000FB62A /* FinansialStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B4182D29FBE10E000FB62A /* FinansialStoryboard.storyboard */; };
+		C6B4184629FBE10E000FB62A /* OnEveryDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4182F29FBE10E000FB62A /* OnEveryDayViewController.swift */; };
+		C6B4184729FBE10E000FB62A /* OnEveryDayStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B4183029FBE10E000FB62A /* OnEveryDayStoryboard.storyboard */; };
+		C6B4184829FBE10E000FB62A /* СelticCrossStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B4183229FBE10E000FB62A /* СelticCrossStoryboard.storyboard */; };
+		C6B4184929FBE10E000FB62A /* СelticCrossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4183329FBE10E000FB62A /* СelticCrossViewController.swift */; };
+		C6B4184A29FBE10E000FB62A /* TarotSpreadsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4183429FBE10E000FB62A /* TarotSpreadsCell.swift */; };
+		C6B4184B29FBE10E000FB62A /* TarotSpreadsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4183529FBE10E000FB62A /* TarotSpreadsCollectionViewController.swift */; };
+		C6B4184D29FBE10E000FB62A /* TarotSpreadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4183729FBE10E000FB62A /* TarotSpreadModel.swift */; };
+		C6B4185129FBE350000FB62A /* UIView+Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4185029FBE34F000FB62A /* UIView+Copy.swift */; };
+		C6B4185529FBEAEC000FB62A /* configFinancial.json in Resources */ = {isa = PBXBuildFile; fileRef = C6B4185429FBEAEC000FB62A /* configFinancial.json */; };
 		C6D8A3E829F7C184007B1147 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D8A3E729F7C184007B1147 /* Images.xcassets */; };
 		C6D8A3EE29F7C7F0007B1147 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8A3ED29F7C7F0007B1147 /* String.swift */; };
 		C6D8A3F029F7C7FA007B1147 /* UIViewController+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8A3EF29F7C7FA007B1147 /* UIViewController+Localization.swift */; };
@@ -26,6 +56,13 @@
 		C6D8A40A29F7D0A3007B1147 /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8A40629F7D0A3007B1147 /* R.swift */; };
 		C6D8A40B29F7D0A3007B1147 /* StoryboardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8A40729F7D0A3007B1147 /* StoryboardScene.swift */; };
 		C6D8A40C29F7D0A3007B1147 /* StoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8A40829F7D0A3007B1147 /* StoryboardSegue.swift */; };
+		C6F275832A07DC3900507F4C /* UIViewController+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F275822A07DC3900507F4C /* UIViewController+Save.swift */; };
+		C6F275852A07E4F100507F4C /* configAngelNumbers.json in Resources */ = {isa = PBXBuildFile; fileRef = C6F275842A07E4F000507F4C /* configAngelNumbers.json */; };
+		C6F2758C2A07E58F00507F4C /* AngelNumbersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F275872A07E58F00507F4C /* AngelNumbersCollectionViewController.swift */; };
+		C6F2758D2A07E58F00507F4C /* AngelNumbersCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F275882A07E58F00507F4C /* AngelNumbersCardModel.swift */; };
+		C6F2758E2A07E58F00507F4C /* AngelNumbersDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F275892A07E58F00507F4C /* AngelNumbersDescriptionViewController.swift */; };
+		C6F2758F2A07E58F00507F4C /* AngelNumbersSectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2758A2A07E58F00507F4C /* AngelNumbersSectionReusableView.swift */; };
+		C6F275902A07E58F00507F4C /* AngelNumbersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2758B2A07E58F00507F4C /* AngelNumbersCollectionViewCell.swift */; };
 		C6FB5E2229ED738D00172CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5E2129ED738D00172CAE /* AppDelegate.swift */; };
 		C6FB5E2429ED738D00172CAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5E2329ED738D00172CAE /* SceneDelegate.swift */; };
 		C6FB5E2629ED738D00172CAE /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5E2529ED738D00172CAE /* MainTabBarViewController.swift */; };
@@ -127,8 +164,6 @@
 		C6FB5F3229ED749700172CAE /* hierophantCard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5EE429ED749700172CAE /* hierophantCard.m4a */; };
 		C6FB5F3A29EEB0A700172CAE /* CardsOfDayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F3929EEB0A700172CAE /* CardsOfDayScreenViewController.swift */; };
 		C6FB5F3D29EEB41500172CAE /* UIViewController+TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F3C29EEB41500172CAE /* UIViewController+TabBar.swift */; };
-		C6FB5F3F29EEB49500172CAE /* AngelScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F3E29EEB49500172CAE /* AngelScreenViewController.swift */; };
-		C6FB5F4129EEB4B300172CAE /* TarotsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F4029EEB4B300172CAE /* TarotsScreenViewController.swift */; };
 		C6FB5F4329EEB4C200172CAE /* VideoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F4229EEB4C200172CAE /* VideoScreenViewController.swift */; };
 		C6FB5F4729EEB59900172CAE /* HighPriestess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FB5F4629EEB59900172CAE /* HighPriestess.storyboard */; };
 		C6FB5F4929EEB5CD00172CAE /* HighPriestessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB5F4829EEB5CD00172CAE /* HighPriestessViewController.swift */; };
@@ -167,6 +202,36 @@
 		C6220E1429EFD60400EAA3BC /* UIViewController+Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Video.swift"; sourceTree = "<group>"; };
 		C6220E1629EFDAA300EAA3BC /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		C6220E1929EFFB6600EAA3BC /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		C6A08DED29F7D9ED004D1FCE /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		C6B4180C29FBB042000FB62A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		C6B4180E29FBB3A5000FB62A /* AVPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerManager.swift; sourceTree = "<group>"; };
+		C6B4181129FBBECA000FB62A /* configCardsDay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = configCardsDay.json; sourceTree = "<group>"; };
+		C6B4181329FBBF12000FB62A /* CardsDayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsDayModel.swift; sourceTree = "<group>"; };
+		C6B4181529FBC3E0000FB62A /* UITextView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Animation.swift"; sourceTree = "<group>"; };
+		C6B4181729FBDF10000FB62A /* configTarotSpreads.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = configTarotSpreads.json; sourceTree = "<group>"; };
+		C6B4181A29FBE10E000FB62A /* TarotDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarotDescriptionViewController.swift; sourceTree = "<group>"; };
+		C6B4181C29FBE10E000FB62A /* BaseTarotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTarotViewController.swift; sourceTree = "<group>"; };
+		C6B4181E29FBE10E000FB62A /* PersonalGrowthStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PersonalGrowthStoryboard.storyboard; sourceTree = "<group>"; };
+		C6B4181F29FBE10E000FB62A /* PersonalGrowthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalGrowthViewController.swift; sourceTree = "<group>"; };
+		C6B4182129FBE10E000FB62A /* HealthyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyViewController.swift; sourceTree = "<group>"; };
+		C6B4182229FBE10E000FB62A /* HealthyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HealthyStoryboard.storyboard; sourceTree = "<group>"; };
+		C6B4182429FBE10E000FB62A /* ChoiseStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChoiseStoryboard.storyboard; sourceTree = "<group>"; };
+		C6B4182529FBE10E000FB62A /* ChoiseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiseViewController.swift; sourceTree = "<group>"; };
+		C6B4182629FBE10E000FB62A /* BaseSpreadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSpreadModel.swift; sourceTree = "<group>"; };
+		C6B4182829FBE10E000FB62A /* LovelyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LovelyStoryboard.storyboard; sourceTree = "<group>"; };
+		C6B4182929FBE10E000FB62A /* LovelyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LovelyViewController.swift; sourceTree = "<group>"; };
+		C6B4182A29FBE10E000FB62A /* TarotContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarotContainerViewController.swift; sourceTree = "<group>"; };
+		C6B4182C29FBE10E000FB62A /* FinansialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinansialViewController.swift; sourceTree = "<group>"; };
+		C6B4182D29FBE10E000FB62A /* FinansialStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinansialStoryboard.storyboard; sourceTree = "<group>"; };
+		C6B4182F29FBE10E000FB62A /* OnEveryDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnEveryDayViewController.swift; sourceTree = "<group>"; };
+		C6B4183029FBE10E000FB62A /* OnEveryDayStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnEveryDayStoryboard.storyboard; sourceTree = "<group>"; };
+		C6B4183229FBE10E000FB62A /* СelticCrossStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "СelticCrossStoryboard.storyboard"; sourceTree = "<group>"; };
+		C6B4183329FBE10E000FB62A /* СelticCrossViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "СelticCrossViewController.swift"; sourceTree = "<group>"; };
+		C6B4183429FBE10E000FB62A /* TarotSpreadsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarotSpreadsCell.swift; sourceTree = "<group>"; };
+		C6B4183529FBE10E000FB62A /* TarotSpreadsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarotSpreadsCollectionViewController.swift; sourceTree = "<group>"; };
+		C6B4183729FBE10E000FB62A /* TarotSpreadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarotSpreadModel.swift; sourceTree = "<group>"; };
+		C6B4185029FBE34F000FB62A /* UIView+Copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Copy.swift"; sourceTree = "<group>"; };
+		C6B4185429FBEAEC000FB62A /* configFinancial.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = configFinancial.json; sourceTree = "<group>"; };
 		C6D8A3E729F7C184007B1147 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C6D8A3ED29F7C7F0007B1147 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		C6D8A3EF29F7C7FA007B1147 /* UIViewController+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Localization.swift"; sourceTree = "<group>"; };
@@ -180,6 +245,13 @@
 		C6D8A40629F7D0A3007B1147 /* R.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		C6D8A40729F7D0A3007B1147 /* StoryboardScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScene.swift; sourceTree = "<group>"; };
 		C6D8A40829F7D0A3007B1147 /* StoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegue.swift; sourceTree = "<group>"; };
+		C6F275822A07DC3900507F4C /* UIViewController+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Save.swift"; sourceTree = "<group>"; };
+		C6F275842A07E4F000507F4C /* configAngelNumbers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = configAngelNumbers.json; sourceTree = "<group>"; };
+		C6F275872A07E58F00507F4C /* AngelNumbersCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngelNumbersCollectionViewController.swift; sourceTree = "<group>"; };
+		C6F275882A07E58F00507F4C /* AngelNumbersCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngelNumbersCardModel.swift; sourceTree = "<group>"; };
+		C6F275892A07E58F00507F4C /* AngelNumbersDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngelNumbersDescriptionViewController.swift; sourceTree = "<group>"; };
+		C6F2758A2A07E58F00507F4C /* AngelNumbersSectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngelNumbersSectionReusableView.swift; sourceTree = "<group>"; };
+		C6F2758B2A07E58F00507F4C /* AngelNumbersCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngelNumbersCollectionViewCell.swift; sourceTree = "<group>"; };
 		C6FB5E1E29ED738D00172CAE /* angeldaemontaro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = angeldaemontaro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FB5E2129ED738D00172CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6FB5E2329ED738D00172CAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -297,8 +369,6 @@
 		C6FB5EE429ED749700172CAE /* hierophantCard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hierophantCard.m4a; sourceTree = "<group>"; };
 		C6FB5F3929EEB0A700172CAE /* CardsOfDayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsOfDayScreenViewController.swift; sourceTree = "<group>"; };
 		C6FB5F3C29EEB41500172CAE /* UIViewController+TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TabBar.swift"; sourceTree = "<group>"; };
-		C6FB5F3E29EEB49500172CAE /* AngelScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngelScreenViewController.swift; sourceTree = "<group>"; };
-		C6FB5F4029EEB4B300172CAE /* TarotsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotsScreenViewController.swift; sourceTree = "<group>"; };
 		C6FB5F4229EEB4C200172CAE /* VideoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoScreenViewController.swift; sourceTree = "<group>"; };
 		C6FB5F4629EEB59900172CAE /* HighPriestess.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HighPriestess.storyboard; sourceTree = "<group>"; };
 		C6FB5F4829EEB5CD00172CAE /* HighPriestessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighPriestessViewController.swift; sourceTree = "<group>"; };
@@ -357,8 +427,116 @@
 			isa = PBXGroup;
 			children = (
 				C6220E1929EFFB6600EAA3BC /* Appearance.swift */,
+				C6B4180C29FBB042000FB62A /* Settings.swift */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		C6B4181029FBBEAA000FB62A /* Confings */ = {
+			isa = PBXGroup;
+			children = (
+				C6B4185229FBEAEC000FB62A /* Tarots */,
+				C6B4181129FBBECA000FB62A /* configCardsDay.json */,
+				C6F275842A07E4F000507F4C /* configAngelNumbers.json */,
+				C6B4181729FBDF10000FB62A /* configTarotSpreads.json */,
+			);
+			path = Confings;
+			sourceTree = "<group>";
+		};
+		C6B4181B29FBE10E000FB62A /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				C6B4181C29FBE10E000FB62A /* BaseTarotViewController.swift */,
+				C6B4181D29FBE10E000FB62A /* PersonalGrowth */,
+				C6B4182029FBE10E000FB62A /* Healthy */,
+				C6B4182329FBE10E000FB62A /* Situation */,
+				C6B4182629FBE10E000FB62A /* BaseSpreadModel.swift */,
+				C6B4182729FBE10E000FB62A /* Lovely */,
+				C6B4182A29FBE10E000FB62A /* TarotContainerViewController.swift */,
+				C6B4182B29FBE10E000FB62A /* Finansial */,
+				C6B4182E29FBE10E000FB62A /* OnEveryDay */,
+				C6B4183129FBE10E000FB62A /* СelticCross */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		C6B4181D29FBE10E000FB62A /* PersonalGrowth */ = {
+			isa = PBXGroup;
+			children = (
+				C6B4181E29FBE10E000FB62A /* PersonalGrowthStoryboard.storyboard */,
+				C6B4181F29FBE10E000FB62A /* PersonalGrowthViewController.swift */,
+			);
+			path = PersonalGrowth;
+			sourceTree = "<group>";
+		};
+		C6B4182029FBE10E000FB62A /* Healthy */ = {
+			isa = PBXGroup;
+			children = (
+				C6B4182129FBE10E000FB62A /* HealthyViewController.swift */,
+				C6B4182229FBE10E000FB62A /* HealthyStoryboard.storyboard */,
+			);
+			path = Healthy;
+			sourceTree = "<group>";
+		};
+		C6B4182329FBE10E000FB62A /* Situation */ = {
+			isa = PBXGroup;
+			children = (
+				C6B4182429FBE10E000FB62A /* ChoiseStoryboard.storyboard */,
+				C6B4182529FBE10E000FB62A /* ChoiseViewController.swift */,
+			);
+			path = Situation;
+			sourceTree = "<group>";
+		};
+		C6B4182729FBE10E000FB62A /* Lovely */ = {
+			isa = PBXGroup;
+			children = (
+				C6B4182829FBE10E000FB62A /* LovelyStoryboard.storyboard */,
+				C6B4182929FBE10E000FB62A /* LovelyViewController.swift */,
+			);
+			path = Lovely;
+			sourceTree = "<group>";
+		};
+		C6B4182B29FBE10E000FB62A /* Finansial */ = {
+			isa = PBXGroup;
+			children = (
+				C6B4182C29FBE10E000FB62A /* FinansialViewController.swift */,
+				C6B4182D29FBE10E000FB62A /* FinansialStoryboard.storyboard */,
+			);
+			path = Finansial;
+			sourceTree = "<group>";
+		};
+		C6B4182E29FBE10E000FB62A /* OnEveryDay */ = {
+			isa = PBXGroup;
+			children = (
+				C6B4182F29FBE10E000FB62A /* OnEveryDayViewController.swift */,
+				C6B4183029FBE10E000FB62A /* OnEveryDayStoryboard.storyboard */,
+			);
+			path = OnEveryDay;
+			sourceTree = "<group>";
+		};
+		C6B4183129FBE10E000FB62A /* СelticCross */ = {
+			isa = PBXGroup;
+			children = (
+				C6B4183229FBE10E000FB62A /* СelticCrossStoryboard.storyboard */,
+				C6B4183329FBE10E000FB62A /* СelticCrossViewController.swift */,
+			);
+			path = "СelticCross";
+			sourceTree = "<group>";
+		};
+		C6B4185229FBEAEC000FB62A /* Tarots */ = {
+			isa = PBXGroup;
+			children = (
+				C6B4185329FBEAEC000FB62A /* Financial */,
+			);
+			path = Tarots;
+			sourceTree = "<group>";
+		};
+		C6B4185329FBEAEC000FB62A /* Financial */ = {
+			isa = PBXGroup;
+			children = (
+				C6B4185429FBEAEC000FB62A /* configFinancial.json */,
+			);
+			path = Financial;
 			sourceTree = "<group>";
 		};
 		C6D8A3E929F7C208007B1147 /* Resources */ = {
@@ -414,6 +592,7 @@
 		C6FB5E2029ED738D00172CAE /* angeldaemontaro */ = {
 			isa = PBXGroup;
 			children = (
+				C6B4181029FBBEAA000FB62A /* Confings */,
 				C6D8A40329F7D0A3007B1147 /* Helpers */,
 				C6D8A3E929F7C208007B1147 /* Resources */,
 				C6220E1829EFFB5300EAA3BC /* Global */,
@@ -659,8 +838,10 @@
 		C6FB5F3529EEB06E00172CAE /* CardOfDay */ = {
 			isa = PBXGroup;
 			children = (
+				C6B4181329FBBF12000FB62A /* CardsDayModel.swift */,
 				C6FB5F3929EEB0A700172CAE /* CardsOfDayScreenViewController.swift */,
 				C6FB5F4D29EEBA9100172CAE /* CardOfDay.storyboard */,
+				C6A08DED29F7D9ED004D1FCE /* CardDetailViewController.swift */,
 			);
 			path = CardOfDay;
 			sourceTree = "<group>";
@@ -668,7 +849,11 @@
 		C6FB5F3629EEB07800172CAE /* Angels */ = {
 			isa = PBXGroup;
 			children = (
-				C6FB5F3E29EEB49500172CAE /* AngelScreenViewController.swift */,
+				C6F275872A07E58F00507F4C /* AngelNumbersCollectionViewController.swift */,
+				C6F275882A07E58F00507F4C /* AngelNumbersCardModel.swift */,
+				C6F275892A07E58F00507F4C /* AngelNumbersDescriptionViewController.swift */,
+				C6F2758A2A07E58F00507F4C /* AngelNumbersSectionReusableView.swift */,
+				C6F2758B2A07E58F00507F4C /* AngelNumbersCollectionViewCell.swift */,
 				C6FB5F4F29EEBBFF00172CAE /* Angels.storyboard */,
 			);
 			path = Angels;
@@ -677,7 +862,11 @@
 		C6FB5F3729EEB07F00172CAE /* Tarots */ = {
 			isa = PBXGroup;
 			children = (
-				C6FB5F4029EEB4B300172CAE /* TarotsScreenViewController.swift */,
+				C6B4181B29FBE10E000FB62A /* Types */,
+				C6B4181A29FBE10E000FB62A /* TarotDescriptionViewController.swift */,
+				C6B4183429FBE10E000FB62A /* TarotSpreadsCell.swift */,
+				C6B4183529FBE10E000FB62A /* TarotSpreadsCollectionViewController.swift */,
+				C6B4183729FBE10E000FB62A /* TarotSpreadModel.swift */,
 				C6FB5F5129EEBC5600172CAE /* Tarots.storyboard */,
 			);
 			path = Tarots;
@@ -695,6 +884,7 @@
 		C6FB5F3B29EEB0BA00172CAE /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				C6B4185029FBE34F000FB62A /* UIView+Copy.swift */,
 				C6D8A3FB29F7C87C007B1147 /* UIViewController+Sounds.swift */,
 				C6D8A3F929F7C86C007B1147 /* UIViewController+GestureRecognizer.swift */,
 				C6D8A3F729F7C867007B1147 /* UIViewController+AlertViewController.swift */,
@@ -708,6 +898,8 @@
 				C6220E1429EFD60400EAA3BC /* UIViewController+Video.swift */,
 				C6220E1629EFDAA300EAA3BC /* UIViewController+Navigation.swift */,
 				C620CCAC29F00E89007555B9 /* UIViewController+Theme.swift */,
+				C6B4181529FBC3E0000FB62A /* UITextView+Animation.swift */,
+				C6F275822A07DC3900507F4C /* UIViewController+Save.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -732,6 +924,7 @@
 			isa = PBXGroup;
 			children = (
 				C6FB5F5829EEC17400172CAE /* TabNavigationController.swift */,
+				C6B4180E29FBB3A5000FB62A /* AVPlayerManager.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -854,6 +1047,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6FB5E8429ED745700172CAE /* AngelNumbersLocalizable.strings in Resources */,
+				C6B4185529FBEAEC000FB62A /* configFinancial.json in Resources */,
 				C6FB5F1129ED749700172CAE /* fourOfWands.m4a in Resources */,
 				C6FB5F0229ED749700172CAE /* eightOfCups.m4a in Resources */,
 				C6FB5F2329ED749700172CAE /* sunCard.m4a in Resources */,
@@ -866,6 +1060,7 @@
 				C6FB5F3229ED749700172CAE /* hierophantCard.m4a in Resources */,
 				C6FB5F4729EEB59900172CAE /* HighPriestess.storyboard in Resources */,
 				C6FB5E8F29ED745700172CAE /* СelticCrossLocalizable.strings in Resources */,
+				C6B4181829FBDF10000FB62A /* configTarotSpreads.json in Resources */,
 				C6FB5F2529ED749700172CAE /* fool.m4a in Resources */,
 				C6FB5F4E29EEBA9100172CAE /* CardOfDay.storyboard in Resources */,
 				C6FB5EFB29ED749700172CAE /* sixOfCups.m4a in Resources */,
@@ -883,6 +1078,7 @@
 				C6FB5EEB29ED749700172CAE /* queenOfSwords.m4a in Resources */,
 				C6FB5F1229ED749700172CAE /* twoOfPentacles.m4a in Resources */,
 				C6FB5F2729ED749700172CAE /* doomsdayCard.m4a in Resources */,
+				C6B4184829FBE10E000FB62A /* СelticCrossStoryboard.storyboard in Resources */,
 				C6FB5F2929ED749700172CAE /* hangedCard.m4a in Resources */,
 				C6FB5F0A29ED749700172CAE /* threeOfPentacles.m4a in Resources */,
 				C6FB5F1629ED749700172CAE /* eightOfPentacles.m4a in Resources */,
@@ -891,23 +1087,28 @@
 				C6FB5E8829ED745700172CAE /* NumeralCardsLocalizable.strings in Resources */,
 				C6FB5E9029ED745700172CAE /* LovelyLocalizable.strings in Resources */,
 				C6FB5EEC29ED749700172CAE /* pageOfPentacles.m4a in Resources */,
+				C6B4183A29FBE10E000FB62A /* PersonalGrowthStoryboard.storyboard in Resources */,
 				C6FB5F2D29ED749700172CAE /* worldCard.m4a in Resources */,
 				C6FB5EED29ED749700172CAE /* kingOfPentacles.m4a in Resources */,
 				C6FB5F2C29ED749700172CAE /* towerCard.m4a in Resources */,
 				C6FB5F2429ED749700172CAE /* chariotCard.m4a in Resources */,
 				C6FB5F1C29ED749700172CAE /* twoOfSwords.m4a in Resources */,
+				C6B4184529FBE10E000FB62A /* FinansialStoryboard.storyboard in Resources */,
 				C6FB5EF629ED749700172CAE /* sixOfPentacles.m4a in Resources */,
 				C6FB5F2B29ED749700172CAE /* magicianCard.m4a in Resources */,
 				C6FB5F2229ED749700172CAE /* moderationCard.m4a in Resources */,
 				C6FB5EE929ED749700172CAE /* pageOfWands.m4a in Resources */,
+				C6B4181229FBBECA000FB62A /* configCardsDay.json in Resources */,
 				C6FB5EE729ED749700172CAE /* knightOfSwords.m4a in Resources */,
 				C6FB5EE629ED749700172CAE /* knightOfPentacles.m4a in Resources */,
+				C6B4184729FBE10E000FB62A /* OnEveryDayStoryboard.storyboard in Resources */,
 				C6FB5F2829ED749700172CAE /* emperorCard.m4a in Resources */,
 				C6FB5F1029ED749700172CAE /* tenOfCups.m4a in Resources */,
 				C6FB5EFD29ED749700172CAE /* fourOfPentacles.m4a in Resources */,
 				C6FB5F0E29ED749700172CAE /* aceOfWands.m4a in Resources */,
 				C6FB5F0929ED749700172CAE /* threeOfCups.m4a in Resources */,
 				C6FB5F5029EEBBFF00172CAE /* Angels.storyboard in Resources */,
+				C6B4183E29FBE10E000FB62A /* ChoiseStoryboard.storyboard in Resources */,
 				C6FB5F1B29ED749700172CAE /* sevenOfSwords.m4a in Resources */,
 				C6FB5F1A29ED749700172CAE /* fourOfCups.m4a in Resources */,
 				C6FB5EF129ED749700172CAE /* kingOfWands.m4a in Resources */,
@@ -925,7 +1126,9 @@
 				C6FB5F1F29ED749700172CAE /* wheelOfFortune.m4a in Resources */,
 				C6FB5F0729ED749700172CAE /* sevenOfCups.m4a in Resources */,
 				C6FB5EE829ED749700172CAE /* queenOfPentacles.m4a in Resources */,
+				C6B4183D29FBE10E000FB62A /* HealthyStoryboard.storyboard in Resources */,
 				C6FB5F0529ED749700172CAE /* nineOfSwords.m4a in Resources */,
+				C6B4184129FBE10E000FB62A /* LovelyStoryboard.storyboard in Resources */,
 				C6FB5EEE29ED749700172CAE /* pageOfCups.m4a in Resources */,
 				C6FB5E8E29ED745700172CAE /* HealthyLocalizable.strings in Resources */,
 				C6FB5F0C29ED749700172CAE /* nineOfCups.m4a in Resources */,
@@ -946,6 +1149,7 @@
 				C6FB5F2A29ED749700172CAE /* hermitCard.m4a in Resources */,
 				C6FB5F1529ED749700172CAE /* fiveOfCups.m4a in Resources */,
 				C6FB5F0F29ED749700172CAE /* tenOfPentacles.m4a in Resources */,
+				C6F275852A07E4F100507F4C /* configAngelNumbers.json in Resources */,
 				C6FB5F2F29ED749700172CAE /* devilCard.m4a in Resources */,
 				C6FB5EF229ED749700172CAE /* knightOfCups.m4a in Resources */,
 				C6FB5EE529ED749700172CAE /* queenOfCups.m4a in Resources */,
@@ -1041,32 +1245,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6FB5E2629ED738D00172CAE /* MainTabBarViewController.swift in Sources */,
+				C6B4184929FBE10E000FB62A /* СelticCrossViewController.swift in Sources */,
+				C6B4183F29FBE10E000FB62A /* ChoiseViewController.swift in Sources */,
 				C6D8A3F829F7C867007B1147 /* UIViewController+AlertViewController.swift in Sources */,
+				C6B4183C29FBE10E000FB62A /* HealthyViewController.swift in Sources */,
 				C6FB5F4929EEB5CD00172CAE /* HighPriestessViewController.swift in Sources */,
-				C6FB5F3F29EEB49500172CAE /* AngelScreenViewController.swift in Sources */,
+				C6B4183929FBE10E000FB62A /* BaseTarotViewController.swift in Sources */,
+				C6B4184429FBE10E000FB62A /* FinansialViewController.swift in Sources */,
+				C6B4181429FBBF12000FB62A /* CardsDayModel.swift in Sources */,
+				C6B4184A29FBE10E000FB62A /* TarotSpreadsCell.swift in Sources */,
 				C6FB5F5929EEC17400172CAE /* TabNavigationController.swift in Sources */,
 				C620CCAD29F00E89007555B9 /* UIViewController+Theme.swift in Sources */,
+				C6F275832A07DC3900507F4C /* UIViewController+Save.swift in Sources */,
 				C6FB5F3A29EEB0A700172CAE /* CardsOfDayScreenViewController.swift in Sources */,
+				C6B4180F29FBB3A6000FB62A /* AVPlayerManager.swift in Sources */,
 				C6D8A3F429F7C855007B1147 /* RangeReplaceableCollection.swift in Sources */,
+				C6F275902A07E58F00507F4C /* AngelNumbersCollectionViewCell.swift in Sources */,
 				C6D8A40929F7D0A3007B1147 /* Assets.swift in Sources */,
 				C6FB5E2C29ED738D00172CAE /* angeldaemontaro.xcdatamodeld in Sources */,
 				C6D8A3F029F7C7FA007B1147 /* UIViewController+Localization.swift in Sources */,
 				C6D8A3FA29F7C86C007B1147 /* UIViewController+GestureRecognizer.swift in Sources */,
 				C6220E1729EFDAA300EAA3BC /* UIViewController+Navigation.swift in Sources */,
+				C6F2758D2A07E58F00507F4C /* AngelNumbersCardModel.swift in Sources */,
+				C6B4184329FBE10E000FB62A /* TarotContainerViewController.swift in Sources */,
 				C6FB5F5629EEBE1B00172CAE /* UITabBarViewController+Animations.swift in Sources */,
 				C6FB5F4C29EEB71100172CAE /* UIViewController+Storyboard.swift in Sources */,
 				C6D8A40B29F7D0A3007B1147 /* StoryboardScene.swift in Sources */,
+				C6B4183B29FBE10E000FB62A /* PersonalGrowthViewController.swift in Sources */,
+				C6B4181629FBC3E0000FB62A /* UITextView+Animation.swift in Sources */,
+				C6B4184629FBE10E000FB62A /* OnEveryDayViewController.swift in Sources */,
 				C6220E1529EFD60400EAA3BC /* UIViewController+Video.swift in Sources */,
 				C6FB5E2229ED738D00172CAE /* AppDelegate.swift in Sources */,
+				C6F2758C2A07E58F00507F4C /* AngelNumbersCollectionViewController.swift in Sources */,
+				C6B4185129FBE350000FB62A /* UIView+Copy.swift in Sources */,
+				C6F2758F2A07E58F00507F4C /* AngelNumbersSectionReusableView.swift in Sources */,
 				C6D8A40C29F7D0A3007B1147 /* StoryboardSegue.swift in Sources */,
+				C6B4183829FBE10E000FB62A /* TarotDescriptionViewController.swift in Sources */,
 				C6D8A3F229F7C83E007B1147 /* Bundle.swift in Sources */,
 				C6D8A3EE29F7C7F0007B1147 /* String.swift in Sources */,
 				C6220E1A29EFFB6600EAA3BC /* Appearance.swift in Sources */,
 				C6D8A3FC29F7C87C007B1147 /* UIViewController+Sounds.swift in Sources */,
+				C6B4184229FBE10E000FB62A /* LovelyViewController.swift in Sources */,
 				C6FB5F4329EEB4C200172CAE /* VideoScreenViewController.swift in Sources */,
+				C6B4180D29FBB042000FB62A /* Settings.swift in Sources */,
+				C6A08DEE29F7D9ED004D1FCE /* CardDetailViewController.swift in Sources */,
 				C6FB5F3D29EEB41500172CAE /* UIViewController+TabBar.swift in Sources */,
-				C6FB5F4129EEB4B300172CAE /* TarotsScreenViewController.swift in Sources */,
+				C6B4184D29FBE10E000FB62A /* TarotSpreadModel.swift in Sources */,
+				C6B4184B29FBE10E000FB62A /* TarotSpreadsCollectionViewController.swift in Sources */,
 				C6D8A40A29F7D0A3007B1147 /* R.swift in Sources */,
+				C6F2758E2A07E58F00507F4C /* AngelNumbersDescriptionViewController.swift in Sources */,
+				C6B4184029FBE10E000FB62A /* BaseSpreadModel.swift in Sources */,
 				C6FB5E2429ED738D00172CAE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1362,8 +1590,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1371,6 +1599,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.angeldaemon.taro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1392,8 +1623,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1401,6 +1632,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.angeldaemon.taro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

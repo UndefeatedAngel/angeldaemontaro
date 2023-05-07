@@ -21,7 +21,24 @@ internal enum StoryboardScene {
   internal enum CardOfDay: StoryboardType {
     internal static let storyboardName = "CardOfDay"
 
+    internal static let initialScene = InitialSceneType<TabNavigationController>(storyboard: CardOfDay.self)
+
     internal static let cardOfDaysSB = SceneType<TabNavigationController>(storyboard: CardOfDay.self, identifier: "cardOfDaysSB")
+  }
+  internal enum ChoiseStoryboard: StoryboardType {
+    internal static let storyboardName = "ChoiseStoryboard"
+
+    internal static let choiseViewController = SceneType<ChoiseViewController>(storyboard: ChoiseStoryboard.self, identifier: "ChoiseViewController")
+  }
+  internal enum FinansialStoryboard: StoryboardType {
+    internal static let storyboardName = "FinansialStoryboard"
+
+    internal static let finansialViewController = SceneType<FinansialViewController>(storyboard: FinansialStoryboard.self, identifier: "FinansialViewController")
+  }
+  internal enum HealthyStoryboard: StoryboardType {
+    internal static let storyboardName = "HealthyStoryboard"
+
+    internal static let healthyViewController = SceneType<HealthyViewController>(storyboard: HealthyStoryboard.self, identifier: "HealthyViewController")
   }
   internal enum HighPriestess: StoryboardType {
     internal static let storyboardName = "HighPriestess"
@@ -33,10 +50,25 @@ internal enum StoryboardScene {
 
     internal static let initialScene = InitialSceneType<UIKit.UIViewController>(storyboard: LaunchScreen.self)
   }
+  internal enum LovelyStoryboard: StoryboardType {
+    internal static let storyboardName = "LovelyStoryboard"
+
+    internal static let lovelyViewController = SceneType<LovelyViewController>(storyboard: LovelyStoryboard.self, identifier: "LovelyViewController")
+  }
   internal enum Main: StoryboardType {
     internal static let storyboardName = "Main"
 
     internal static let initialScene = InitialSceneType<MainTabBarViewController>(storyboard: Main.self)
+  }
+  internal enum OnEveryDayStoryboard: StoryboardType {
+    internal static let storyboardName = "OnEveryDayStoryboard"
+
+    internal static let onEveryDayViewController = SceneType<OnEveryDayViewController>(storyboard: OnEveryDayStoryboard.self, identifier: "OnEveryDayViewController")
+  }
+  internal enum PersonalGrowthStoryboard: StoryboardType {
+    internal static let storyboardName = "PersonalGrowthStoryboard"
+
+    internal static let personalGrowthViewController = SceneType<PersonalGrowthViewController>(storyboard: PersonalGrowthStoryboard.self, identifier: "PersonalGrowthViewController")
   }
   internal enum Tarots: StoryboardType {
     internal static let storyboardName = "Tarots"
@@ -47,6 +79,11 @@ internal enum StoryboardScene {
     internal static let storyboardName = "Video"
 
     internal static let videoSB = SceneType<TabNavigationController>(storyboard: Video.self, identifier: "videoSB")
+  }
+  internal enum СelticCrossStoryboard: StoryboardType {
+    internal static let storyboardName = "СelticCrossStoryboard"
+
+    internal static let сelticCrossViewController = SceneType<CelticCrossViewController>(storyboard: СelticCrossStoryboard.self, identifier: "СelticCrossViewController")
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length prefer_self_in_static_references

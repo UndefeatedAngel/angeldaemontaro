@@ -8,17 +8,31 @@
 import UIKit
 
 extension UIViewController {
-    func setupNavBackButton() {
-        let button = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(actionBack))
+    
+    func setupNavBackButton(complete: Selector) {
+        let button = UIBarButtonItem(image: Assets.Images.back.image, style: .plain, target: self, action: complete)
         self.navigationItem.leftBarButtonItems = [button]
     }
     
-    @objc
-    func actionBack() {
-        self.dismiss(animated: true)
+    func setupNavTitle(text: String) {
+        self.navigationItem.title = text
     }
     
-    func addNavTitle(text: String) {
-        self.navigationItem.title = text
+    func setupSoundsNav() {
+        Settings.isSounds = true
+        
+        let button = UIBarButtonItem(image: Settings.isSounds
+                                     ? Assets.Images.soundOn.image
+                                     : Assets.Images.soundOff.image,
+                                     style: .plain, target: self, action: #selector(actionSoundClick))
+        self.navigationItem.rightBarButtonItems = [button]
+    }
+    
+    @objc
+    func actionSoundClick() {
+        Settings.isSounds = !Settings.isSounds
+        setupSoundsNav()
+        AVPlayerManager.avPlayer?.isMuted = !Settings.isSounds
+        AVPlayerManager.audioPlayer?.volume = Settings.isSounds ? 1 : 0
     }
 }

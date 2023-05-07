@@ -43,14 +43,14 @@ class HighPriestessViewController: UIViewController {
     @IBOutlet weak var pauseButton: UIButton!
     var buttonsSocial = [[]]
     var isPauseVideo: Bool = false
-    var player: AVPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addNavTitle(text: "Верховная жрица")
+        setupNavTitle(text: "Верховная жрица")
         setupVideo()
-        setupNavBackButton()
+        setupNavBackButton(complete: #selector(backClick))
+        setupSoundsNav()
         setupTextView()
         setupSocial()
         updateTheme()
@@ -66,6 +66,16 @@ class HighPriestessViewController: UIViewController {
             name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     
+    @objc
+    func backClick() {
+        self.dismiss(animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        AVPlayerManager.avPlayer = nil
+    }
+    
     // MARK: Setup Video
     private func setupVideo() {
         pauseButton.setImage(UIImage(), for: .normal)
@@ -73,7 +83,7 @@ class HighPriestessViewController: UIViewController {
         if let avPlayer = attachVideo(name: "promo", extention: "MOV", view: videoPlayerView) {
             avPlayer.isMuted = false
             avPlayer.volume = 1.0
-            player = avPlayer
+            AVPlayerManager.avPlayer = avPlayer
             videoActivityIndicator.stopAnimating()
         }
     }
@@ -151,7 +161,7 @@ class HighPriestessViewController: UIViewController {
     
     @objc
     private func finishVideoPlayer() {
-        guard let avPlayer = player else { return }
+        guard let avPlayer = AVPlayerManager.avPlayer else { return }
         
         pauseButton.setImage(Assets.Images.playerPlay.image, for: .normal)
         avPlayer.seek(to: .zero)
@@ -160,13 +170,13 @@ class HighPriestessViewController: UIViewController {
     
     @objc
     private func foreroundAction() {
-        guard let avPlayer = player, isPauseVideo == false else { return }
+        guard let avPlayer = AVPlayerManager.avPlayer, isPauseVideo == false else { return }
         
         avPlayer.play()
     }
     
     @IBAction func onClickPause(_ sender: Any) {
-        guard let avPlayer = player else { return }
+        guard let avPlayer = AVPlayerManager.avPlayer else { return }
         
         if isPauseVideo {
             pauseButton.setImage(UIImage(), for: .normal)

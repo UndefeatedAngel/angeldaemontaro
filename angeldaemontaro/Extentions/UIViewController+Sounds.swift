@@ -10,7 +10,6 @@ import UIKit
 import AVFoundation
 
 extension UIViewController {
-    private static var player: AVAudioPlayer?
     
     func playSound(name: String) {
         guard let url = Bundle.main.url(forResource: name, withExtension: "m4a") else { return }
@@ -20,12 +19,12 @@ extension UIViewController {
             try AVAudioSession.sharedInstance().setActive(true)
 
             /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
-            UIViewController.player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.m4a.rawValue)
+            AVPlayerManager.audioPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.m4a.rawValue)
 
             /* iOS 10 and earlier require the following line:
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
-            guard let player = UIViewController.player else { return }
+            guard let player = AVPlayerManager.audioPlayer else { return }
 
             player.play()
             player.volume = 1
@@ -36,10 +35,10 @@ extension UIViewController {
     }
     
     func stopSound() {
-        UIViewController.player?.stop()
+        AVPlayerManager.audioPlayer?.stop()
     }
     
     func setVolume(volume: Float) {
-        UIViewController.player?.volume = volume
+        AVPlayerManager.audioPlayer?.volume = volume
     }
 }

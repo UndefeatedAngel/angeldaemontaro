@@ -1,0 +1,315 @@
+[
+  {
+    "image": "fool",
+    "description": "fool_financial"
+  },
+  {
+    "image": "magicianCard",
+    "description": "magicianCard_financial"
+  },
+  {
+    "image": "highpriestessCard",
+    "description": "highpriestessCard_financial"
+  },
+  {
+    "image": "empressCard",
+    "description": "empressCard_financial"
+  },
+  {
+    "image": "emperorCard",
+    "description": "emperorCard_financial"
+  },
+  {
+    "image": "lovesCard",
+    "description": "lovesCard_financial"
+  },
+  {
+    "image": "chariotCard",
+    "description": "chariotCard_financial"
+  },
+  {
+    "image": "strengthCard",
+    "description": "strengthCard_financial"
+  },
+  {
+    "image": "hermitCard",
+    "description": "hermitCard_financial"
+  },
+  {
+    "image": "wheelOfFortune",
+    "description": "wheelOfFortune_financial"
+  },
+  {
+    "image": "justiceCard",
+    "description": "justiceCard_financial"
+  },
+  {
+    "image": "hangedCard",
+    "description": "hangedCard_financial"
+  },
+  {
+    "image": "deathCard",
+    "description": "deathCard_financial"
+  },
+  {
+    "image": "moderationCard",
+    "description": "moderationCard_financial"
+  },
+  {
+    "image": "devilCard",
+    "description": "devilCard_financial"
+  },
+  {
+    "image": "towerCard",
+    "description": "towerCard_financial"
+  },
+  {
+    "image": "starCard",
+    "description": "starCard_financial"
+  },
+  {
+    "image": "moonCard",
+    "description": "moonCard_financial"
+  },
+  {
+    "image": "sunCard",
+    "description": "sunCard_financial"
+  },
+  {
+    "image": "doomsdayCard",
+    "description": "doomsdayCard_financial"
+  },
+  {
+    "image": "worldCard",
+    "description": "worldCard_financial"
+  },
+  
+  
+  
+  {
+    "image": "kingOfCups",
+    "description": "kingOfCups_financial"
+  },
+  {
+    "image": "kingOfPentacles",
+    "description": "kingOfPentacles_financial"
+  },
+  {
+    "image": "kingOfSwords",
+    "description": "kingOfSwords_financial"
+  },
+  {
+    "image": "kingOfWands",
+    "description": "kingOfWands_financial"
+  },
+  {
+    "image": "knightOfCups",
+    "description": "knightOfCups_financial"
+  },
+  {
+    "image": "knightOfPentacles",
+    "description": "knightOfPentacles_financial"
+  },
+  {
+    "image": "knightOfSwords",
+    "description": "knightOfSwords_financial"
+  },
+  {
+    "image": "knightOfWands",
+    "description": "knightOfWands_financial"
+  },
+  {
+    "image": "pageOfCups",
+    "description": "pageOfCups_financial"
+  },
+  {
+    "image": "pageOfPentacles",
+    "description": "pageOfPentacles_financial"
+  },
+  {
+    "image": "pageOfSwords",
+    "description": "pageOfSwords_financial"
+  },
+  {
+    "image": "pageOfWands",
+    "description": "pageOfWands_financial"
+  },
+  {
+    "image": "queenOfCups",
+    "description": "queenOfCups_financial"
+  },
+  {
+    "image": "queenOfPentacles",
+    "description": "queenOfPentacles_financial"
+  },
+  {
+    "image": "queenOfSwords",
+    "description": "queenOfSwords_financial"
+  },
+  {
+    "image": "queenOfWands",
+    "description": "queenOfWands_financial"
+  },
+  
+  
+  {
+    "image": "aceOfPentacles",
+    "description": "aceOfPentacles_financial"
+  },
+  {
+    "image": "aceOfSwords",
+    "description": "aceOfSwords_financial"
+  },
+  {
+    "image": "aceOfWands",
+    "description": "aceOfWands_financial"
+  },
+  {
+    "image": "aceOfCups",
+    "description": "aceOfCups_financial"
+  },
+  {
+    "image": "twoOfPentacles",
+    "description": "twoOfPentacles_financial"
+  },
+  {
+    "image": "twoOfSwords",
+    "description": "twoOfSwords_financial"
+  },
+  {
+    "image": "twoOfWands",
+    "description": "twoOfWands_financial"
+  },
+  {
+    "image": "twoOfCups",
+    "description": "twoOfCups_financial"
+  },
+  {
+    "image": "threeOfPentacles",
+    "description": "threeOfPentacles_financial"
+  },
+  {
+    "image": "threeOfSwords",
+    "description": "threeOfSwords_financial"
+  },
+  {
+    "image": "threeOfWands",
+    "description": "threeOfWands_financial"
+  },
+  {
+    "image": "threeOfCups",
+    "description": "threeOfCups_financial"
+  },
+  {
+    "image": "fourOfPentacles",
+    "description": "fourOfPentacles_financial"
+  },
+  {
+    "image": "fourOfSwords",
+    "description": "fourOfSwords_financial"
+  },
+  {
+    "image": "fourOfWands",
+    "description": "fourOfWands_financial"
+  },
+  {
+    "image": "fourOfCups",
+    "description": "fourOfCups_financial"
+  },
+  {
+    "image": "fiveOfPentacles",
+    "description": "fiveOfPentacles_financial"
+  },
+  {
+    "image": "fiveOfSwords",
+    "description": "fiveOfSwords_financial"
+  },
+  {
+    "image": "fiveOfWands",
+    "description": "fiveOfWands_financial"
+  },
+  {
+    "image": "fiveOfCups",
+    "description": "fiveOfCups_financial"
+  },
+  {
+    "image": "sixOfPentacles",
+    "description": "sixOfPentacles_financial"
+  },
+  {
+    "image": "sixOfSwords",
+    "description": "sixOfSwords_financial"
+  },
+  {
+    "image": "sixOfWands",
+    "description": "sixOfWands_financial"
+  },
+  {
+    "image": "sixOfCups",
+    "description": "sixOfCups_financial"
+  },
+  {
+    "image": "sevenOfPentacles",
+    "description": "sevenOfPentacles_financial"
+  },
+  {
+    "image": "sevenOfSwords",
+    "description": "sevenOfSwords_financial"
+  },
+  {
+    "image": "sevenOfWands",
+    "description": "sevenOfWands_financial"
+  },
+  {
+    "image": "sevenOfCups",
+    "description": "sevenOfCups_financial"
+  },
+  {
+    "image": "eightOfPentacles",
+    "description": "eightOfPentacles_financial"
+  },
+  {
+    "image": "eightOfSwords",
+    "description": "eightOfSwords_financial"
+  },
+  {
+    "image": "eightOfWands",
+    "description": "eightOfWands_financial"
+  },
+  {
+    "image": "eightOfCups",
+    "description": "eightOfCups_financial"
+  },
+  {
+    "image": "nineOfPentacles",
+    "description": "nineOfPentacles_financial"
+  },
+  {
+    "image": "nineOfSwords",
+    "description": "nineOfSwords_financial"
+  },
+  {
+    "image": "nineOfWands",
+    "description": "nineOfWands_financial"
+  },
+  {
+    "image": "nineOfCups",
+    "description": "nineOfCups_financial"
+  },
+  {
+    "image": "tenOfPentacles",
+    "description": "tenOfPentacles_financial"
+  },
+  {
+    "image": "tenOfSwords",
+    "description": "tenOfSwords_financial"
+  },
+  {
+    "image": "tenOfWands",
+    "description": "tenOfWands_financial"
+  },
+  {
+    "image": "tenOfCups",
+    "description": "tenOfCups_financial"
+  }
+]

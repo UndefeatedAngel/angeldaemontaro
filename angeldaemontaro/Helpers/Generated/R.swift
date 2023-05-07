@@ -12,7 +12,7 @@ internal enum R {
   /// Question
   internal static let addQuestionButton = R.tr("Localizable", "add_question_button", fallback: "Question")
   /// Angel Numbers
-  internal static let angelTitle = R.tr("Localizable", "angel_title", fallback: "Angel Numbers")
+  internal static let angelsMenu = R.tr("Localizable", "angelsMenu", fallback: "Angel Numbers")
   /// Map of the day
   internal static let buttomMapOfDay = R.tr("Localizable", "buttomMapOfDay", fallback: "Map of the day")
   /// Make Tarot
@@ -21,6 +21,11 @@ internal enum R {
   internal static let buttonTarotWrite = R.tr("Localizable", "buttonTarotWrite", fallback: "Write Tarot")
   /// Buy a cards
   internal static let cardsButton = R.tr("Localizable", "cards_button", fallback: "Buy a cards")
+  /// Localizable.strings
+  ///   CourseProject
+  /// 
+  ///   Created by Anastasiya Laptseva on 7.07.22.
+  internal static let cardsOfDayMenu = R.tr("Localizable", "cardsOfDayMenu", fallback: "Cards of Day")
   /// Celtic Cross Spread
   /// (situation)
   internal static let celticCrossSpreadTitle = R.tr("Localizable", "celticCrossSpread_title", fallback: "Celtic Cross Spread\n(situation)")
@@ -84,10 +89,7 @@ internal enum R {
   internal static let situationSpread = R.tr("Localizable", "situationSpread", fallback: "Celtic cross(analysis of a specific situation)")
   /// Sounds
   internal static let sounds = R.tr("Localizable", "sounds", fallback: "Sounds")
-  /// Localizable.strings
-  ///   CourseProject
-  /// 
-  ///   Created by Anastasiya Laptseva on 7.07.22.
+  /// Tarot Spreads
   internal static let tarotSpreadsMenu = R.tr("Localizable", "tarotSpreadsMenu", fallback: "Tarot Spreads")
   /// Themes
   internal static let theme = R.tr("Localizable", "theme", fallback: "Themes")

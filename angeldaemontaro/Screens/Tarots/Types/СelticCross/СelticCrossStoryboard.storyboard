@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Celtic Cross View Controller-->
+        <scene sceneID="MbT-dI-7Ga">
+            <objects>
+                <viewController storyboardIdentifier="СelticCrossViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WlV-8C-FdX" customClass="CelticCrossViewController" customModule="angeldaemontaro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Af-Q6-iWL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="9h0-Er-DrS" userLabel="imageView2">
+                                <rect key="frame" x="172" y="235" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3Uj-rN-IDu"/>
+                                    <constraint firstAttribute="width" constant="70" id="rho-ym-fGV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="cce-hv-yzi" userLabel="imageView1">
+                                <rect key="frame" x="94" y="235" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="3NZ-xb-uAZ"/>
+                                    <constraint firstAttribute="height" constant="100" id="QCj-5r-eif"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="yeD-4R-W1F" userLabel="imageView8">
+                                <rect key="frame" x="328" y="168" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dki-e2-vfO"/>
+                                    <constraint firstAttribute="width" constant="70" id="voV-gE-W8Q"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="hmH-jn-zaF" userLabel="imageView5">
+                                <rect key="frame" x="19" y="235" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="D3w-6h-Mf2"/>
+                                    <constraint firstAttribute="height" constant="100" id="leb-0i-D2U"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="pnw-77-8sl" userLabel="imageView6">
+                                <rect key="frame" x="250" y="235" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="rcS-MM-Cu3"/>
+                                    <constraint firstAttribute="width" constant="70" id="y0m-aY-Umr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="ur7-nk-ALI" userLabel="imageView7">
+                                <rect key="frame" x="328" y="278" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="D8D-Bd-PAP"/>
+                                    <constraint firstAttribute="height" constant="100" id="esX-vz-eoc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="Bfw-eZ-R6G" userLabel="imageView10">
+                                <rect key="frame" x="328" y="388" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Nf2-nK-fDq"/>
+                                    <constraint firstAttribute="height" constant="100" id="xsY-dg-qOa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="GfL-yn-Mwu" userLabel="imageView4">
+                                <rect key="frame" x="172" y="343" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OSp-D8-eiM"/>
+                                    <constraint firstAttribute="width" constant="70" id="nhU-G2-BdF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="0Gr-gH-lop" userLabel="imageView3">
+                                <rect key="frame" x="172" y="127" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="LvX-cd-cHD"/>
+                                    <constraint firstAttribute="height" constant="100" id="zHn-Ko-9lG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="NSn-Qz-In7" userLabel="imageView9">
+                                <rect key="frame" x="328" y="58" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="EVJ-1V-WFR"/>
+                                    <constraint firstAttribute="height" constant="100" id="Vdw-sW-qve"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CCi-sn-BdM"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yeD-4R-W1F" firstAttribute="trailing" secondItem="NSn-Qz-In7" secondAttribute="trailing" id="9Ca-Gf-Frx"/>
+                            <constraint firstItem="hmH-jn-zaF" firstAttribute="centerY" secondItem="cce-hv-yzi" secondAttribute="centerY" id="AJq-js-phB"/>
+                            <constraint firstItem="9h0-Er-DrS" firstAttribute="centerX" secondItem="CCi-sn-BdM" secondAttribute="centerX" id="DHy-hW-mCE"/>
+                            <constraint firstItem="GfL-yn-Mwu" firstAttribute="top" secondItem="9h0-Er-DrS" secondAttribute="bottom" constant="8" symbolic="YES" id="DT0-e7-sHz"/>
+                            <constraint firstItem="Bfw-eZ-R6G" firstAttribute="top" secondItem="ur7-nk-ALI" secondAttribute="bottom" constant="10" id="HAn-qV-XaI"/>
+                            <constraint firstItem="NSn-Qz-In7" firstAttribute="top" secondItem="CCi-sn-BdM" secondAttribute="top" constant="10" id="N4z-J2-qzU"/>
+                            <constraint firstItem="9h0-Er-DrS" firstAttribute="top" secondItem="0Gr-gH-lop" secondAttribute="bottom" constant="8" symbolic="YES" id="QNt-wQ-HvK"/>
+                            <constraint firstItem="cce-hv-yzi" firstAttribute="leading" secondItem="hmH-jn-zaF" secondAttribute="trailing" constant="5" id="QgY-tQ-pdl"/>
+                            <constraint firstItem="9h0-Er-DrS" firstAttribute="leading" secondItem="cce-hv-yzi" secondAttribute="trailing" constant="8" symbolic="YES" id="StJ-Ff-fvg"/>
+                            <constraint firstItem="9h0-Er-DrS" firstAttribute="top" secondItem="pnw-77-8sl" secondAttribute="top" id="aUO-dR-v8b"/>
+                            <constraint firstItem="Bfw-eZ-R6G" firstAttribute="trailing" secondItem="ur7-nk-ALI" secondAttribute="trailing" id="dUq-x7-7TD"/>
+                            <constraint firstItem="GfL-yn-Mwu" firstAttribute="centerX" secondItem="9h0-Er-DrS" secondAttribute="centerX" id="fRr-8C-16C"/>
+                            <constraint firstItem="yeD-4R-W1F" firstAttribute="top" secondItem="NSn-Qz-In7" secondAttribute="bottom" constant="10" id="lN9-8z-4z3"/>
+                            <constraint firstItem="pnw-77-8sl" firstAttribute="leading" secondItem="9h0-Er-DrS" secondAttribute="trailing" constant="8" symbolic="YES" id="n3D-wO-ZIt"/>
+                            <constraint firstItem="ur7-nk-ALI" firstAttribute="trailing" secondItem="yeD-4R-W1F" secondAttribute="trailing" id="ozq-X8-ecg"/>
+                            <constraint firstItem="0Gr-gH-lop" firstAttribute="centerX" secondItem="9h0-Er-DrS" secondAttribute="centerX" id="qmp-xz-bRd"/>
+                            <constraint firstItem="cce-hv-yzi" firstAttribute="centerY" secondItem="9h0-Er-DrS" secondAttribute="centerY" id="rgW-Dg-zNB"/>
+                            <constraint firstItem="ur7-nk-ALI" firstAttribute="top" secondItem="yeD-4R-W1F" secondAttribute="bottom" constant="10" id="uAJ-8F-qc0"/>
+                            <constraint firstItem="yeD-4R-W1F" firstAttribute="leading" secondItem="pnw-77-8sl" secondAttribute="trailing" constant="8" symbolic="YES" id="y3C-dj-gpD"/>
+                            <constraint firstItem="pnw-77-8sl" firstAttribute="top" secondItem="yeD-4R-W1F" secondAttribute="bottom" constant="-33" id="z0F-ke-sHI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zm7-f6-YgD"/>
+                    <connections>
+                        <outlet property="imageView1" destination="cce-hv-yzi" id="1dd-Ud-HlS"/>
+                        <outlet property="imageView10" destination="Bfw-eZ-R6G" id="xz1-3o-Nep"/>
+                        <outlet property="imageView2" destination="9h0-Er-DrS" id="9uJ-zv-lXD"/>
+                        <outlet property="imageView3" destination="0Gr-gH-lop" id="1N9-cA-W57"/>
+                        <outlet property="imageView4" destination="GfL-yn-Mwu" id="PaS-yz-PGK"/>
+                        <outlet property="imageView5" destination="hmH-jn-zaF" id="I0v-6R-mCf"/>
+                        <outlet property="imageView6" destination="pnw-77-8sl" id="rLC-JV-aiD"/>
+                        <outlet property="imageView7" destination="ur7-nk-ALI" id="1dM-JR-xic"/>
+                        <outlet property="imageView8" destination="yeD-4R-W1F" id="Tvh-vw-gyO"/>
+                        <outlet property="imageView9" destination="NSn-Qz-In7" id="3Xp-q0-QXn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2cO-mw-kPl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3358" y="2743"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shirt" width="500" height="650"/>
+    </resources>
+</document>

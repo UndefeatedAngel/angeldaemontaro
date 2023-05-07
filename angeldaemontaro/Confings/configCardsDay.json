@@ -1,0 +1,488 @@
+[
+  {
+    "description": "foolCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "fool",
+    "sound": "fool"
+  },
+  {
+    "description": "magicianCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "magicianCard",
+    "sound": "magicianCard"
+  },
+  {
+    "description": "highpriestessCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "highpriestessCard",
+    "sound": "highpriestessCard"
+  },
+  {
+    "description": "empressCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "empressCard",
+    "sound": "empressCard"
+  },
+  {
+    "description": "emperorCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "emperorCard",
+    "sound": "emperorCard"
+  },
+  {
+    "description": "hierophantCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "hierophantCard",
+    "sound": "hierophantCard"
+  },
+  {
+    "description": "lovesCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "lovesCard",
+    "sound": "lovesCard"
+  },
+  {
+    "description": "chariotCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "chariotCard",
+    "sound": "chariotCard"
+  },
+  {
+    "description": "strengthCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "strengthCard",
+    "sound": "strengthCard"
+  },
+  {
+    "description": "hermitCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "hermitCard",
+    "sound": "hermitCard"
+  },
+  {
+    "description": "wheelOfFortuneCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "wheelOfFortune",
+    "sound": "wheelOfFortune"
+  },
+  {
+    "description": "justiceCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "justiceCard",
+    "sound": "justiceCard"
+  },
+  {
+    "description": "hangedCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "hangedCard",
+    "sound": "hangedCard"
+  },
+  {
+    "description": "deathCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "deathCard",
+    "sound": "deathCard"
+  },
+  {
+    "description": "moderationCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "moderationCard",
+    "sound": "moderationCard"
+  },
+  {
+    "description": "devilCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "devilCard",
+    "sound": "devilCard"
+  },
+  {
+    "description": "towerCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "towerCard",
+    "sound": "towerCard"
+  },
+  {
+    "description": "starCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "starCard",
+    "sound": "starCard"
+  },
+  {
+    "description": "moonCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "moonCard",
+    "sound": "moonCard"
+  },
+  {
+    "description": "sunCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "sunCard",
+    "sound": "sunCard"
+  },
+  {
+    "description": "doomsdayCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "doomsdayCard",
+    "sound": "doomsdayCard"
+  },
+  {
+    "description": "worldCard_description",
+    "locale": "MajorArcanaLocalizable",
+    "image": "worldCard",
+    "sound": "worldCard"
+  },
+  
+  
+  
+  {
+    "description": "kingOfCups_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "kingOfCups",
+    "sound": "kingOfCups"
+  },
+  {
+    "description": "kingOfPentacles_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "kingOfPentacles",
+    "sound": "kingOfPentacles"
+  },
+  
+  {
+    "description": "kingOfSwords_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "kingOfSwords",
+    "sound": "kingOfSwords"
+  },
+  
+  {
+    "description": "kingOfWands_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "kingOfWands",
+    "sound": "kingOfWands"
+  },
+  
+  {
+    "description": "knightOfCups_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "knightOfCups",
+    "sound": "knightOfCups"
+  },
+  
+  {
+    "description": "knightOfPentacles_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "knightOfPentacles",
+    "sound": "knightOfPentacles"
+  },
+  
+  {
+    "description": "knightOfSwords_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "knightOfSwords",
+    "sound": "knightOfSwords"
+  },
+  
+  {
+    "description": "knightOfWands_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "knightOfWands",
+    "sound": "knightOfWands"
+  },
+  
+  {
+    "description": "pageOfCups_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "pageOfCups",
+    "sound": "pageOfCups"
+  },
+  
+  {
+    "description": "pageOfPentacles_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "pageOfPentacles",
+    "sound": "pageOfPentacles"
+  },
+  
+  {
+    "description": "pageOfSwords_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "pageOfSwords",
+    "sound": "pageOfSwords"
+  },
+  
+  {
+    "description": "pageOfWands_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "pageOfWands",
+    "sound": "pageOfWands"
+  },
+  
+  {
+    "description": "queenOfCups_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "queenOfCups",
+    "sound": "queenOfCups"
+  },
+  
+  {
+    "description": "queenOfPentacles_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "queenOfPentacles",
+    "sound": "queenOfPentacles"
+  },
+  {
+    "description": "queenOfSwords_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "queenOfSwords",
+    "sound": "queenOfSwords"
+  },
+  {
+    "description": "queenOfWands_description",
+    "locale": "FigureCardsLocalizable",
+    "image": "queenOfWands",
+    "sound": "queenOfWands"
+  },
+  
+  
+  
+  {
+    "description": "aceOfPentacles_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "aceOfPentacles",
+    "sound": "aceOfPentacles"
+  },
+  {
+    "description": "aceOfSwords_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "aceOfSwords",
+    "sound": "aceOfSwords"
+  },
+  {
+    "description": "aceOfWands_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "aceOfWands",
+    "sound": "aceOfWands"
+  },
+  {
+    "description": "aceOfCups_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "aceOfCups",
+    "sound": "aceOfCups"
+  },
+  {
+    "description": "twoOfPentacles_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "twoOfPentacles",
+    "sound": "twoOfPentacles"
+  },
+  {
+    "description": "twoOfSwords_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "twoOfSwords",
+    "sound": "twoOfSwords"
+  },
+  {
+    "description": "twoOfWands_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "twoOfWands",
+    "sound": "twoOfWands"
+  },
+  {
+    "description": "twoOfCups_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "twoOfCups",
+    "sound": "twoOfCups"
+  },
+  {
+    "description": "threeOfPentacles_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "threeOfPentacles",
+    "sound": "threeOfPentacles"
+  },
+  {
+    "description": "threeOfSwords_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "threeOfSwords",
+    "sound": "threeOfSwords"
+  },
+  {
+    "description": "threeOfWands_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "threeOfWands",
+    "sound": "threeOfWands"
+  },
+  {
+    "description": "threeOfCups_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "threeOfCups",
+    "sound": "threeOfCups"
+  },
+  {
+    "description": "fourOfPentacles_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "fourOfPentacles",
+    "sound": "fourOfPentacles"
+  },
+  {
+    "description": "fourOfSwords_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "fourOfSwords",
+    "sound": "fourOfSwords"
+  },
+  {
+    "description": "fourOfWands_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "fourOfWands",
+    "sound": "fourOfWands"
+  },
+  {
+    "description": "fourOfCups_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "fourOfCups",
+    "sound": "fourOfCups"
+  },
+  {
+    "description": "fiveOfPentacles_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "fiveOfPentacles",
+    "sound": "fiveOfPentacles"
+  },
+  {
+    "description": "fiveOfSwords_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "fiveOfSwords",
+    "sound": "fiveOfSwords"
+  },
+  {
+    "description": "fiveOfWands_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "fiveOfWands",
+    "sound": "fiveOfWands"
+  },
+  {
+    "description": "fiveOfCups_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "fiveOfCups",
+    "sound": "fiveOfCups"
+  },
+  {
+    "description": "sixOfPentacles_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "sixOfPentacles",
+    "sound": "sixOfPentacles"
+  },
+  {
+    "description": "sixOfSwords_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "sixOfSwords",
+    "sound": "sixOfSwords"
+  },
+  {
+    "description": "sixOfWands_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "sixOfWands",
+    "sound": "sixOfWands"
+  },
+  {
+    "description": "sixOfCups_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "sixOfCups",
+    "sound": "sixOfCups"
+  },
+  {
+    "description": "sevenOfPentacles_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "sevenOfPentacles",
+    "sound": "sevenOfPentacles"
+  },
+  {
+    "description": "sevenOfSwords_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "sevenOfSwords",
+    "sound": "sevenOfSwords"
+  },
+  {
+    "description": "sevenOfWands_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "sevenOfWands",
+    "sound": "sevenOfWands"
+  },
+  {
+    "description": "sevenOfCups_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "sevenOfCups",
+    "sound": "sevenOfCups"
+  },
+  {
+    "description": "eightOfPentacles_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "eightOfPentacles",
+    "sound": "eightOfPentacles"
+  },
+  {
+    "description": "eightOfSwords_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "eightOfSwords",
+    "sound": "eightOfSwords"
+  },
+  {
+    "description": "eightOfWands_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "eightOfWands",
+    "sound": "eightOfWands"
+  },
+  {
+    "description": "eightOfCups_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "eightOfCups",
+    "sound": "eightOfCups"
+  },
+  {
+    "description": "nineOfPentacles_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "nineOfPentacles",
+    "sound": "nineOfPentacles"
+  },
+  {
+    "description": "nineOfSwords_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "nineOfSwords",
+    "sound": "nineOfSwords"
+  },
+  {
+    "description": "nineOfWands_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "nineOfWands",
+    "sound": "nineOfWands"
+  },
+  {
+    "description": "nineOfCups_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "nineOfCups",
+    "sound": "nineOfCups"
+  },
+  {
+    "description": "tenOfPentacles_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "tenOfPentacles",
+    "sound": "tenOfPentacles"
+  },
+  {
+    "description": "tenOfSwords_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "tenOfSwords",
+    "sound": "tenOfSwords"
+  },
+  {
+    "description": "tenOfWands_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "tenOfWands",
+    "sound": "tenOfWands"
+  },
+  {
+    "description": "tenOfCups_description",
+    "locale": "NumeralCardsLocalizable",
+    "image": "tenOfCups",
+    "sound": "tenOfCups"
+  }
+]

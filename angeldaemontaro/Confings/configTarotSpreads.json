@@ -1,0 +1,65 @@
+[
+  {
+    "title": "financialSpread_title",
+    "image":"devilCard_en",
+    "storyboard": "FinansialStoryboard",
+    "controller": "FinansialViewController",
+    "config": "configFinancial",
+    "locale": "FinansialLocalizable",
+    "save": "finansialSave"
+  },
+  {
+    "title": "onEveryDaySpread_title",
+    "image":"magicianCard_en",
+    "storyboard": "OnEveryDayStoryboard",
+    "controller": "OnEveryDayViewController",
+    "config": "configFinancial",
+    "locale": "OnEveryDayLocalizable",
+    "save": "onEveryDaySave"
+  },
+  {
+    "title": "lovelySpread_title",
+    "image":"highpriestessCard_en",
+    "storyboard": "LovelyStoryboard",
+    "controller": "LovelyViewController",
+    "config": "configFinancial",
+    "locale": "LovelyLocalizable",
+    "save": "lovelySave"
+  },
+  {
+    "title": "choiseSpread_title",
+    "image":"empressCard_en",
+    "storyboard": "ChoiseStoryboard",
+    "controller": "ChoiseViewController",
+    "config": "configFinancial",
+    "locale": "ChoiseLocalizable",
+    "save": "choiseSave"
+  },
+  {
+    "title": "healthySpread_title",
+    "image":"emperorCard_en",
+    "storyboard": "HealthyStoryboard",
+    "controller": "HealthyViewController",
+    "config": "configFinancial",
+    "locale": "HealthyLocalizable",
+    "save": "healthySave"
+  },
+  {
+    "title": "personalGrowthSpread_title",
+    "image":"hierophantCard_en",
+    "storyboard": "PersonalGrowthStoryboard",
+    "controller": "PersonalGrowthViewController",
+    "config": "configFinancial",
+    "locale": "PersonalGrowthLocalizable",
+    "save": "personalGrowthSave"
+  },
+  {
+    "title": "celticCrossSpread_title",
+    "image":"worldCard_en",
+    "storyboard": "СelticCrossStoryboard",
+    "controller": "СelticCrossViewController",
+    "config": "configFinancial",
+    "locale": "СelticCrossLocalizable",
+    "save": "celticCrossSave"
+  }
+]

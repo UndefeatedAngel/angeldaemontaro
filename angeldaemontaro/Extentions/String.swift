@@ -24,4 +24,9 @@ extension String {
         let imageName = "\(self )_\(controller.getLangKey())"
         return UIImage(named: imageName)
     }
+    
+    func getImage(controller: UIViewController) -> UIImage? {
+        let imageName = "\(self )"
+        return UIImage(named: imageName)
+    }
 }

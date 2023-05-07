@@ -6,10 +6,12 @@
   
 */
 
+"cardsOfDayMenu" = "Cards of Day";
 "tarotSpreadsMenu" = "Tarot Spreads";
+"angelsMenu" = "Angel Numbers";
+"videoMenu" = "Video";
 "descriptionMenu" = "Description";
 "preservationMenu" = "Preservation";
-"videoMenu" = "Video";
 "settingsMenu" = "Settings";
 
 "buttomMapOfDay" = "Map of the day";
@@ -20,7 +22,7 @@
 "major_arcane_title" = "Major Arcane";
 "figure_cards_title" = "Figure Cards";
 "numberical_cards_title" = "Numerical Cards";
-"angel_title" = "Angel Numbers";
+
 
 /*
  TarotSpreads

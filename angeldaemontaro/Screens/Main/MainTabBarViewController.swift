@@ -19,6 +19,24 @@ class MainTabBarViewController: UITabBarController {
         let video = StoryboardScene.Video.videoSB.instantiate()
         
         viewControllers = [cardOfDay, tarots, angels, video]
+        
+        updateTheme()
+    }
+    
+    private func updateTheme() {
+        let isDark = traitCollection.userInterfaceStyle == .dark
+        
+        let colorWhite = isDark ? UIColor.white : UIColor.black
+        let colorDark = isDark ? UIColor.black : UIColor.white
+        
+        tabBar.backgroundColor = colorDark
+        tabBar.tintColor = colorWhite
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        updateTheme()
     }
 }
 
