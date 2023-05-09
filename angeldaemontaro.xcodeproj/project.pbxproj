@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B451FD511D67DC379FB94B62 /* Pods_angeldaemontaro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334D278367E751658A6EBEDE /* Pods_angeldaemontaro.framework */; };
+		C606AA862A0AB5C200120E23 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C606AA852A0AB5C200120E23 /* Settings.storyboard */; };
+		C606AA922A0AB86B00120E23 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606AA8D2A0AB86B00120E23 /* SettingsViewController.swift */; };
+		C606AA982A0ABBCD00120E23 /* SoundsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606AA942A0ABBCD00120E23 /* SoundsModel.swift */; };
+		C606AA992A0ABBCD00120E23 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606AA952A0ABBCD00120E23 /* ThemeModel.swift */; };
+		C606AA9D2A0AC98000120E23 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606AA9C2A0AC98000120E23 /* LanguageModel.swift */; };
 		C620CCAD29F00E89007555B9 /* UIViewController+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C620CCAC29F00E89007555B9 /* UIViewController+Theme.swift */; };
 		C6220E1329EFD2C300EAA3BC /* promo.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C6220E1229EFD2C300EAA3BC /* promo.MOV */; };
 		C6220E1529EFD60400EAA3BC /* UIViewController+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6220E1429EFD60400EAA3BC /* UIViewController+Video.swift */; };
@@ -204,6 +209,11 @@
 		334D278367E751658A6EBEDE /* Pods_angeldaemontaro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_angeldaemontaro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8867FC4209461A5A0164AB57 /* Pods-angeldaemontaro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-angeldaemontaro.debug.xcconfig"; path = "Target Support Files/Pods-angeldaemontaro/Pods-angeldaemontaro.debug.xcconfig"; sourceTree = "<group>"; };
 		9387DDBC9035A4BF0880B3FC /* Pods-angeldaemontaro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-angeldaemontaro.release.xcconfig"; path = "Target Support Files/Pods-angeldaemontaro/Pods-angeldaemontaro.release.xcconfig"; sourceTree = "<group>"; };
+		C606AA852A0AB5C200120E23 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		C606AA8D2A0AB86B00120E23 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C606AA942A0ABBCD00120E23 /* SoundsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsModel.swift; sourceTree = "<group>"; };
+		C606AA952A0ABBCD00120E23 /* ThemeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
+		C606AA9C2A0AC98000120E23 /* LanguageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
 		C620CCAC29F00E89007555B9 /* UIViewController+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Theme.swift"; sourceTree = "<group>"; };
 		C6220E1229EFD2C300EAA3BC /* promo.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = promo.MOV; sourceTree = "<group>"; };
 		C6220E1429EFD60400EAA3BC /* UIViewController+Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Video.swift"; sourceTree = "<group>"; };
@@ -427,6 +437,16 @@
 				334D278367E751658A6EBEDE /* Pods_angeldaemontaro.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C606AA932A0ABBCD00120E23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C606AA9C2A0AC98000120E23 /* LanguageModel.swift */,
+				C606AA942A0ABBCD00120E23 /* SoundsModel.swift */,
+				C606AA952A0ABBCD00120E23 /* ThemeModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C6220E1129EFD2B900EAA3BC /* Video */ = {
@@ -660,6 +680,9 @@
 		C6FB5E5729ED740A00172CAE /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				C606AA932A0ABBCD00120E23 /* Models */,
+				C606AA8D2A0AB86B00120E23 /* SettingsViewController.swift */,
+				C606AA852A0AB5C200120E23 /* Settings.storyboard */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -1097,6 +1120,7 @@
 				C6FB5F2929ED749700172CAE /* hangedCard.m4a in Resources */,
 				C6FB5F0A29ED749700172CAE /* threeOfPentacles.m4a in Resources */,
 				C6FB5F1629ED749700172CAE /* eightOfPentacles.m4a in Resources */,
+				C606AA862A0AB5C200120E23 /* Settings.storyboard in Resources */,
 				C6FB5F2029ED749700172CAE /* lovesCard.m4a in Resources */,
 				C6FB5EF829ED749700172CAE /* threeOfWands.m4a in Resources */,
 				C6FB5E8829ED745700172CAE /* NumeralCardsLocalizable.strings in Resources */,
@@ -1277,10 +1301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6FB5E2629ED738D00172CAE /* MainTabBarViewController.swift in Sources */,
+				C606AA9D2A0AC98000120E23 /* LanguageModel.swift in Sources */,
 				C6B4184929FBE10E000FB62A /* СelticCrossViewController.swift in Sources */,
 				C6B4183F29FBE10E000FB62A /* ChoiseViewController.swift in Sources */,
 				C6D8A3F829F7C867007B1147 /* UIViewController+AlertViewController.swift in Sources */,
 				C6B4183C29FBE10E000FB62A /* HealthyViewController.swift in Sources */,
+				C606AA982A0ABBCD00120E23 /* SoundsModel.swift in Sources */,
 				C6FB5F4929EEB5CD00172CAE /* HighPriestessViewController.swift in Sources */,
 				C645061D2A0A7045004EDD62 /* NFTDescriptionViewController.swift in Sources */,
 				C6B4183929FBE10E000FB62A /* BaseTarotViewController.swift in Sources */,
@@ -1297,6 +1323,7 @@
 				C6D8A40929F7D0A3007B1147 /* Assets.swift in Sources */,
 				C6FB5E2C29ED738D00172CAE /* angeldaemontaro.xcdatamodeld in Sources */,
 				C6D8A3F029F7C7FA007B1147 /* UIViewController+Localization.swift in Sources */,
+				C606AA992A0ABBCD00120E23 /* ThemeModel.swift in Sources */,
 				C6D8A3FA29F7C86C007B1147 /* UIViewController+GestureRecognizer.swift in Sources */,
 				C6220E1729EFDAA300EAA3BC /* UIViewController+Navigation.swift in Sources */,
 				C645061F2A0A7045004EDD62 /* NFTCollectionViewCell.swift in Sources */,
@@ -1317,6 +1344,7 @@
 				C6B4185129FBE350000FB62A /* UIView+Copy.swift in Sources */,
 				C6F2758F2A07E58F00507F4C /* AngelNumbersSectionReusableView.swift in Sources */,
 				C64506252A0A7BD4004EDD62 /* TabContainerViewController.swift in Sources */,
+				C606AA922A0AB86B00120E23 /* SettingsViewController.swift in Sources */,
 				C6D8A40C29F7D0A3007B1147 /* StoryboardSegue.swift in Sources */,
 				C6B4183829FBE10E000FB62A /* TarotDescriptionViewController.swift in Sources */,
 				C6D8A3F229F7C83E007B1147 /* Bundle.swift in Sources */,

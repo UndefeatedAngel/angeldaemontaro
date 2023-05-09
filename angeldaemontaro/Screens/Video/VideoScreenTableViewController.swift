@@ -19,11 +19,15 @@ class VideoScreenTableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = R.videoMenu
         
         setupGestureTabBar()
         
         updateTheme()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.title = getLocale(key: "videoMenu")
     }
 }
 

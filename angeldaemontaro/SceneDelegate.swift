@@ -18,6 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //  are new (see `application:configurationForConnectingSceneSession` instead).
         
         //guard let _ = (scene as? UIWindowScene) else { return }
+        
+        window?.overrideUserInterfaceStyle = Settings.theme == "dark" ? .dark : .light
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

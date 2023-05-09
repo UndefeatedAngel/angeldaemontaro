@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mi5-IQ-iDB">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -192,10 +193,10 @@
             </objects>
             <point key="canvasLocation" x="2955" y="-284"/>
         </scene>
-        <!--CardsOfDayDetail-->
+        <!--NFTDescription-->
         <scene sceneID="C3D-vW-WhE">
             <objects>
-                <viewController title="CardsOfDayDetail" id="zAn-2t-C8K" customClass="NFTDescriptionViewController" customModule="angeldaemontaro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="NFTDescription" id="zAn-2t-C8K" customClass="NFTDescriptionViewController" customModule="angeldaemontaro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ar5-5l-xiI">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,31 +212,59 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFX-kG-oYZ" userLabel="DescriptionTextView">
-                                <rect key="frame" x="10" y="321" width="370" height="289"/>
+                                <rect key="frame" x="10" y="321" width="370" height="339"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5W4-7n-q9y" userLabel="LayoutButtons">
+                                <rect key="frame" x="20" y="740" width="350" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ftj-bm-WOD">
+                                        <rect key="frame" x="20" y="0.0" width="310" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jn8-iu-aXF">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ftj-bm-WOD" firstAttribute="top" secondItem="5W4-7n-q9y" secondAttribute="top" id="444-Ef-bkI"/>
+                                    <constraint firstAttribute="trailing" secondItem="ftj-bm-WOD" secondAttribute="trailing" constant="20" id="DwT-Rg-vCs"/>
+                                    <constraint firstAttribute="bottom" secondItem="ftj-bm-WOD" secondAttribute="bottom" id="Pq3-LJ-QOy"/>
+                                    <constraint firstAttribute="height" constant="50" id="oCI-An-OAE"/>
+                                    <constraint firstItem="ftj-bm-WOD" firstAttribute="leading" secondItem="5W4-7n-q9y" secondAttribute="leading" constant="20" id="vIN-CA-0Ga"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zEb-R5-kzc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PFX-kG-oYZ" firstAttribute="leading" secondItem="zEb-R5-kzc" secondAttribute="leading" constant="10" id="2h5-Sb-qyh"/>
                             <constraint firstItem="zEb-R5-kzc" firstAttribute="trailing" secondItem="PFX-kG-oYZ" secondAttribute="trailing" constant="10" id="73K-bh-FFX"/>
-                            <constraint firstItem="zEb-R5-kzc" firstAttribute="bottom" secondItem="PFX-kG-oYZ" secondAttribute="bottom" constant="200" id="Db8-mq-Wl4"/>
+                            <constraint firstItem="5W4-7n-q9y" firstAttribute="leading" secondItem="zEb-R5-kzc" secondAttribute="leading" constant="20" id="8ik-Dz-E24"/>
+                            <constraint firstItem="zEb-R5-kzc" firstAttribute="bottom" secondItem="5W4-7n-q9y" secondAttribute="bottom" constant="20" id="9sV-DC-mqr"/>
+                            <constraint firstItem="zEb-R5-kzc" firstAttribute="bottom" secondItem="PFX-kG-oYZ" secondAttribute="bottom" constant="150" id="Db8-mq-Wl4"/>
                             <constraint firstAttribute="bottom" secondItem="PKw-1v-cDv" secondAttribute="bottom" id="Iyv-G0-7z4"/>
                             <constraint firstItem="PFX-kG-oYZ" firstAttribute="top" secondItem="GfR-Fj-i64" secondAttribute="bottom" constant="10" id="OU5-KE-SWr"/>
                             <constraint firstItem="PKw-1v-cDv" firstAttribute="top" secondItem="zEb-R5-kzc" secondAttribute="top" id="Vsw-5S-Pp1"/>
                             <constraint firstAttribute="trailing" secondItem="PKw-1v-cDv" secondAttribute="trailing" id="dcp-RV-qJs"/>
                             <constraint firstItem="GfR-Fj-i64" firstAttribute="centerX" secondItem="zEb-R5-kzc" secondAttribute="centerX" id="h6f-r3-vlV"/>
+                            <constraint firstItem="zEb-R5-kzc" firstAttribute="trailing" secondItem="5W4-7n-q9y" secondAttribute="trailing" constant="20" id="m6P-1H-rEM"/>
                             <constraint firstItem="GfR-Fj-i64" firstAttribute="top" secondItem="zEb-R5-kzc" secondAttribute="top" constant="20" id="qcR-Ob-CeP"/>
                             <constraint firstItem="PKw-1v-cDv" firstAttribute="leading" secondItem="Ar5-5l-xiI" secondAttribute="leading" id="u1t-Lf-Zmo"/>
+                            <constraint firstItem="5W4-7n-q9y" firstAttribute="centerX" secondItem="zEb-R5-kzc" secondAttribute="centerX" id="uFj-RY-4s1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Main" image="mainTabBar" selectedImage="mainTabBar" id="qGR-HV-Qqx"/>
                     <navigationItem key="navigationItem" id="dYG-3Y-fgI"/>
                     <connections>
+                        <outlet property="buyButton" destination="Jn8-iu-aXF" id="SDO-B8-bui"/>
                         <outlet property="imageView" destination="GfR-Fj-i64" id="fc6-tq-MVq"/>
                         <outlet property="textView" destination="PFX-kG-oYZ" id="QOP-6U-oe1"/>
                     </connections>

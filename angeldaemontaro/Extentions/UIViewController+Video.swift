@@ -19,7 +19,6 @@ extension UIViewController {
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = view.bounds
         view.layer.addSublayer(playerLayer)
-        player.play()
         return player
     }
 }

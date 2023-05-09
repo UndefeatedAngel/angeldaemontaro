@@ -33,8 +33,15 @@ class TarotDescriptionViewController: UIViewController {
         })
 
         createDescription()
-
-        updateTheme()
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = "Something Else"
+        navigationItem.backBarButtonItem = backItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.backItem?.title = ""
     }
     
     func createDescription() {

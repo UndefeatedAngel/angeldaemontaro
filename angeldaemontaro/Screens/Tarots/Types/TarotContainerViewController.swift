@@ -116,6 +116,10 @@ class TarotContainerViewController: UIViewController {
             controller.currentSave = jsonCurrentSave
             controller.tarotField = content?.save ?? ""
         }
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {

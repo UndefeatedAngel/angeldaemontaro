@@ -21,13 +21,16 @@ class CardsOfDayScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = R.cardsOfDayMenu
         
         setupGestureTabBar()
         setupCard()
         updateTheme()
         
         setupNavBar()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setupNavTitle(text: getLocale(key: "cardsOfDayMenu"))
     }
     
     private func setupCard() {
@@ -61,7 +64,9 @@ class CardsOfDayScreenViewController: UIViewController {
     
     @objc
     func settingsClick() {
-        
+        let controller = StoryboardScene.Settings.settingsSB.instantiate()
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: true)
     }
     
     @objc
@@ -97,6 +102,10 @@ class CardsOfDayScreenViewController: UIViewController {
         if let descruptionController = segue.destination as? NFTDescriptionViewController {
             descruptionController.json = self.nftCards.content?[numberSection].cards[numberRow]
         }
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
     }
 }
 

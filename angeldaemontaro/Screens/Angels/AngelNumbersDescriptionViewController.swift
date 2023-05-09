@@ -18,7 +18,7 @@ class AngelNumbersDescriptionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = R.angelsMenu
+        navigationItem.title = getLocale(key: "angelsMenu")
         
         setupGestureTabBar()
         
@@ -47,7 +47,7 @@ class AngelNumbersDescriptionViewController: UIViewController {
         let isDark = traitCollection.userInterfaceStyle == .dark
         
         let colorWhite = isDark ? UIColor.white : UIColor.black
-        let colorDark = isDark ? UIColor.black : UIColor.white
+//        let colorDark = isDark ? UIColor.black : UIColor.white
         
         textView.textColor = colorWhite
     }

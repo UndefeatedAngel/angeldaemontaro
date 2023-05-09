@@ -23,6 +23,17 @@ class MainTabBarViewController: UITabBarController {
         updateTheme()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        guard let items = tabBar.items else { return }
+
+        items[0].title = getLocale(key: "mainTab")
+        items[1].title = getLocale(key: "tarotTab")
+        items[2].title = getLocale(key: "angelsTab")
+        items[3].title = getLocale(key: "videoTab")
+    }
+    
     private func updateTheme() {
         let isDark = traitCollection.userInterfaceStyle == .dark
         

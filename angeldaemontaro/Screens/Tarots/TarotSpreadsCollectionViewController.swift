@@ -19,14 +19,21 @@ class TarotSpreadsCollectionViewController: UIViewController {
         super.viewDidLoad()
         
         setupGestureTabBar()
-        
-        navigationItem.title = R.tarotSpreadsMenu
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.title = getLocale(key: "tarotSpreadsMenu")
+        collectionView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let container = segue.destination as? TarotContainerViewController {
             container.content = tarotSpreads.contents?[selectedIndex]
         }
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
     }
 }
 

@@ -10,8 +10,20 @@ import UIKit
 class NFTDescriptionViewController: UIViewController {
     var json: NFTCardsModel.NFTCardsJson?
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var textView: UITextView!
+    
+    @IBOutlet weak var buyButton: UIButton! {
+        didSet {
+            buyButton.layer.masksToBounds = true
+            buyButton.layer.cornerRadius = 10
+            buyButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
+            buyButton.setTitle(getLocale(key: "cards_button"), for: .normal)
+            buyButton.addTarget(
+                self,
+                action: #selector(onBuyClick),
+                for: .touchUpInside)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +38,35 @@ class NFTDescriptionViewController: UIViewController {
         textView.text = getLocale(key: description)
         imageView.image = json.image.getImageLocale(controller: self)
         
-        setupNavBackButton(complete: #selector(backClick))
+        updateTheme()
     }
     
     @objc
-    func backClick() {
-        self.navigationController?.popViewController(animated: true)
+    func onBuyClick() {
+        
+    }
+    
+    // MARK: Update Theme
+    private func updateTheme() {
+        let isDark = traitCollection.userInterfaceStyle == .dark
+        
+        let colorWhite = isDark ? UIColor.white : UIColor.black
+        let colorDark = isDark ? UIColor.black : UIColor.white
+        
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: colorWhite,
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 28, weight: .bold)
+        ]
+        
+        textView.textColor = colorWhite
+        
+        buyButton.tintColor = colorDark
+        buyButton.backgroundColor = colorWhite
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        updateTheme()
     }
 }

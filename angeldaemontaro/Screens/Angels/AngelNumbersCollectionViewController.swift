@@ -16,12 +16,16 @@ class AngelNumbersCollectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = R.angelsMenu
         
         collectionView.backgroundView = UIImageView(image: UIImage(named: "background"))
         collectionView.backgroundColor = UIColor.clear.withAlphaComponent(0)
         
         setupGestureTabBar()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.title = getLocale(key: "angelsMenu")
     }
 
     // MARK: - Navigation
@@ -31,6 +35,10 @@ class AngelNumbersCollectionViewController: UIViewController {
         if let descruptionController = segue.destination as? AngelNumbersDescriptionViewController {
             descruptionController.json = self.angelNumbers.content?[numberSection].cards[numberRow]
         }
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
     }
     
     func getImage(numberSection: Int, numberKey: Int) -> UIImage? {

@@ -13,6 +13,8 @@ internal enum R {
   internal static let addQuestionButton = R.tr("Localizable", "add_question_button", fallback: "Question")
   /// Angel Numbers
   internal static let angelsMenu = R.tr("Localizable", "angelsMenu", fallback: "Angel Numbers")
+  /// Angel
+  internal static let angelsTab = R.tr("Localizable", "angelsTab", fallback: "Angel")
   /// Map of the day
   internal static let buttomMapOfDay = R.tr("Localizable", "buttomMapOfDay", fallback: "Map of the day")
   /// Make Tarot
@@ -21,10 +23,7 @@ internal enum R {
   internal static let buttonTarotWrite = R.tr("Localizable", "buttonTarotWrite", fallback: "Write Tarot")
   /// Buy a cards
   internal static let cardsButton = R.tr("Localizable", "cards_button", fallback: "Buy a cards")
-  /// Localizable.strings
-  ///   CourseProject
-  /// 
-  ///   Created by Anastasiya Laptseva on 7.07.22.
+  /// Cards of Day
   internal static let cardsOfDayMenu = R.tr("Localizable", "cardsOfDayMenu", fallback: "Cards of Day")
   /// Celtic Cross Spread
   /// (situation)
@@ -51,8 +50,14 @@ internal enum R {
   internal static let healthySpread = R.tr("Localizable", "healthySpread", fallback: "Alignment for health")
   /// Healthy Spread
   internal static let healthySpreadTitle = R.tr("Localizable", "healthySpread_title", fallback: "Healthy Spread")
-  /// Здравствуйте, дорогой Alexander Laptev. Я вас рада приветствовать. Меня зовут Анастасия, я таролог и с удовольствием могу помочь решить вашу проблему или ответить на интересующие вас вопросы, а также успокоить ваше эмоциональное состояние, внося недостающую ясность и найти направления решения существующей проблемы.
-  internal static let highprietessDescription = R.tr("Localizable", "highprietess_description", fallback: "Здравствуйте, дорогой Alexander Laptev. Я вас рада приветствовать. Меня зовут Анастасия, я таролог и с удовольствием могу помочь решить вашу проблему или ответить на интересующие вас вопросы, а также успокоить ваше эмоциональное состояние, внося недостающую ясность и найти направления решения существующей проблемы.")
+  /// Buy consultation
+  internal static let highprietessConsultationButton = R.tr("Localizable", "highprietess_consultation_button", fallback: "Buy consultation")
+  /// Hello dear friend. I am glad to welcome you. My name is Anastasiya, I am a tarot reader and I can be happy to help solve your problem or answer your questions, as well as calm your emotional state, bringing in the missing clarity and finding ways to solve an existing problem.
+  internal static let highprietessDescription = R.tr("Localizable", "highprietess_description", fallback: "Hello dear friend. I am glad to welcome you. My name is Anastasiya, I am a tarot reader and I can be happy to help solve your problem or answer your questions, as well as calm your emotional state, bringing in the missing clarity and finding ways to solve an existing problem.")
+  /// Visit to site
+  internal static let highprietessSiteButton = R.tr("Localizable", "highprietess_site_button", fallback: "Visit to site")
+  /// High Prietess
+  internal static let highprietessTitle = R.tr("Localizable", "highprietess_title", fallback: "High Prietess")
   /// Bottom menu
   internal static let homeButton = R.tr("Localizable", "home_button", fallback: "Home")
   /// Settings
@@ -63,6 +68,13 @@ internal enum R {
   internal static let lovelySpread = R.tr("Localizable", "lovelySpread", fallback: "Station for two(layout for love)")
   /// Lovely Spread
   internal static let lovelySpreadTitle = R.tr("Localizable", "lovelySpread_title", fallback: "Lovely Spread")
+  /// Main
+  internal static let mainMenu = R.tr("Localizable", "mainMenu", fallback: "Main")
+  /// Localizable.strings
+  ///   CourseProject
+  /// 
+  ///   Created by Anastasiya Laptseva on 7.07.22.
+  internal static let mainTab = R.tr("Localizable", "mainTab", fallback: "Main")
   /// Cards collections
   internal static let majorArcaneTitle = R.tr("Localizable", "major_arcane_title", fallback: "Major Arcane")
   /// Numerical Cards
@@ -91,10 +103,14 @@ internal enum R {
   internal static let sounds = R.tr("Localizable", "sounds", fallback: "Sounds")
   /// Tarot Spreads
   internal static let tarotSpreadsMenu = R.tr("Localizable", "tarotSpreadsMenu", fallback: "Tarot Spreads")
+  /// Tarot
+  internal static let tarotTab = R.tr("Localizable", "tarotTab", fallback: "Tarot")
   /// Themes
   internal static let theme = R.tr("Localizable", "theme", fallback: "Themes")
   /// Video
   internal static let videoMenu = R.tr("Localizable", "videoMenu", fallback: "Video")
+  /// Video
+  internal static let videoTab = R.tr("Localizable", "videoTab", fallback: "Video")
 }
 // swiftlint:enable function_parameter_count identifier_name line_length type_body_length
 

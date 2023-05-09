@@ -29,7 +29,9 @@ extension UIViewController {
     @objc
     func actionSoundClick() {
         Settings.isSounds = !Settings.isSounds
-        setupSoundsNav()
+        self.navigationItem.rightBarButtonItems?[0].image = Settings.isSounds
+        ? Assets.Images.soundOn.image
+        : Assets.Images.soundOff.image
         AVPlayerManager.avPlayer?.isMuted = !Settings.isSounds
         AVPlayerManager.audioPlayer?.volume = Settings.isSounds ? 1 : 0
     }

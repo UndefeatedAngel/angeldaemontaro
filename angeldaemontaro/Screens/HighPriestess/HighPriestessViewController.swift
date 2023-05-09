@@ -19,7 +19,7 @@ class HighPriestessViewController: UIViewController {
             consultationButton.layer.masksToBounds = true
             consultationButton.layer.cornerRadius = 10
             consultationButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
-            consultationButton.setTitle("Заказать консультацию", for: .normal)
+            consultationButton.setTitle(getLocale(key: "highprietess_consultation_button"), for: .normal)
             consultationButton.addTarget(
                 self,
                 action: #selector(onClickConsultationButton),
@@ -31,7 +31,7 @@ class HighPriestessViewController: UIViewController {
             openSiteButton.layer.masksToBounds = true
             openSiteButton.layer.cornerRadius = 10
             openSiteButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
-            openSiteButton.setTitle("Посетить сайт", for: .normal)
+            openSiteButton.setTitle(getLocale(key: "highprietess_site_button"), for: .normal)
             openSiteButton.addTarget(
                 self,
                 action: #selector(onClickOpenSiteButton),
@@ -47,7 +47,7 @@ class HighPriestessViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupNavTitle(text: "Верховная жрица")
+        setupNavTitle(text: getLocale(key: "highprietess_title"))
         setupVideo()
         setupNavBackButton(complete: #selector(backClick))
         setupSoundsNav()
@@ -64,6 +64,13 @@ class HighPriestessViewController: UIViewController {
             self,
             selector: #selector(foreroundAction),
             name: UIApplication.willEnterForegroundNotification, object: nil)
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback)
+        } catch {
+            print("Error")
+        }
+        
     }
     
     @objc
@@ -81,16 +88,16 @@ class HighPriestessViewController: UIViewController {
         pauseButton.setImage(UIImage(), for: .normal)
         videoActivityIndicator.startAnimating()
         if let avPlayer = attachVideo(name: "promo", extention: "MOV", view: videoPlayerView) {
-            avPlayer.isMuted = false
             avPlayer.volume = 1.0
             AVPlayerManager.avPlayer = avPlayer
             videoActivityIndicator.stopAnimating()
+            AVPlayerManager.playVideo()
         }
     }
     
     // MARK: Setup TextView
     private func setupTextView() {
-        let text = R.highprietessDescription
+        let text = getLocale(key: "highprietess_description")
         descriptionTextView.text = text
         descriptionTextView.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
     }
@@ -132,6 +139,7 @@ class HighPriestessViewController: UIViewController {
         ]
         
         navigationItem.leftBarButtonItems?[0].tintColor = colorWhite
+        navigationItem.rightBarButtonItems?[0].tintColor = colorWhite
         descriptionTextView.textColor = colorWhite
         
         consultationButton.tintColor = colorDark
@@ -170,7 +178,7 @@ class HighPriestessViewController: UIViewController {
     
     @objc
     private func foreroundAction() {
-        guard let avPlayer = AVPlayerManager.avPlayer, isPauseVideo == false else { return }
+        guard isPauseVideo == false else { return }
         
         AVPlayerManager.playVideo()
     }

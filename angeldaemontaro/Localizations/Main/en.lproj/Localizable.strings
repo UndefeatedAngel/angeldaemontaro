@@ -6,8 +6,15 @@
   
 */
 
+"mainTab" = "Main";
+"tarotTab" = "Tarot";
+"angelsTab" = "Angel";
+"videoTab" = "Video";
+
+
 "cardsOfDayMenu" = "Cards of Day";
 "tarotSpreadsMenu" = "Tarot Spreads";
+"mainMenu" = "Main";
 "angelsMenu" = "Angel Numbers";
 "videoMenu" = "Video";
 "descriptionMenu" = "Description";
@@ -73,5 +80,7 @@
 "cards_button" = "Buy a cards";
 
 // HighPriestess menu
-
-"highprietess_description" = "Здравствуйте, дорогой Alexander Laptev. Я вас рада приветствовать. Меня зовут Анастасия, я таролог и с удовольствием могу помочь решить вашу проблему или ответить на интересующие вас вопросы, а также успокоить ваше эмоциональное состояние, внося недостающую ясность и найти направления решения существующей проблемы.";
+"highprietess_title" = "High Prietess";
+"highprietess_description" = "Hello dear friend. I am glad to welcome you. My name is Anastasiya, I am a tarot reader and I can be happy to help solve your problem or answer your questions, as well as calm your emotional state, bringing in the missing clarity and finding ways to solve an existing problem.";
+"highprietess_consultation_button" = "Buy consultation";
+"highprietess_site_button" = "Visit to site";
