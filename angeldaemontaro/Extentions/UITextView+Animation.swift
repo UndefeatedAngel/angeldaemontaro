@@ -12,7 +12,7 @@ extension UITextView {
         UIView.animate(withDuration: duration, delay: 0, options: .curveLinear, animations: {
             self.layoutIfNeeded()
             self.text = value
-        }, completion: { finished in
+        }, completion: { _ in
             print("Animation completed")
         })
     }

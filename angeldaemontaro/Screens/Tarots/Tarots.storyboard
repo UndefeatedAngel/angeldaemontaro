@@ -74,7 +74,7 @@
                                                 <constraint firstItem="e7j-OF-5k5" firstAttribute="leading" secondItem="Mi7-oX-6I5" secondAttribute="leading" constant="25" id="mg0-AG-ip1"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.49174738410000002" green="0.49174738410000002" blue="0.49174738410000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="imageView" destination="e7j-OF-5k5" id="DiA-B8-CwK"/>
                                             <outlet property="labelView" destination="7te-VR-lYH" id="WsX-4s-J1D"/>

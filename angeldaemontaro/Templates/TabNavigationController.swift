@@ -17,7 +17,7 @@ class TabNavigationController: UINavigationController {
     }
     
     private func updateTheme() {
-        var isDark = traitCollection.userInterfaceStyle == .dark
+        let isDark = traitCollection.userInterfaceStyle == .dark
         
         let colorWhite: UIColor = isDark ? .white : .black
         let colorDark: UIColor = isDark ? .black : .white

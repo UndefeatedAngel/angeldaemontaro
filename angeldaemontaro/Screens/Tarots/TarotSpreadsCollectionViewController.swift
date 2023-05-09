@@ -48,8 +48,7 @@ extension TarotSpreadsCollectionViewController: UICollectionViewDataSource {
         return tarotSpreads.contents?.count ?? 0
     }
     
-    func collectionView(_ collectionView: UICollectionView,
-                                 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: TarotSpreadsCell.reuseID, for: indexPath) as? TarotSpreadsCell {
             guard let tarot = tarotSpreads.contents?[indexPath.row] else { return cell }
@@ -57,6 +56,8 @@ extension TarotSpreadsCollectionViewController: UICollectionViewDataSource {
             cell.imageView.image = image
             cell.labelView.text = getLocale(key: tarot.title)
             cell.contentView.backgroundColor = .clear
+            cell.contentView.clipsToBounds = true
+            cell.contentView.layer.cornerRadius = 10
 
             return cell
         }

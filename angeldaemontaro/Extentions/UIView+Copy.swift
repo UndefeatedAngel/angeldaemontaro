@@ -9,8 +9,16 @@ import Foundation
 import UIKit
 
 extension UIView {
+    func copyObject<T: NSObject>() throws -> T? {
+        let data = try NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: false)
+        return try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? T
+    }
+    
     func createCopy() -> UIView? {
-        let archivedData = NSKeyedArchiver.archivedData(withRootObject: self)
-        return NSKeyedUnarchiver.unarchiveObject(with: archivedData) as? UIView
+        do {
+            return try self.copyObject()
+        } catch {
+            return nil
+        }
     }
 }

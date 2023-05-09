@@ -70,10 +70,10 @@ extension VideoScreenTableViewController: UITableViewDataSource {
     }
     
     private func updateTheme() {
-        let isDark = traitCollection.userInterfaceStyle == .dark
+//        let isDark = traitCollection.userInterfaceStyle == .dark
         
-        let colorWhite = isDark ? UIColor.white : UIColor.black
-        let colorDark = isDark ? UIColor.black : UIColor.white
+//        let colorWhite = isDark ? UIColor.white : UIColor.black
+//        let colorDark = isDark ? UIColor.black : UIColor.white
         
         self.tableView.reloadData()
     }

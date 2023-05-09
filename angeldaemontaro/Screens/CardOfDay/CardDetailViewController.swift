@@ -70,7 +70,7 @@ class CardDetailViewController: UIViewController {
             let df = DateFormatter()
             df.dateFormat = "dd/MM/yyyy"
             let current = df.string(from: date)
-            let now = df.string(from: Date.now)
+            let now = df.string(from: Date())
             if current.elementsEqual(now) {
                 if let number = UserDefaults.standard.object(forKey: keySaveCurrent) as? Int {
                     numberCardsDay = number
@@ -81,7 +81,7 @@ class CardDetailViewController: UIViewController {
         
         if let count = menuCardsDay.cards?.count {
             numberCardsDay = Int.random(in: 0..<count)
-            UserDefaults.standard.set(Date.now, forKey: keySave)
+            UserDefaults.standard.set(Date(), forKey: keySave)
             UserDefaults.standard.set(numberCardsDay, forKey: keySaveCurrent)
             //saveCardOfDay()
         }

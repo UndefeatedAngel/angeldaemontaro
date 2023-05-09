@@ -15,10 +15,10 @@ opt_in_rules:
 # Excluded Carthage sources and binaries
 excluded:
 - Pods
+- Carthage
 - .idea
 - build
-- WalletCoreWrapper
-- Prox/Bluetooth Core/DTO
+- angeldaemontaro/Helpers/
 function_parameter_count:
   - 6
   - 8

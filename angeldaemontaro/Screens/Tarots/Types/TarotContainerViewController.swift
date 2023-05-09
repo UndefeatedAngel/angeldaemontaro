@@ -70,7 +70,7 @@ class TarotContainerViewController: UIViewController {
     }
     
     func prepareTarot() {
-        guard let content = content else { return }
+//        guard let content = content else { return }
         
         buttonNext.isUserInteractionEnabled = false
         guard let pick4Elements = spreadModel?.cards?.choose(controllerTarot?.arrayViews.count ?? 0) else { return }
@@ -89,7 +89,7 @@ class TarotContainerViewController: UIViewController {
             // prepare date
             let dateFormatterGet = DateFormatter()
             dateFormatterGet.dateFormat = "MM-dd-yyyy HH:mm:ss"
-            let date = dateFormatterGet.string(from: Date.now)
+//            let date = dateFormatterGet.string(from: Date.now)
             // invoke method coredata
             jsonCurrentSave = json ?? ""
 //            saveName(tarot: content.save,date: date, save: json ?? "", title: content.title)
@@ -128,7 +128,7 @@ class TarotContainerViewController: UIViewController {
         let isDark = traitCollection.userInterfaceStyle == .dark
         
         let colorWhite = isDark ? UIColor.white : UIColor.black
-        let colorDark = isDark ? UIColor.black : UIColor.white
+//        let colorDark = isDark ? UIColor.black : UIColor.white
         
         self.navigationController?.navigationBar.tintColor = colorWhite
     }

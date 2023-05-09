@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="iyp-7D-8hZ">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pLx-UD-Obt">
                                 <rect key="frame" x="0.0" y="91" width="390" height="670"/>
@@ -91,16 +91,16 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4xk-zn-r9Y"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="iyp-7D-8hZ" secondAttribute="trailing" id="FT9-lb-Vb1"/>
                             <constraint firstItem="4xk-zn-r9Y" firstAttribute="trailing" secondItem="pLx-UD-Obt" secondAttribute="trailing" id="Nr8-Fu-L25"/>
-                            <constraint firstItem="iyp-7D-8hZ" firstAttribute="top" secondItem="uRR-sF-QPi" secondAttribute="top" id="NyT-dR-N8T"/>
+                            <constraint firstItem="iyp-7D-8hZ" firstAttribute="top" secondItem="4xk-zn-r9Y" secondAttribute="top" id="NyT-dR-N8T"/>
                             <constraint firstItem="pLx-UD-Obt" firstAttribute="top" secondItem="4xk-zn-r9Y" secondAttribute="top" id="PHA-UI-hUc"/>
                             <constraint firstItem="iyp-7D-8hZ" firstAttribute="leading" secondItem="uRR-sF-QPi" secondAttribute="leading" id="ZLQ-Vr-Sbq"/>
                             <constraint firstItem="pLx-UD-Obt" firstAttribute="leading" secondItem="4xk-zn-r9Y" secondAttribute="leading" id="cAh-18-YmA"/>
                             <constraint firstItem="4xk-zn-r9Y" firstAttribute="bottom" secondItem="pLx-UD-Obt" secondAttribute="bottom" id="uFH-Kg-xIr"/>
-                            <constraint firstAttribute="bottom" secondItem="iyp-7D-8hZ" secondAttribute="bottom" id="xkm-Qc-hU6"/>
+                            <constraint firstItem="4xk-zn-r9Y" firstAttribute="bottom" secondItem="iyp-7D-8hZ" secondAttribute="bottom" id="xkm-Qc-hU6"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Video" image="videoTabBar" selectedImage="videoTabBar" id="B68-Xw-q6x"/>

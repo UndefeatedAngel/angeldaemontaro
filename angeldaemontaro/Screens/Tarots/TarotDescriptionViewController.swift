@@ -97,7 +97,7 @@ class TarotDescriptionViewController: UIViewController {
         let isDark = traitCollection.userInterfaceStyle == .dark
         
         let colorWhite = isDark ? UIColor.white : UIColor.black
-        let colorDark = isDark ? UIColor.black : UIColor.white
+//        let colorDark = isDark ? UIColor.black : UIColor.white
         
         for view in stackView.arrangedSubviews {
             if let label = view as? UILabel {

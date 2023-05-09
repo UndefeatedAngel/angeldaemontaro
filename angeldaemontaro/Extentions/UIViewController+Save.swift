@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIViewController {
-    func getModelJsonFromSave(saveField: String?) -> [BaseSpreadModel.BaseSpreadJson]{
+    func getModelJsonFromSave(saveField: String?) -> [BaseSpreadModel.BaseSpreadJson] {
         var model = [BaseSpreadModel.BaseSpreadJson]()
         if let json = saveField {
             do {
