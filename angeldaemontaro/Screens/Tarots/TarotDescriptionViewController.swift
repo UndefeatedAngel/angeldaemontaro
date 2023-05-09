@@ -25,41 +25,17 @@ class TarotDescriptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupGestureTabBar()
 
         content = TarotSpreadModel().contents?.first(where: { json in
             return json.save == tarotField
         })
 
-//        if currentSave.tarotField == keyMapOfDaySave {
-//            createDescriptionMapOfDay()
-//        } else {
-            createDescription()
-//        }
+        createDescription()
+
         updateTheme()
     }
-    
-//    func createDescriptionMapOfDay() {
-//        var descriptionString = ""
-//        let localeTitle = getLocale(key: keyMapOfDay)
-//        let model = getModelJsonFromSave(saveField: currentSave?.saveField)[0]
-//        let cardOfDayJson = MenuCardsDayModel().cards?.first(where: { card in
-//            return card.description.elementsEqual(model.description)
-//        })
-//
-//        guard let cardOfDayJson = cardOfDayJson else { return }
-//
-//
-//        let localePoint = getLocaleFromTable(tableName: cardOfDayJson.locale, key: cardOfDayJson.description)
-//
-//        // Добавление описания
-//        if !localeTitle.isEmpty {
-//            descriptionString.append("\(localeTitle):")
-//        }
-//        // Добавление пункта
-//        descriptionString.append("\(localePoint)")
-//
-//        addDescription(title: localeTitle, image: model.image.getImageLocale(controller: self), description: localePoint)
-//    }
     
     func createDescription() {
         guard let content = content else { return }

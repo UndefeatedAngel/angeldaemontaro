@@ -8,41 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Video-->
-        <scene sceneID="rWl-9G-CvW">
-            <objects>
-                <viewController id="N5G-lb-gWE" customClass="VideoScreenViewController" customModule="angeldaemontaro" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8iM-bF-UTJ">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWq-kK-YZB">
-                                <rect key="frame" x="45" y="116" width="300" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="5vP-XB-sLu"/>
-                                    <constraint firstAttribute="height" constant="200" id="6yL-GY-8be"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="tSe-Pa-kMy"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
-                        <constraints>
-                            <constraint firstItem="CWq-kK-YZB" firstAttribute="centerX" secondItem="tSe-Pa-kMy" secondAttribute="centerX" id="JFP-EB-z98"/>
-                            <constraint firstItem="CWq-kK-YZB" firstAttribute="top" secondItem="tSe-Pa-kMy" secondAttribute="top" constant="25" id="rUJ-Wt-8dZ"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Video" image="videoTabBar" selectedImage="videoTabBar" id="W7m-Ac-A1a"/>
-                    <navigationItem key="navigationItem" id="gKd-BW-7nc"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="viewForVideo" destination="CWq-kK-YZB" id="Zna-VB-ee4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tHS-lw-M1e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="839" y="32"/>
-        </scene>
         <!--Tab Navigation Controller-->
         <scene sceneID="abZ-VG-yuk">
             <objects>
@@ -52,21 +17,109 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="N5G-lb-gWE" kind="relationship" relationship="rootViewController" id="otc-hI-9fw"/>
+                        <segue destination="HQG-7x-x2s" kind="relationship" relationship="rootViewController" id="mQp-aF-hJX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7v-np-mxi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-275" y="32"/>
         </scene>
+        <!--Video-->
+        <scene sceneID="lgD-pt-BS4">
+            <objects>
+                <viewController id="HQG-7x-x2s" customClass="VideoScreenTableViewController" customModule="angeldaemontaro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uRR-sF-QPi">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="iyp-7D-8hZ">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pLx-UD-Obt">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="300" id="RMQ-Bi-FV8" customClass="VideoTableViewCell" customModule="angeldaemontaro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RMQ-Bi-FV8" id="m6Z-T6-P9W">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8y-UB-3Dj" userLabel="VideoView" customClass="YoutubePlayerView" customModule="YoutubePlayerView">
+                                                    <rect key="frame" x="20" y="20" width="350" height="260"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDs-30-HEd" userLabel="LoadingView">
+                                                    <rect key="frame" x="20" y="20" width="350" height="260"/>
+                                                    <subviews>
+                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-8q-AaV">
+                                                            <rect key="frame" x="156.66666666666666" y="111.66666666666666" width="37" height="37"/>
+                                                        </activityIndicatorView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="qbc-8q-AaV" firstAttribute="centerX" secondItem="eDs-30-HEd" secondAttribute="centerX" id="hcc-G7-5dU"/>
+                                                        <constraint firstItem="qbc-8q-AaV" firstAttribute="centerY" secondItem="eDs-30-HEd" secondAttribute="centerY" id="nht-YF-BDy"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="X8y-UB-3Dj" secondAttribute="bottom" constant="20" id="0YI-UG-Mmh"/>
+                                                <constraint firstAttribute="trailing" secondItem="X8y-UB-3Dj" secondAttribute="trailing" constant="20" id="14c-iD-aiH"/>
+                                                <constraint firstItem="X8y-UB-3Dj" firstAttribute="top" secondItem="m6Z-T6-P9W" secondAttribute="top" constant="20" id="43z-cG-eQJ"/>
+                                                <constraint firstItem="eDs-30-HEd" firstAttribute="top" secondItem="X8y-UB-3Dj" secondAttribute="top" id="8VF-oH-a9i"/>
+                                                <constraint firstItem="eDs-30-HEd" firstAttribute="bottom" secondItem="X8y-UB-3Dj" secondAttribute="bottom" id="F1x-TS-Irk"/>
+                                                <constraint firstItem="eDs-30-HEd" firstAttribute="leading" secondItem="X8y-UB-3Dj" secondAttribute="leading" id="fz6-y8-x3r"/>
+                                                <constraint firstItem="X8y-UB-3Dj" firstAttribute="leading" secondItem="m6Z-T6-P9W" secondAttribute="leading" constant="20" id="iGD-5L-Gv9"/>
+                                                <constraint firstItem="eDs-30-HEd" firstAttribute="trailing" secondItem="X8y-UB-3Dj" secondAttribute="trailing" id="ojK-hi-Z1L"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="loadingIndicator" destination="qbc-8q-AaV" id="0GX-dF-k8y"/>
+                                            <outlet property="loadingView" destination="eDs-30-HEd" id="mfP-T9-lKe"/>
+                                            <outlet property="videoView" destination="X8y-UB-3Dj" id="bwN-Aa-SxK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HQG-7x-x2s" id="tNK-1k-jr7"/>
+                                    <outlet property="delegate" destination="HQG-7x-x2s" id="JxG-MQ-PTz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4xk-zn-r9Y"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iyp-7D-8hZ" secondAttribute="trailing" id="FT9-lb-Vb1"/>
+                            <constraint firstItem="4xk-zn-r9Y" firstAttribute="trailing" secondItem="pLx-UD-Obt" secondAttribute="trailing" id="Nr8-Fu-L25"/>
+                            <constraint firstItem="iyp-7D-8hZ" firstAttribute="top" secondItem="uRR-sF-QPi" secondAttribute="top" id="NyT-dR-N8T"/>
+                            <constraint firstItem="pLx-UD-Obt" firstAttribute="top" secondItem="4xk-zn-r9Y" secondAttribute="top" id="PHA-UI-hUc"/>
+                            <constraint firstItem="iyp-7D-8hZ" firstAttribute="leading" secondItem="uRR-sF-QPi" secondAttribute="leading" id="ZLQ-Vr-Sbq"/>
+                            <constraint firstItem="pLx-UD-Obt" firstAttribute="leading" secondItem="4xk-zn-r9Y" secondAttribute="leading" id="cAh-18-YmA"/>
+                            <constraint firstItem="4xk-zn-r9Y" firstAttribute="bottom" secondItem="pLx-UD-Obt" secondAttribute="bottom" id="uFH-Kg-xIr"/>
+                            <constraint firstAttribute="bottom" secondItem="iyp-7D-8hZ" secondAttribute="bottom" id="xkm-Qc-hU6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Video" image="videoTabBar" selectedImage="videoTabBar" id="B68-Xw-q6x"/>
+                    <navigationItem key="navigationItem" id="z1I-FH-GEg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="pLx-UD-Obt" id="cv5-Lp-R3I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKj-wH-iM3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627.69230769230762" y="31.990521327014218"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="background" width="360" height="640"/>
         <image name="videoTabBar" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

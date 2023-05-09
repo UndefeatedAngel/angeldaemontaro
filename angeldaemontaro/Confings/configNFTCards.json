@@ -1,0 +1,410 @@
+[
+  {
+    "title": "major_arcane_title",
+    "color": "531B93",
+    "cards": [
+      {
+        "description": "foolCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "fool"
+      },
+      {
+        "description": "magicianCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "magicianCard"
+      },
+      {
+        "description": "highpriestessCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "highpriestessCard"
+      },
+      {
+        "description": "empressCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "empressCard"
+      },
+      {
+        "description": "emperorCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "emperorCard"
+      },
+      {
+        "description": "hierophantCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "hierophantCard"
+      },
+      {
+        "description": "lovesCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "lovesCard"
+      },
+      {
+        "description": "chariotCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "chariotCard"
+      },
+      {
+        "description": "strengthCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "strengthCard"
+      },
+      {
+        "description": "hermitCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "hermitCard"
+      },
+      {
+        "description": "wheelOfFortuneCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "wheelOfFortune"
+      },
+      {
+        "description": "justiceCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "justiceCard"
+      },
+      {
+        "description": "hangedCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "hangedCard"
+      },
+      {
+        "description": "deathCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "deathCard"
+      },
+      {
+        "description": "moderationCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "moderationCard"
+      },
+      {
+        "description": "devilCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "devilCard"
+      },
+      {
+        "description": "towerCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "towerCard"
+      },
+      {
+        "description": "starCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "starCard"
+      },
+      {
+        "description": "moonCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "moonCard"
+      },
+      {
+        "description": "sunCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "sunCard"
+      },
+      {
+        "description": "doomsdayCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "doomsdayCard"
+      },
+      {
+        "description": "worldCard_map_description",
+        "locale": "MajorArcanaLocalizable",
+        "image": "worldCard"
+      }
+    ]
+  },
+  {
+    "title": "figure_cards_title",
+    "color": "0096FF",
+    "cards": [
+      {
+        "description": "pageOfPentacles_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "pageOfPentacles"
+      },
+      {
+        "description": "pageOfSwords_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "pageOfSwords"
+      },
+      {
+        "description": "pageOfWands_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "pageOfWands"
+      },
+      {
+        "description": "pageOfCups_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "pageOfCups"
+      },
+      {
+        "description": "knightOfPentacles_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "knightOfPentacles"
+      },
+      {
+        "description": "knightOfSwords_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "knightOfSwords"
+      },
+      {
+        "description": "knightOfWands_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "knightOfWands"
+      },
+      {
+        "description": "knightOfCups_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "knightOfCups"
+      },
+      {
+        "description": "kingOfPentacles_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "kingOfPentacles"
+      },
+      {
+        "description": "kingOfSwords_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "kingOfSwords"
+      },
+      {
+        "description": "kingOfWands_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "kingOfWands"
+      },
+      {
+        "description": "kingOfCups_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "kingOfCups"
+      },
+      {
+        "description": "queenOfPentacles_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "queenOfPentacles"
+      },
+      {
+        "description": "queenOfSwords_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "queenOfSwords"
+      },
+      {
+        "description": "queenOfWands_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "queenOfWands"
+      },
+      {
+        "description": "queenOfCups_map_description",
+        "locale": "FigureCardsLocalizable",
+        "image": "queenOfCups"
+      }
+    ]
+  },
+  {
+      "title": "numberical_cards_title",
+      "color": "945200",
+      "cards": [
+          {
+            "description": "aceOfPentacles_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "aceOfPentacles"
+          },
+          {
+            "description": "aceOfSwords_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "aceOfSwords"
+          },
+          {
+            "description": "aceOfWands_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "aceOfWands"
+          },
+          {
+            "description": "aceOfCups_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "aceOfCups"
+          },
+          {
+            "description": "twoOfPentacles_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "twoOfPentacles"
+          },
+          {
+            "description": "twoOfSwords_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "twoOfSwords"
+          },
+          {
+            "description": "twoOfWands_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "twoOfWands"
+          },
+          {
+            "description": "twoOfCups_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "twoOfCups"
+          },
+          {
+            "description": "threeOfPentacles_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "threeOfPentacles"
+          },
+          {
+            "description": "threeOfSwords_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "threeOfSwords"
+          },
+          {
+            "description": "threeOfWands_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "threeOfWands"
+          },
+          {
+            "description": "threeOfCups_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "threeOfCups"
+          },
+          {
+            "description": "fourOfPentacles_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "fourOfPentacles"
+          },
+          {
+            "description": "fourOfSwords_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "fourOfSwords"
+          },
+          {
+            "description": "fourOfWands_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "fourOfWands"
+          },
+          {
+            "description": "fourOfCups_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "fourOfCups"
+          },
+          {
+            "description": "fiveOfPentacles_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "fiveOfPentacles"
+          },
+          {
+            "description": "fiveOfSwords_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "fiveOfSwords"
+          },
+          {
+            "description": "fiveOfWands_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "fiveOfWands"
+          },
+          {
+            "description": "fiveOfCups_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "fiveOfCups"
+          },
+          {
+            "description": "sixOfPentacles_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "sixOfPentacles"
+          },
+          {
+            "description": "sixOfSwords_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "sixOfSwords"
+          },
+          {
+            "description": "sixOfWands_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "sixOfWands"
+          },
+          {
+            "description": "sixOfCups_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "sixOfCups"
+          },
+          {
+            "description": "sevenOfPentacles_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "sevenOfPentacles"
+          },
+          {
+            "description": "sevenOfSwords_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "sevenOfSwords"
+          },
+          {
+            "description": "sevenOfWands_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "sevenOfWands"
+          },
+          {
+            "description": "sevenOfCups_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "sevenOfCups"
+          },
+          {
+            "description": "eightOfPentacles_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "eightOfPentacles"
+          },
+          {
+            "description": "eightOfSwords_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "eightOfSwords"
+          },
+          {
+            "description": "eightOfWands_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "eightOfWands"
+          },
+          {
+            "description": "eightOfCups_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "eightOfCups"
+          },
+          {
+            "description": "nineOfPentacles_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "nineOfPentacles"
+          },
+          {
+            "description": "nineOfSwords_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "nineOfSwords"
+          },
+          {
+            "description": "nineOfWands_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "nineOfWands"
+          },
+          {
+            "description": "nineOfCups_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "nineOfCups"
+          },
+          {
+            "description": "tenOfPentacles_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "tenOfPentacles"
+          },
+          {
+            "description": "tenOfSwords_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "tenOfSwords"
+          },
+          {
+            "description": "tenOfWands_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "tenOfWands"
+          },
+          {
+            "description": "tenOfCups_map_description",
+            "locale": "NumeralCardsLocalizable",
+            "image": "tenOfCups"
+          }
+      ]
+  }
+]

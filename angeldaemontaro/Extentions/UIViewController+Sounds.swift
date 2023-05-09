@@ -27,7 +27,7 @@ extension UIViewController {
             guard let player = AVPlayerManager.audioPlayer else { return }
 
             player.play()
-            player.volume = 1
+            player.volume = Settings.isSounds ? 1 : 0
 
         } catch let error {
             print(error.localizedDescription)

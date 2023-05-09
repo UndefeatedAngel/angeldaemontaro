@@ -12,6 +12,8 @@ class BaseTarotViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupGestureTabBar()
     }
 
     func animateCardDay(imageView: UIImageView, finished: @escaping (Bool) -> Void) {

@@ -20,6 +20,8 @@ class AngelNumbersDescriptionViewController: UIViewController {
         
         navigationItem.title = R.angelsMenu
         
+        setupGestureTabBar()
+        
         guard let json = json else { return }
 
         let locale = json.locale

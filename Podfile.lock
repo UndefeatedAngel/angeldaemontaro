@@ -1,20 +1,24 @@
 PODS:
   - SwiftGen (6.6.2)
   - SwiftLint (0.51.0)
+  - YoutubePlayerView (1.2.1)
 
 DEPENDENCIES:
   - SwiftGen
   - SwiftLint
+  - YoutubePlayerView (~> 1.2)
 
 SPEC REPOS:
   trunk:
     - SwiftGen
     - SwiftLint
+    - YoutubePlayerView
 
 SPEC CHECKSUMS:
   SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
   SwiftLint: 1b7561918a19e23bfed960e40759086e70f4dba5
+  YoutubePlayerView: 3870fc10f2db3f54156697757f44d304203bdc7e
 
-PODFILE CHECKSUM: 92eaf5313630e5a5990d50c208df570568883d9d
+PODFILE CHECKSUM: d7a9e2ceabc96005bbe5bb0c432a28d9b9266e6a
 
 COCOAPODS: 1.12.1

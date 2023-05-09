@@ -19,8 +19,6 @@ extension UIViewController {
     }
     
     func setupSoundsNav() {
-        Settings.isSounds = true
-        
         let button = UIBarButtonItem(image: Settings.isSounds
                                      ? Assets.Images.soundOn.image
                                      : Assets.Images.soundOff.image,

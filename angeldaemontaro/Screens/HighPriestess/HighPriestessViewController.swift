@@ -172,7 +172,7 @@ class HighPriestessViewController: UIViewController {
     private func foreroundAction() {
         guard let avPlayer = AVPlayerManager.avPlayer, isPauseVideo == false else { return }
         
-        avPlayer.play()
+        AVPlayerManager.playVideo()
     }
     
     @IBAction func onClickPause(_ sender: Any) {

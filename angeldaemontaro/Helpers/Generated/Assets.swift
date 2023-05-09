@@ -220,6 +220,7 @@ internal enum Assets {
     internal static let notes = ImageAsset(name: "notes")
     internal static let playerPlay = ImageAsset(name: "playerPlay")
     internal static let preservation = ImageAsset(name: "preservation")
+    internal static let profileIcon = ImageAsset(name: "profileIcon")
     internal static let question = ImageAsset(name: "question")
     internal static let settings = ImageAsset(name: "settings")
     internal static let soundOff = ImageAsset(name: "soundOff")

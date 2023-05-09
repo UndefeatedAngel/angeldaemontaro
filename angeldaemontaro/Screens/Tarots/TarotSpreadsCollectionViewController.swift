@@ -7,17 +7,20 @@
 
 import UIKit
 
-class TarotSpreadsCollectionViewController: UICollectionViewController {
+class TarotSpreadsCollectionViewController: UIViewController {
+    
     let segue = "tarotSegue"
     let tarotSpreads = TarotSpreadModel()
     var selectedIndex: Int = 0
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = R.tarotSpreadsMenu
         
-        collectionView.backgroundView = UIImageView(image: Assets.Images.background.image)
-        collectionView.backgroundColor = UIColor.clear.withAlphaComponent(0)
+        setupGestureTabBar()
+        
+        navigationItem.title = R.tarotSpreadsMenu
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -25,21 +28,27 @@ class TarotSpreadsCollectionViewController: UICollectionViewController {
             container.content = tarotSpreads.contents?[selectedIndex]
         }
     }
-    
-    // MARK: UICollectionViewDataSource
+}
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tarotSpreads.contents?.count ?? 0
-    }
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+extension TarotSpreadsCollectionViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedIndex = indexPath.row
         performSegue(withIdentifier: segue, sender: self)
     }
+}
 
-    override func collectionView(_ collectionView: UICollectionView,
+extension TarotSpreadsCollectionViewController: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return tarotSpreads.contents?.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
                                  cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: TarotSpreadsCell.reuseID, for: indexPath) as? TarotSpreadsCell {

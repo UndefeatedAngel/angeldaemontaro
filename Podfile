@@ -6,4 +6,5 @@ inhibit_all_warnings!
 target 'angeldaemontaro' do
   pod 'SwiftLint'
   pod 'SwiftGen'
+  pod 'YoutubePlayerView', '~> 1.2'
 end

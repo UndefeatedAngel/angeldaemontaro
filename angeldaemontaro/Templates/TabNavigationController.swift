@@ -22,18 +22,12 @@ class TabNavigationController: UINavigationController {
         let colorWhite: UIColor = isDark ? .white : .black
         let colorDark: UIColor = isDark ? .black : .white
         
-        UINavigationBar.appearance().tintColor = colorWhite
-        let navigationBarAppearance = UINavigationBarAppearance()
-        navigationBarAppearance.configureWithOpaqueBackground()
-        navigationBarAppearance.backgroundColor = colorDark
-        
-        navigationBarAppearance.titleTextAttributes = [
+        let navBar = self.navigationBar
+        navBar.backgroundColor = colorDark
+        navBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: colorWhite
         ]
-        
-        UINavigationBar.appearance().standardAppearance = navigationBarAppearance
-        UINavigationBar.appearance().compactAppearance = navigationBarAppearance
-        UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+        navBar.tintColor = colorWhite
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {

@@ -25,6 +25,7 @@ class CardDetailViewController: UIViewController {
         super.viewDidLoad()
         
         setCardOfDay()
+        setupGestureTabBar()
         
         setupNavBackButton(complete: #selector(backClick))
         setupSoundsNav()
@@ -35,14 +36,14 @@ class CardDetailViewController: UIViewController {
     @objc
     func backClick() {
         self.navigationController?.popViewController(animated: true)
-        AVPlayerManager.audioPlayer = nil
+        AVPlayerManager.audioPlayer?.stop()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         if isFirst {
-            AVPlayerManager.audioPlayer?.play()
+            AVPlayerManager.playAudio()
             return
         }
         isFirst = true
@@ -135,12 +136,6 @@ extension CardDetailViewController {
         let key = card.description
         let description = self.getLocaleFromTable(tableName: locale, key: key)
         self.descriptionTextView.text = description
-
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) { [weak self] in
-//            guard let self = self else { return }
-//            let countSymbols = description.count
-//            self.descriptionTextView.animation(typing: description, duration: Double(countSymbols) * 0.01)
-//        }
         
         playSound(name: card.sound)
     }
