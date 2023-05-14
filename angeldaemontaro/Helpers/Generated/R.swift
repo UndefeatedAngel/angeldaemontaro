@@ -26,8 +26,7 @@ internal enum R {
   /// Cards of Day
   internal static let cardsOfDayMenu = R.tr("Localizable", "cardsOfDayMenu", fallback: "Cards of Day")
   /// Celtic Cross Spread
-  /// (situation)
-  internal static let celticCrossSpreadTitle = R.tr("Localizable", "celticCrossSpread_title", fallback: "Celtic Cross Spread\n(situation)")
+  internal static let celticCrossSpreadTitle = R.tr("Localizable", "celticCrossSpread_title", fallback: "Celtic Cross Spread")
   /// Сhoose
   internal static let choiceSpread = R.tr("Localizable", "choiceSpread", fallback: "Сhoose")
   /// Choise Spread
@@ -93,6 +92,8 @@ internal enum R {
   internal static let personalGrowthSpreadTitle = R.tr("Localizable", "personalGrowthSpread_title", fallback: "Personal Growth Spread")
   /// Preservation
   internal static let preservationMenu = R.tr("Localizable", "preservationMenu", fallback: "Preservation")
+  /// Profile
+  internal static let profileMenu = R.tr("Localizable", "profileMenu", fallback: "Profile")
   /// Russian
   internal static let russian = R.tr("Localizable", "russian", fallback: "Russian")
   /// Settings

@@ -19,6 +19,7 @@
 "descriptionMenu" = "Описание";
 "preservationMenu" = "Сохранения";
 "settingsMenu" = "Настройки";
+"profileMenu" = "Профиль";
 
 "buttomMapOfDay" = "Карта дня";
 
@@ -63,7 +64,7 @@
 "choiseSpread_title" = "Расклад Выбор";
 "healthySpread_title" = "Расклад на здоровье";
 "personalGrowthSpread_title" = "Личностный рост";
-"celticCrossSpread_title" = "Кельтский крест\n(на ситуацию)";
+"celticCrossSpread_title" = "Кельтский крест";
 //"choiceSpread_title" = "Выбор";
 "buttonTarotMake" = "Сделать расклад";
 "buttonTarotWrite" = "Читать описание";

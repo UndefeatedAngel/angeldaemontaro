@@ -20,6 +20,7 @@
 "descriptionMenu" = "Description";
 "preservationMenu" = "Preservation";
 "settingsMenu" = "Settings";
+"profileMenu" = "Profile";
 
 "buttomMapOfDay" = "Map of the day";
 
@@ -66,7 +67,7 @@
 "choiseSpread_title" = "Choise Spread";
 "healthySpread_title" = "Healthy Spread";
 "personalGrowthSpread_title" = "Personal Growth Spread";
-"celticCrossSpread_title" = "Celtic Cross Spread\n(situation)";
+"celticCrossSpread_title" = "Celtic Cross Spread";
 "buttonTarotMake" = "Make Tarot";
 "buttonTarotWrite" = "Write Tarot";
 

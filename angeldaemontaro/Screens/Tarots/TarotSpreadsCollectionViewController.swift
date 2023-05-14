@@ -31,6 +31,7 @@ class TarotSpreadsCollectionViewController: UIViewController {
         if let container = segue.destination as? TarotContainerViewController {
             container.content = tarotSpreads.contents?[selectedIndex]
         }
+        
         let backItem = UIBarButtonItem()
         backItem.title = ""
         navigationItem.backBarButtonItem = backItem
@@ -41,6 +42,7 @@ extension TarotSpreadsCollectionViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedIndex = indexPath.row
+        
         performSegue(withIdentifier: segue, sender: self)
     }
 }
@@ -62,10 +64,12 @@ extension TarotSpreadsCollectionViewController: UICollectionViewDataSource {
             let image = UIImage(named: tarot.image)
             cell.imageView.image = image
             cell.labelView.text = getLocale(key: tarot.title)
-            cell.contentView.backgroundColor = .clear
+            
             cell.contentView.clipsToBounds = true
             cell.contentView.layer.cornerRadius = 10
 
+            let isDark = traitCollection.userInterfaceStyle == .dark
+            cell.labelView.textColor = isDark ? .white : .black
             return cell
         }
         

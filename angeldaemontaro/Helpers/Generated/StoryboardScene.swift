@@ -70,6 +70,11 @@ internal enum StoryboardScene {
 
     internal static let personalGrowthViewController = SceneType<PersonalGrowthViewController>(storyboard: PersonalGrowthStoryboard.self, identifier: "PersonalGrowthViewController")
   }
+  internal enum Profile: StoryboardType {
+    internal static let storyboardName = "Profile"
+
+    internal static let profileSB = SceneType<UIKit.UINavigationController>(storyboard: Profile.self, identifier: "profileSB")
+  }
   internal enum Settings: StoryboardType {
     internal static let storyboardName = "Settings"
 

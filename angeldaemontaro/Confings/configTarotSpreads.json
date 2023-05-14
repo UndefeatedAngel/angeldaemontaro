@@ -1,7 +1,7 @@
 [
   {
     "title": "financialSpread_title",
-    "image":"devilCard_en",
+    "image":"01finance",
     "storyboard": "FinansialStoryboard",
     "controller": "FinansialViewController",
     "config": "configFinancial",
@@ -10,7 +10,7 @@
   },
   {
     "title": "onEveryDaySpread_title",
-    "image":"magicianCard_en",
+    "image":"02everyday",
     "storyboard": "OnEveryDayStoryboard",
     "controller": "OnEveryDayViewController",
     "config": "configFinancial",
@@ -19,7 +19,7 @@
   },
   {
     "title": "lovelySpread_title",
-    "image":"highpriestessCard_en",
+    "image":"03lovely",
     "storyboard": "LovelyStoryboard",
     "controller": "LovelyViewController",
     "config": "configFinancial",
@@ -28,7 +28,7 @@
   },
   {
     "title": "choiseSpread_title",
-    "image":"empressCard_en",
+    "image":"04choise",
     "storyboard": "ChoiseStoryboard",
     "controller": "ChoiseViewController",
     "config": "configFinancial",
@@ -37,7 +37,7 @@
   },
   {
     "title": "healthySpread_title",
-    "image":"emperorCard_en",
+    "image":"05health",
     "storyboard": "HealthyStoryboard",
     "controller": "HealthyViewController",
     "config": "configFinancial",
@@ -46,7 +46,7 @@
   },
   {
     "title": "personalGrowthSpread_title",
-    "image":"hierophantCard_en",
+    "image":"06personalgrowth",
     "storyboard": "PersonalGrowthStoryboard",
     "controller": "PersonalGrowthViewController",
     "config": "configFinancial",
@@ -55,7 +55,7 @@
   },
   {
     "title": "celticCrossSpread_title",
-    "image":"worldCard_en",
+    "image":"07situation",
     "storyboard": "СelticCrossStoryboard",
     "controller": "СelticCrossViewController",
     "config": "configFinancial",

@@ -26,6 +26,8 @@
 		C64506252A0A7BD4004EDD62 /* TabContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64506242A0A7BD4004EDD62 /* TabContainerViewController.swift */; };
 		C693C8B92A08130700F414F8 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C693C8B82A08130700F414F8 /* VideoTableViewCell.swift */; };
 		C6A08DEE29F7D9ED004D1FCE /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A08DED29F7D9ED004D1FCE /* CardDetailViewController.swift */; };
+		C6A1523F2A1132F300816CA2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A1523E2A1132F300816CA2 /* Profile.storyboard */; };
+		C6A152412A11333700816CA2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A152402A11333700816CA2 /* ProfileViewController.swift */; };
 		C6B4180D29FBB042000FB62A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4180C29FBB042000FB62A /* Settings.swift */; };
 		C6B4180F29FBB3A6000FB62A /* AVPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4180E29FBB3A5000FB62A /* AVPlayerManager.swift */; };
 		C6B4181229FBBECA000FB62A /* configCardsDay.json in Resources */ = {isa = PBXBuildFile; fileRef = C6B4181129FBBECA000FB62A /* configCardsDay.json */; };
@@ -227,6 +229,8 @@
 		C64506242A0A7BD4004EDD62 /* TabContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerViewController.swift; sourceTree = "<group>"; };
 		C693C8B82A08130700F414F8 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		C6A08DED29F7D9ED004D1FCE /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		C6A1523E2A1132F300816CA2 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		C6A152402A11333700816CA2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C6B4180C29FBB042000FB62A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C6B4180E29FBB3A5000FB62A /* AVPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerManager.swift; sourceTree = "<group>"; };
 		C6B4181129FBBECA000FB62A /* configCardsDay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = configCardsDay.json; sourceTree = "<group>"; };
@@ -488,7 +492,6 @@
 				C6B4182329FBE10E000FB62A /* Situation */,
 				C6B4182629FBE10E000FB62A /* BaseSpreadModel.swift */,
 				C6B4182729FBE10E000FB62A /* Lovely */,
-				C6B4182A29FBE10E000FB62A /* TarotContainerViewController.swift */,
 				C6B4182B29FBE10E000FB62A /* Finansial */,
 				C6B4182E29FBE10E000FB62A /* OnEveryDay */,
 				C6B4183129FBE10E000FB62A /* СelticCross */,
@@ -665,16 +668,8 @@
 				C6FB5F3529EEB06E00172CAE /* CardOfDay */,
 				C6FB5F3329ED757500172CAE /* Main */,
 				C6FB5E5729ED740A00172CAE /* Settings */,
-				C6FB5E5629ED740300172CAE /* Tarot */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		C6FB5E5629ED740300172CAE /* Tarot */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tarot;
 			sourceTree = "<group>";
 		};
 		C6FB5E5729ED740A00172CAE /* Settings */ = {
@@ -897,6 +892,7 @@
 			children = (
 				C6B4181B29FBE10E000FB62A /* Types */,
 				C6B4181A29FBE10E000FB62A /* TarotDescriptionViewController.swift */,
+				C6B4182A29FBE10E000FB62A /* TarotContainerViewController.swift */,
 				C6B4183429FBE10E000FB62A /* TarotSpreadsCell.swift */,
 				C6B4183529FBE10E000FB62A /* TarotSpreadsCollectionViewController.swift */,
 				C6B4183729FBE10E000FB62A /* TarotSpreadModel.swift */,
@@ -942,6 +938,8 @@
 		C6FB5F4429EEB56B00172CAE /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C6A1523E2A1132F300816CA2 /* Profile.storyboard */,
+				C6A152402A11333700816CA2 /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1179,6 +1177,7 @@
 				C6FB5F2129ED749700172CAE /* strengthCard.m4a in Resources */,
 				C6D8A3E829F7C184007B1147 /* Images.xcassets in Resources */,
 				C6FB5EF329ED749700172CAE /* kingOfCups.m4a in Resources */,
+				C6A1523F2A1132F300816CA2 /* Profile.storyboard in Resources */,
 				C6FB5F5229EEBC5600172CAE /* Tarots.storyboard in Resources */,
 				C6FB5EF529ED749700172CAE /* fiveOfWands.m4a in Resources */,
 				C6FB5EFC29ED749700172CAE /* nineOfWands.m4a in Resources */,
@@ -1360,6 +1359,7 @@
 				C6B4184B29FBE10E000FB62A /* TarotSpreadsCollectionViewController.swift in Sources */,
 				C6D8A40A29F7D0A3007B1147 /* R.swift in Sources */,
 				C6F2758E2A07E58F00507F4C /* AngelNumbersDescriptionViewController.swift in Sources */,
+				C6A152412A11333700816CA2 /* ProfileViewController.swift in Sources */,
 				C6B4184029FBE10E000FB62A /* BaseSpreadModel.swift in Sources */,
 				C6FB5E2429ED738D00172CAE /* SceneDelegate.swift in Sources */,
 			);
@@ -1665,7 +1665,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.angeldaemon.taro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angeldaemon.taro2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1700,7 +1700,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.angeldaemon.taro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angeldaemon.taro2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

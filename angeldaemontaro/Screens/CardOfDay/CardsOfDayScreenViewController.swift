@@ -71,7 +71,9 @@ class CardsOfDayScreenViewController: UIViewController {
     
     @objc
     func profileClick() {
-        
+        let controller = StoryboardScene.Profile.profileSB.instantiate()
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: true)
     }
     
     @objc

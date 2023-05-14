@@ -247,6 +247,13 @@ internal enum Assets {
     internal static let mainTabBar = ImageAsset(name: "mainTabBar")
     internal static let tarotTabBar = ImageAsset(name: "tarotTabBar")
     internal static let videoTabBar = ImageAsset(name: "videoTabBar")
+    internal static let _01finance = ImageAsset(name: "01finance")
+    internal static let _02everyday = ImageAsset(name: "02everyday")
+    internal static let _03lovely = ImageAsset(name: "03lovely")
+    internal static let _04choise = ImageAsset(name: "04choise")
+    internal static let _05health = ImageAsset(name: "05health")
+    internal static let _06personalgrowth = ImageAsset(name: "06personalgrowth")
+    internal static let _07situation = ImageAsset(name: "07situation")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
