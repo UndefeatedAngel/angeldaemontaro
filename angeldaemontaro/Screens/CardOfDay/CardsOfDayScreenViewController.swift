@@ -130,14 +130,16 @@ extension CardsOfDayScreenViewController: UICollectionViewDelegate, UICollection
         if let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: NFTCollectionViewCell.reuseID,
             for: indexPath) as? NFTCollectionViewCell {
+            let isDark = traitCollection.userInterfaceStyle == .dark
             
-            cell.nftImageView?.image = getImage(numberSection: indexPath.section, numberKey: indexPath.row)
-            
-            if let model = nftCards.content?[indexPath.section] {
-                cell.contentView.backgroundColor = UIColor(hex: model.color)
-            }
+            cell.contentView.backgroundColor = .clear
+            cell.nftImageView?.image = getImageNFT(numberSection: indexPath.section, numberKey: indexPath.row)
+            cell.nftImageView?.layer.borderWidth = 2
+            cell.nftImageView?.layer.borderColor = isDark ? UIColor.white.cgColor : UIColor.black.cgColor
+            cell.nftImageView?.clipsToBounds = true
+            cell.nftImageView?.layer.cornerRadius = (cell.nftImageView?.bounds.width ?? 75) / 2
             cell.contentView.clipsToBounds = true
-            cell.contentView.layer.cornerRadius = 10
+            cell.contentView.layer.cornerRadius = cell.contentView.bounds.width / 2
             
             return cell
         }
@@ -148,5 +150,11 @@ extension CardsOfDayScreenViewController: UICollectionViewDelegate, UICollection
     func getImage(numberSection: Int, numberKey: Int) -> UIImage? {
         let imageName = nftCards.content?[numberSection].cards[numberKey].image ?? ""
         return imageName.getImageLocale(controller: self)
+    }
+    
+    func getImageNFT(numberSection: Int, numberKey: Int) -> UIImage? {
+        let imageName = nftCards.content?[numberSection].cards[numberKey].image ?? ""
+        let keyImage = "\(imageName)NFT"
+        return keyImage.getImage(controller: self)
     }
 }

@@ -36,7 +36,13 @@ class NFTDescriptionViewController: UIViewController {
         let key = json.description
         let description = self.getLocaleFromTable(tableName: locale, key: key)
         textView.text = getLocale(key: description)
-        imageView.image = json.image.getImageLocale(controller: self)
+        let keyImage = "\(json.image)NFT"
+        imageView.image = keyImage.getImage(controller: self)
+        let isDark = traitCollection.userInterfaceStyle == .dark
+        imageView.layer.borderWidth = 2
+        imageView.layer.borderColor = isDark ? UIColor.white.cgColor : UIColor.black.cgColor
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = imageView.bounds.width / 2
         
         updateTheme()
     }
