@@ -9,18 +9,30 @@ import Foundation
 
 // swiftlint:disable function_parameter_count identifier_name line_length type_body_length
 internal enum R {
+  /// About:
+  internal static let aboutProfile = R.tr("Localizable", "about_profile", fallback: "About:")
   /// Question
   internal static let addQuestionButton = R.tr("Localizable", "add_question_button", fallback: "Question")
   /// Angel Numbers
   internal static let angelsMenu = R.tr("Localizable", "angelsMenu", fallback: "Angel Numbers")
   /// Angel
   internal static let angelsTab = R.tr("Localizable", "angelsTab", fallback: "Angel")
+  /// Aquarius
+  internal static let aquariusText = R.tr("Localizable", "aquarius_text", fallback: "Aquarius")
+  /// Aries
+  internal static let ariesText = R.tr("Localizable", "aries_text", fallback: "Aries")
+  /// Birthday:
+  internal static let bithProfile = R.tr("Localizable", "bith_profile", fallback: "Birthday:")
   /// Map of the day
   internal static let buttomMapOfDay = R.tr("Localizable", "buttomMapOfDay", fallback: "Map of the day")
   /// Make Tarot
   internal static let buttonTarotMake = R.tr("Localizable", "buttonTarotMake", fallback: "Make Tarot")
   /// Write Tarot
   internal static let buttonTarotWrite = R.tr("Localizable", "buttonTarotWrite", fallback: "Write Tarot")
+  /// Cancer
+  internal static let cancerText = R.tr("Localizable", "cancer_text", fallback: "Cancer")
+  /// Capricorn
+  internal static let capricornText = R.tr("Localizable", "capricorn_text", fallback: "Capricorn")
   /// Buy a cards
   internal static let cardsButton = R.tr("Localizable", "cards_button", fallback: "Buy a cards")
   /// Cards of Day
@@ -37,6 +49,8 @@ internal enum R {
   internal static let dark = R.tr("Localizable", "dark", fallback: "Dark")
   /// Description
   internal static let descriptionMenu = R.tr("Localizable", "descriptionMenu", fallback: "Description")
+  /// Edit
+  internal static let editNavButton = R.tr("Localizable", "edit_nav_button", fallback: "Edit")
   /// English
   internal static let english = R.tr("Localizable", "english", fallback: "English")
   /// Figure Cards
@@ -45,6 +59,10 @@ internal enum R {
   internal static let financialSpread = R.tr("Localizable", "financialSpread", fallback: "Full bowl (layout for finance)")
   /// Tarot
   internal static let financialSpreadTitle = R.tr("Localizable", "financialSpread_title", fallback: "Financial Spread")
+  /// First Name:
+  internal static let firstnameProfile = R.tr("Localizable", "firstname_profile", fallback: "First Name:")
+  /// Gemini
+  internal static let geminiText = R.tr("Localizable", "gemini_text", fallback: "Gemini")
   /// Alignment for health
   internal static let healthySpread = R.tr("Localizable", "healthySpread", fallback: "Alignment for health")
   /// Healthy Spread
@@ -61,6 +79,12 @@ internal enum R {
   internal static let homeButton = R.tr("Localizable", "home_button", fallback: "Home")
   /// Settings
   internal static let language = R.tr("Localizable", "language", fallback: "Language")
+  /// Last Name:
+  internal static let lastnameProfile = R.tr("Localizable", "lastname_profile", fallback: "Last Name:")
+  /// Leo
+  internal static let leoText = R.tr("Localizable", "leo_text", fallback: "Leo")
+  /// Libra
+  internal static let libraText = R.tr("Localizable", "libra_text", fallback: "Libra")
   /// Light
   internal static let light = R.tr("Localizable", "light", fallback: "Light")
   /// Station for two(layout for love)
@@ -90,12 +114,20 @@ internal enum R {
   internal static let personalGrowthSpread = R.tr("Localizable", "personalGrowthSpread", fallback: "Path (personal growth)")
   /// Personal Growth Spread
   internal static let personalGrowthSpreadTitle = R.tr("Localizable", "personalGrowthSpread_title", fallback: "Personal Growth Spread")
+  /// Pisces
+  internal static let piscesText = R.tr("Localizable", "pisces_text", fallback: "Pisces")
   /// Preservation
   internal static let preservationMenu = R.tr("Localizable", "preservationMenu", fallback: "Preservation")
   /// Profile
   internal static let profileMenu = R.tr("Localizable", "profileMenu", fallback: "Profile")
   /// Russian
   internal static let russian = R.tr("Localizable", "russian", fallback: "Russian")
+  /// Sagittarius
+  internal static let sagittariusText = R.tr("Localizable", "sagittarius_text", fallback: "Sagittarius")
+  /// Save
+  internal static let saveNavButton = R.tr("Localizable", "save_nav_button", fallback: "Save")
+  /// Scorpio
+  internal static let scorpioText = R.tr("Localizable", "scorpio_text", fallback: "Scorpio")
   /// Settings
   internal static let settingsMenu = R.tr("Localizable", "settingsMenu", fallback: "Settings")
   /// Celtic cross(analysis of a specific situation)
@@ -106,12 +138,16 @@ internal enum R {
   internal static let tarotSpreadsMenu = R.tr("Localizable", "tarotSpreadsMenu", fallback: "Tarot Spreads")
   /// Tarot
   internal static let tarotTab = R.tr("Localizable", "tarotTab", fallback: "Tarot")
+  /// Taurus
+  internal static let taurusText = R.tr("Localizable", "taurus_text", fallback: "Taurus")
   /// Themes
   internal static let theme = R.tr("Localizable", "theme", fallback: "Themes")
   /// Video
   internal static let videoMenu = R.tr("Localizable", "videoMenu", fallback: "Video")
   /// Video
   internal static let videoTab = R.tr("Localizable", "videoTab", fallback: "Video")
+  /// Virgo
+  internal static let virgoText = R.tr("Localizable", "virgo_text", fallback: "Virgo")
 }
 // swiftlint:enable function_parameter_count identifier_name line_length type_body_length
 

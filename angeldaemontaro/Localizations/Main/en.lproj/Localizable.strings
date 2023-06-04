@@ -85,3 +85,25 @@
 "highprietess_description" = "Hello dear friend. I am glad to welcome you. My name is Anastasiya, I am a tarot reader and I can be happy to help solve your problem or answer your questions, as well as calm your emotional state, bringing in the missing clarity and finding ways to solve an existing problem.";
 "highprietess_consultation_button" = "Buy consultation";
 "highprietess_site_button" = "Visit to site";
+
+//Zodiak
+"aries_text" = "Aries";
+"taurus_text" = "Taurus";
+"gemini_text" = "Gemini";
+"cancer_text" = "Cancer";
+"leo_text" = "Leo";
+"virgo_text" = "Virgo";
+"libra_text" = "Libra";
+"scorpio_text" = "Scorpio";
+"sagittarius_text" = "Sagittarius";
+"capricorn_text" = "Capricorn";
+"aquarius_text" = "Aquarius";
+"pisces_text" = "Pisces";
+
+//Profile
+"edit_nav_button" = "Edit";
+"save_nav_button" = "Save";
+"firstname_profile" = "First Name:";
+"lastname_profile" = "Last Name:";
+"bith_profile" = "Birthday:";
+"about_profile" = "About:";

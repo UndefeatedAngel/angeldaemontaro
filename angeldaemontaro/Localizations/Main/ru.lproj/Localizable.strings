@@ -83,3 +83,25 @@
 "highprietess_description" = "Здравствуй дорогой пользователь. Я вас рада приветствовать. Меня зовут Анастасия, я таролог и с удовольствием могу помочь решить вашу проблему или ответить на интересующие вас вопросы, а также успокоить ваше эмоциональное состояние, внося недостающую ясность и найти направления решения существующей проблемы.";
 "highprietess_consultation_button" = "Купить консультацию";
 "highprietess_site_button" = "Посетить сайт";
+
+//Zodiak
+"aries_text" = "Овен";
+"taurus_text" = "Телец";
+"gemini_text" = "Близнецы";
+"cancer_text" = "Рак";
+"leo_text" = "Лев";
+"virgo_text" = "Дева";
+"libra_text" = "Весы";
+"scorpio_text" = "Скорпион";
+"sagittarius_text" = "Стрелец";
+"capricorn_text" = "Козерог";
+"aquarius_text" = "Водолей";
+"pisces_text" = "Рыбы";
+
+//Profile
+"edit_nav_button" = "Ред.";
+"save_nav_button" = "Сохр.";
+"firstname_profile" = "Имя:";
+"lastname_profile" = "Фамилия:";
+"bith_profile" = "Дата рождения:";
+"about_profile" = "О себе:";

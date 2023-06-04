@@ -13,6 +13,7 @@
 		C606AA982A0ABBCD00120E23 /* SoundsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606AA942A0ABBCD00120E23 /* SoundsModel.swift */; };
 		C606AA992A0ABBCD00120E23 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606AA952A0ABBCD00120E23 /* ThemeModel.swift */; };
 		C606AA9D2A0AC98000120E23 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606AA9C2A0AC98000120E23 /* LanguageModel.swift */; };
+		C61DFC4D2A2CC51F00F2AAB8 /* Zodiak.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61DFC4C2A2CC51F00F2AAB8 /* Zodiak.swift */; };
 		C620CCAD29F00E89007555B9 /* UIViewController+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C620CCAC29F00E89007555B9 /* UIViewController+Theme.swift */; };
 		C6220E1329EFD2C300EAA3BC /* promo.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C6220E1229EFD2C300EAA3BC /* promo.MOV */; };
 		C6220E1529EFD60400EAA3BC /* UIViewController+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6220E1429EFD60400EAA3BC /* UIViewController+Video.swift */; };
@@ -241,6 +242,7 @@
 		C606AA942A0ABBCD00120E23 /* SoundsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsModel.swift; sourceTree = "<group>"; };
 		C606AA952A0ABBCD00120E23 /* ThemeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
 		C606AA9C2A0AC98000120E23 /* LanguageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
+		C61DFC4C2A2CC51F00F2AAB8 /* Zodiak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zodiak.swift; sourceTree = "<group>"; };
 		C620CCAC29F00E89007555B9 /* UIViewController+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Theme.swift"; sourceTree = "<group>"; };
 		C6220E1229EFD2C300EAA3BC /* promo.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = promo.MOV; sourceTree = "<group>"; };
 		C6220E1429EFD60400EAA3BC /* UIViewController+Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Video.swift"; sourceTree = "<group>"; };
@@ -1162,6 +1164,7 @@
 				C6A152402A11333700816CA2 /* ProfileViewController.swift */,
 				C6609C652A18DF9900E3E26F /* EditProfileViewController.swift */,
 				C62BC5802A2C80C300D536B8 /* ProfileSave.swift */,
+				C61DFC4C2A2CC51F00F2AAB8 /* Zodiak.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1581,6 +1584,7 @@
 				C62BC56E2A2C709F00D536B8 /* IQToolbar.swift in Sources */,
 				C6220E1529EFD60400EAA3BC /* UIViewController+Video.swift in Sources */,
 				C62BC57D2A2C709F00D536B8 /* IQUIView+Hierarchy.swift in Sources */,
+				C61DFC4D2A2CC51F00F2AAB8 /* Zodiak.swift in Sources */,
 				C6FB5E2229ED738D00172CAE /* AppDelegate.swift in Sources */,
 				C6F2758C2A07E58F00507F4C /* AngelNumbersCollectionViewController.swift in Sources */,
 				C6B4185129FBE350000FB62A /* UIView+Copy.swift in Sources */,

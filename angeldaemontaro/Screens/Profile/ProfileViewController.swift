@@ -18,6 +18,9 @@ class ProfileViewController: UIViewController {
         didSet {
             photoImageView.clipsToBounds = true
             photoImageView.layer.cornerRadius = photoImageView.bounds.height / 2
+            photoImageView.layer.borderWidth = 3
+            photoImageView.layer.borderColor = traitCollection.userInterfaceStyle == .dark ?
+            UIColor.white.cgColor : UIColor.black.cgColor
         }
     }
     @IBOutlet weak var nameLabel: UILabel! {
@@ -32,7 +35,8 @@ class ProfileViewController: UIViewController {
     }
     @IBOutlet weak var aboutLabel: UILabel! {
         didSet {
-            aboutLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+            aboutLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+            aboutLabel.text = getLocale(key: "about_profile")
         }
     }
     @IBOutlet weak var aboutText: UILabel! {
@@ -62,7 +66,8 @@ class ProfileViewController: UIViewController {
         setupNavBackButton(complete: #selector(backClick))
         setupNavTitle(text: getLocale(key: "profileMenu"))
         
-        let editButton = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(editClick))
+        let editButton = UIBarButtonItem(title: getLocale(key: "edit_nav_button"),
+                                         style: .plain, target: self, action: #selector(editClick))
         self.navigationItem.rightBarButtonItems = [editButton]
         setup()
         updateTheme()
@@ -86,6 +91,18 @@ class ProfileViewController: UIViewController {
         formated.dateStyle = .medium
         formated.timeStyle = .none
         bithDayLabel.text = formated.string(from: ProfileSave.dateBith ?? Date())
+        
+        if let today = ProfileSave.dateBith {
+            let all = [Zodiac.aries, .taurus, .gemini, .cancer,
+                .leo, .virgo, .libra, .scorpio, .sagittarius, .capricorn, .aquarius, .pisces]
+            for sign in all {
+                if sign.getRange(now: today).contains(today) {
+                    zodiakLabel.text = getLocale(key: "\(sign.rawValue)_text")
+                    break
+                }
+            }
+        }
+        
         if let about = ProfileSave.about {
             aboutText.text = about
         }

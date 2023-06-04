@@ -13,6 +13,9 @@ class EditProfileViewController: UIViewController {
         didSet {
             photoImageView.clipsToBounds = true
             photoImageView.layer.cornerRadius = photoImageView.bounds.height / 2
+            photoImageView.layer.borderWidth = 3
+            photoImageView.layer.borderColor = traitCollection.userInterfaceStyle == .dark ?
+            UIColor.white.cgColor : UIColor.black.cgColor
         }
     }
     @IBOutlet weak var editPhotoButton: UIButton! {
@@ -21,12 +24,12 @@ class EditProfileViewController: UIViewController {
             editPhotoButton.setImage(Assets.Images.loadImageButton.image, for: .normal)
             editPhotoButton.clipsToBounds = true
             editPhotoButton.layer.cornerRadius = editPhotoButton.bounds.height / 2
-            editPhotoButton.backgroundColor = .white
         }
     }
     @IBOutlet weak var firstNameLabel: UILabel! {
         didSet {
             firstNameLabel.font = UIFont.systemFont(ofSize: 20)
+            firstNameLabel.text = getLocale(key: "firstname_profile")
         }
     }
     @IBOutlet weak var firstNameTextField: UITextField! {
@@ -37,6 +40,7 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var lastNameLabel: UILabel! {
         didSet {
             lastNameLabel.font = UIFont.systemFont(ofSize: 20)
+            lastNameLabel.text = getLocale(key: "lastname_profile")
         }
     }
     @IBOutlet weak var lastNameTextField: UITextField! {
@@ -47,6 +51,7 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var bithdayLabel: UILabel! {
         didSet {
             bithdayLabel.font = UIFont.systemFont(ofSize: 20)
+            bithdayLabel.text = getLocale(key: "bith_profile")
         }
     }
     @IBOutlet weak var bithdayTextField: UITextField! {
@@ -57,6 +62,7 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var aboutLabel: UILabel! {
         didSet {
             aboutLabel.font = UIFont.systemFont(ofSize: 20)
+            aboutLabel.text = getLocale(key: "about_profile")
         }
     }
     @IBOutlet weak var aboutTextView: UITextView! {
@@ -81,7 +87,8 @@ class EditProfileViewController: UIViewController {
         setupNavTitle(text: "Edit Profile")
         setupNavBackButton(complete: #selector(backClick))
         
-        let editButton = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveClick))
+        let editButton = UIBarButtonItem(title: getLocale(key: "save_nav_button"),
+                                         style: .plain, target: self, action: #selector(saveClick))
         self.navigationItem.rightBarButtonItems = [editButton]
         
         updateTheme()
@@ -177,6 +184,8 @@ class EditProfileViewController: UIViewController {
         aboutLabel.textColor = colorWhite
         aboutTextView.backgroundColor = colorDark
         aboutTextView.textColor = colorWhite
+        
+        editPhotoButton.backgroundColor = colorDark
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
