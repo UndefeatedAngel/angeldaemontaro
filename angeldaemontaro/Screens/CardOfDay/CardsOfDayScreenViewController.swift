@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import AVKit
 
 class CardsOfDayScreenViewController: UIViewController {
     @IBOutlet weak var highPriestessButton: UIButton!
     @IBOutlet weak var profileButton: UIButton!
     
     @IBOutlet weak var cardImageView: UIImageView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     let nftCards = NFTCardsModel()
     var numberSection = 0
@@ -27,10 +29,13 @@ class CardsOfDayScreenViewController: UIViewController {
         updateTheme()
         
         setupNavBar()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setupNavTitle(text: getLocale(key: "cardsOfDayMenu"))
+        collectionView.reloadData()
     }
     
     private func setupCard() {

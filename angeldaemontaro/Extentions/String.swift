@@ -21,7 +21,7 @@ extension String {
     }
     
     func getImageLocale(controller: UIViewController) -> UIImage? {
-        let imageName = "\(self )_\(controller.getLangKey())"
+        let imageName = "\(self )_\(Settings.language)"
         return UIImage(named: imageName)
     }
     

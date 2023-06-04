@@ -10,6 +10,7 @@ import UIKit
 extension UIViewController {
     
     func setupNavBackButton(complete: Selector) {
+        
         let button = UIBarButtonItem(image: Assets.Images.back.image, style: .plain, target: self, action: complete)
         self.navigationItem.leftBarButtonItems = [button]
     }
@@ -32,7 +33,6 @@ extension UIViewController {
         self.navigationItem.rightBarButtonItems?[0].image = Settings.isSounds
         ? Assets.Images.soundOn.image
         : Assets.Images.soundOff.image
-        AVPlayerManager.avPlayer?.isMuted = !Settings.isSounds
-        AVPlayerManager.audioPlayer?.volume = Settings.isSounds ? 1 : 0
+        AVPlayerManager.isSoundUpdate()
     }
 }

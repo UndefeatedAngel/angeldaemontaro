@@ -117,6 +117,7 @@
                     <navigationItem key="navigationItem" id="Zot-KP-zB9"/>
                     <connections>
                         <outlet property="cardImageView" destination="pde-G8-IzP" id="u6j-sB-D6K"/>
+                        <outlet property="collectionView" destination="ktG-0l-Lf1" id="YDg-pz-u3I"/>
                         <segue destination="Nfy-uh-DAy" kind="show" identifier="cardSegue" animates="NO" id="V22-pc-DlK"/>
                         <segue destination="zAn-2t-C8K" kind="show" identifier="nftDescriptionSegue" id="aSC-oy-BJW"/>
                     </connections>

@@ -81,6 +81,7 @@ class HighPriestessViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         AVPlayerManager.avPlayer = nil
+        AVPlayerManager.stopSpeak()
     }
     
     // MARK: Setup Video
@@ -92,6 +93,7 @@ class HighPriestessViewController: UIViewController {
             AVPlayerManager.avPlayer = avPlayer
             videoActivityIndicator.stopAnimating()
             AVPlayerManager.playVideo()
+            AVPlayerManager.playSpeak(text: getLocale(key: "highprietess_description"))
         }
     }
     
@@ -188,9 +190,12 @@ class HighPriestessViewController: UIViewController {
         
         if isPauseVideo {
             pauseButton.setImage(UIImage(), for: .normal)
-            avPlayer.play()
+            
+            AVPlayerManager.playVideo()
+            AVPlayerManager.playSpeak(text: "highprietess_description")
         } else {
             pauseButton.setImage(Assets.Images.playerPlay.image, for: .normal)
+            AVPlayerManager.pauseSpeak()
             avPlayer.pause()
         }
         

@@ -19,6 +19,7 @@ excluded:
 - .idea
 - build
 - angeldaemontaro/Helpers/
+- angeldaemontaro/Plugins/
 function_parameter_count:
   - 6
   - 8

@@ -19,6 +19,9 @@ internal enum StoryboardSegue {
     case cardSegue
     case nftDescriptionSegue
   }
+  internal enum Profile: String, SegueType {
+    case editProfileSegue
+  }
   internal enum Tarots: String, SegueType {
     case tarotDescriptionSegue
     case tarotSegue

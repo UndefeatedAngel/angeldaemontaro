@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Appearance.setup()
+        IQKeyboardManager.shared.enable = true
+        Bundle.setLanguage(lang: Settings.language)
         
         return true
     }

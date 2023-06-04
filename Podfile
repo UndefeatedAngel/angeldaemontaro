@@ -7,4 +7,5 @@ target 'angeldaemontaro' do
   pod 'SwiftLint'
   pod 'SwiftGen'
   pod 'YoutubePlayerView', '~> 1.2'
+  pod 'AvatarImagePicker', '~> 1.3'
 end

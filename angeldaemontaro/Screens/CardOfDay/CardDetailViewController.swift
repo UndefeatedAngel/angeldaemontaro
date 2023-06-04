@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFAudio
 
 class CardDetailViewController: UIViewController {
 
@@ -24,7 +25,7 @@ class CardDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupNavTitle(text: R.cardsOfDayMenu)
+        setupNavTitle(text: getLocale(key: "cardsOfDayMenu"))
         setCardOfDay()
         setupGestureTabBar()
         
@@ -51,7 +52,7 @@ class CardDetailViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             guard let self = self else { return }
-            self.cardImageView.image = self.getImage(langKey: self.getLangKey(), numberKey: self.numberCardsDay)
+            self.cardImageView.image = self.getImage(langKey: Settings.language, numberKey: self.numberCardsDay)
             self.animateCardDay { _ in
                 self.showDescriptionDay()
             }
@@ -62,6 +63,7 @@ class CardDetailViewController: UIViewController {
         super.viewDidDisappear(animated)
         
         AVPlayerManager.audioPlayer?.pause()
+        AVPlayerManager.stopSpeak()
     }
     
     func setCardOfDay() {
@@ -138,6 +140,11 @@ extension CardDetailViewController {
         let description = self.getLocaleFromTable(tableName: locale, key: key)
         self.descriptionTextView.text = description
         
-        playSound(name: card.sound)
+        if Settings.language == "ru" {
+            playSound(name: card.sound)
+        } else {
+            AVPlayerManager.playSpeak(text: description)
+        }
+        
     }
 }
