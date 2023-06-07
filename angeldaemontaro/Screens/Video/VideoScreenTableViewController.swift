@@ -9,11 +9,12 @@ import UIKit
 
 class VideoScreenTableViewController: UIViewController {
     let arrayVideo = [
-        "xMjWJxbCVxA",
-        "I9Nu_5vfNIk",
-        "Z6sZ1mdMwO0",
-        "aWEN4QjDIDw",
-        "xOECaMu4ZpA"
+        "abi_nhFXbJg",
+        "Isvg1-hdDn4",
+        "3DrwOzGMFfQ",
+        "ryYJehqnSl8",
+        "dsfBEmxl9XM",
+        "8WPMROJJMUw"
     ]
     @IBOutlet weak var tableView: UITableView!
     
