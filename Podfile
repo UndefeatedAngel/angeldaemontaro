@@ -8,4 +8,6 @@ target 'angeldaemontaro' do
   pod 'SwiftGen'
   pod 'YoutubePlayerView', '~> 1.2'
   pod 'AvatarImagePicker', '~> 1.3'
+  pod 'FirebaseAnalytics'
+  pod 'FirebaseStorage'
 end

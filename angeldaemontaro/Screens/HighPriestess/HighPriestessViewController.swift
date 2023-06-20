@@ -88,7 +88,7 @@ class HighPriestessViewController: UIViewController {
     private func setupVideo() {
         pauseButton.setImage(UIImage(), for: .normal)
         videoActivityIndicator.startAnimating()
-        if let avPlayer = attachVideo(name: "promo", extention: "MOV", view: videoPlayerView) {
+        if let avPlayer = attachVideo(name: "promo2", extention: "MOV", view: videoPlayerView) {
             avPlayer.volume = 1.0
             AVPlayerManager.avPlayer = avPlayer
             videoActivityIndicator.stopAnimating()

@@ -18,6 +18,7 @@ class NFTCardsModel {
         let description: String
         let locale: String
         let image: String
+        let status: String
     }
     
     let jsonPath = "configNFTCards"

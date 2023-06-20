@@ -6,16 +6,10 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class VideoScreenTableViewController: UIViewController {
-    let arrayVideo = [
-        "abi_nhFXbJg",
-        "Isvg1-hdDn4",
-        "3DrwOzGMFfQ",
-        "ryYJehqnSl8",
-        "dsfBEmxl9XM",
-        "8WPMROJJMUw"
-    ]
+    var arrayVideo: [String] = []
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -24,11 +18,39 @@ class VideoScreenTableViewController: UIViewController {
         setupGestureTabBar()
         
         updateTheme()
+        
+        loadFromServer()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = getLocale(key: "videoMenu")
+    }
+    
+    func loadFromServer() {
+        getFirebaseJson(jsonName: "configVideo.json") { [weak self] dataJson in
+            guard let self = self else { return }
+            do {
+                let content = try JSONDecoder().decode([VideoModel.VideoModelJson].self, from: dataJson)
+                self.setupVideo(content: content)
+            } catch {
+                self.setupVideoError()
+            }
+        } error: {
+            self.setupVideoError()
+        }
+    }
+    
+    func setupVideo(content: [VideoModel.VideoModelJson]) {
+        for item in content {
+            arrayVideo.append(item.link)
+        }
+        tableView.reloadData()
+    }
+    
+    func setupVideoError() {
+//        guard let content = VideoModel().content else { return }
+//        setupVideo(content: content)
     }
 }
 

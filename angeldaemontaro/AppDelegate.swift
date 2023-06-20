@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Appearance.setup()
         IQKeyboardManager.shared.enable = true
         Bundle.setLanguage(lang: Settings.language)
+        FirebaseApp.configure()
         
         return true
     }

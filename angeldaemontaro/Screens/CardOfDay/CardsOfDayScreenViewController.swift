@@ -15,7 +15,7 @@ class CardsOfDayScreenViewController: UIViewController {
     @IBOutlet weak var cardImageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let nftCards = NFTCardsModel()
+    var nftCards = NFTCardsModel()
     var numberSection = 0
     var numberRow = 0
     
@@ -30,6 +30,8 @@ class CardsOfDayScreenViewController: UIViewController {
         
         setupNavBar()
         
+        nftCards.content?.removeAll()
+        loadFromServer()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -100,6 +102,27 @@ class CardsOfDayScreenViewController: UIViewController {
         super.traitCollectionDidChange(previousTraitCollection)
         
         updateTheme()
+    }
+    
+    func loadFromServer() {
+        getFirebaseJson(jsonName: "configNFTCards.json") { [weak self] dataJson in
+            guard let self = self else { return }
+            do {
+                self.nftCards.content = try JSONDecoder().decode([NFTCardsModel.NFTSpreadJson].self, from: dataJson)
+                self.collectionView.reloadData()
+            } catch {
+                self.errorCreateNFTModel()
+            }
+            
+        } error: { [weak self] in
+            self?.errorCreateNFTModel()
+        }
+
+    }
+    
+    func errorCreateNFTModel() {
+//        nftCards = NFTCardsModel()
+//        collectionView.reloadData()
     }
     
     // MARK: - Navigation
