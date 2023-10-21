@@ -105,3 +105,10 @@
 "lastname_profile" = "Фамилия:";
 "bith_profile" = "Дата рождения:";
 "about_profile" = "О себе:";
+
+//RewardAlert
+"reward_alert_title" = "Закончились бесплатные попытки";
+"reward_alert_description" = "Хотите получить еще %d попытки? Необходимо посмотреть рекламу";
+"reward_alert_notfound" = "Реклама недоступна, попробуйте позже";
+"reward_alert_btn_ok" = "Смотреть";
+"reward_alert_btn_no" = "Нет, спасибо";

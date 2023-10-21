@@ -120,6 +120,18 @@ internal enum R {
   internal static let preservationMenu = R.tr("Localizable", "preservationMenu", fallback: "Preservation")
   /// Profile
   internal static let profileMenu = R.tr("Localizable", "profileMenu", fallback: "Profile")
+  /// No, thanks
+  internal static let rewardAlertBtnNo = R.tr("Localizable", "reward_alert_btn_no", fallback: "No, thanks")
+  /// Reward
+  internal static let rewardAlertBtnOk = R.tr("Localizable", "reward_alert_btn_ok", fallback: "Reward")
+  /// Do you want to get %d more attempts? Must watch advertisement
+  internal static func rewardAlertDescription(_ p1: Int) -> String {
+    return R.tr("Localizable", "reward_alert_description", p1, fallback: "Do you want to get %d more attempts? Must watch advertisement")
+  }
+  /// Advertising is not available, try again later
+  internal static let rewardAlertNotfound = R.tr("Localizable", "reward_alert_notfound", fallback: "Advertising is not available, try again later")
+  /// Free attempts are over
+  internal static let rewardAlertTitle = R.tr("Localizable", "reward_alert_title", fallback: "Free attempts are over")
   /// Russian
   internal static let russian = R.tr("Localizable", "russian", fallback: "Russian")
   /// Sagittarius

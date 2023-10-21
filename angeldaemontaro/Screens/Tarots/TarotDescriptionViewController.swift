@@ -46,6 +46,14 @@ class TarotDescriptionViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.backItem?.title = ""
+        
+        
+        let maxCount = 2
+        AdsData.intertitialCount += 1
+        if AdsData.intertitialCount > maxCount {
+            AdsManager.shared.showInterstitial(self)
+            AdsData.intertitialCount = 0
+        }
     }
     
     func createDescription() {

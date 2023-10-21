@@ -10,4 +10,5 @@ target 'angeldaemontaro' do
   pod 'AvatarImagePicker', '~> 1.3'
   pod 'FirebaseAnalytics'
   pod 'FirebaseStorage'
+  pod 'Google-Mobile-Ads-SDK'
 end

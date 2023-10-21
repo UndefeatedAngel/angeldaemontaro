@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mi5-IQ-iDB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mi5-IQ-iDB">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -82,15 +82,24 @@
                                         <subviews>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt" translatesAutoresizingMaskIntoConstraints="NO" id="pde-G8-IzP">
                                                 <rect key="frame" x="95" y="149.66666666666669" width="200" height="300"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="TFS-tL-hsQ"/>
                                                     <constraint firstAttribute="width" constant="200" id="clA-5V-oaz"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qeu-ll-N3J">
+                                                <rect key="frame" x="254.66666666666666" y="189.66666666666669" width="20.333333333333343" height="33.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="pde-G8-IzP" firstAttribute="centerY" secondItem="76x-Iv-2LC" secondAttribute="centerY" id="7wg-pi-bAk"/>
+                                            <constraint firstItem="Qeu-ll-N3J" firstAttribute="top" secondItem="pde-G8-IzP" secondAttribute="top" constant="40" id="ZHa-Jj-Oxi"/>
+                                            <constraint firstItem="Qeu-ll-N3J" firstAttribute="trailing" secondItem="pde-G8-IzP" secondAttribute="trailing" constant="-20" id="amJ-uf-tNy"/>
                                             <constraint firstItem="pde-G8-IzP" firstAttribute="centerX" secondItem="76x-Iv-2LC" secondAttribute="centerX" id="hqr-49-0Ot"/>
                                         </constraints>
                                     </view>
@@ -116,6 +125,7 @@
                     <tabBarItem key="tabBarItem" title="Main" image="mainTabBar" selectedImage="mainTabBar" id="Zrf-N7-pJB"/>
                     <navigationItem key="navigationItem" id="Zot-KP-zB9"/>
                     <connections>
+                        <outlet property="adsText" destination="Qeu-ll-N3J" id="ruV-DI-TZ4"/>
                         <outlet property="cardImageView" destination="pde-G8-IzP" id="u6j-sB-D6K"/>
                         <outlet property="collectionView" destination="ktG-0l-Lf1" id="YDg-pz-u3I"/>
                         <segue destination="Nfy-uh-DAy" kind="show" identifier="cardSegue" animates="NO" id="V22-pc-DlK"/>

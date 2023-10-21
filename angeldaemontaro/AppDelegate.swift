@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import FirebaseCore
+import GoogleMobileAds
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         Bundle.setLanguage(lang: Settings.language)
         FirebaseApp.configure()
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         
         return true
     }

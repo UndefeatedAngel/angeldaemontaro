@@ -1,5 +1,6 @@
 [
   {
+    "key": "financial_spread",
     "title": "financialSpread_title",
     "image":"01finance",
     "storyboard": "FinansialStoryboard",
@@ -9,6 +10,7 @@
     "save": "finansialSave"
   },
   {
+    "key": "on_every_day_spread",
     "title": "onEveryDaySpread_title",
     "image":"02everyday",
     "storyboard": "OnEveryDayStoryboard",
@@ -18,6 +20,7 @@
     "save": "onEveryDaySave"
   },
   {
+    "key": "lovely_spread",
     "title": "lovelySpread_title",
     "image":"03lovely",
     "storyboard": "LovelyStoryboard",
@@ -27,6 +30,7 @@
     "save": "lovelySave"
   },
   {
+    "key": "choise_spread",
     "title": "choiseSpread_title",
     "image":"04choise",
     "storyboard": "ChoiseStoryboard",
@@ -36,6 +40,7 @@
     "save": "choiseSave"
   },
   {
+    "key": "healthy_spread",
     "title": "healthySpread_title",
     "image":"05health",
     "storyboard": "HealthyStoryboard",
@@ -45,6 +50,7 @@
     "save": "healthySave"
   },
   {
+    "key": "personal_growth_spread",
     "title": "personalGrowthSpread_title",
     "image":"06personalgrowth",
     "storyboard": "PersonalGrowthStoryboard",
@@ -54,6 +60,7 @@
     "save": "personalGrowthSave"
   },
   {
+    "key": "celtic_cross_spread",
     "title": "celticCrossSpread_title",
     "image":"07situation",
     "storyboard": "СelticCrossStoryboard",

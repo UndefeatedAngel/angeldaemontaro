@@ -9,10 +9,14 @@ import UIKit
 import AVKit
 
 class CardsOfDayScreenViewController: UIViewController {
+    let maxCount = 3
+    let keySave = "cardofday"
+    
     @IBOutlet weak var highPriestessButton: UIButton!
     @IBOutlet weak var profileButton: UIButton!
     
     @IBOutlet weak var cardImageView: UIImageView!
+    @IBOutlet weak var adsText: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var nftCards = NFTCardsModel()
@@ -32,6 +36,10 @@ class CardsOfDayScreenViewController: UIViewController {
         
         nftCards.content?.removeAll()
         loadFromServer()
+
+        AdsManager.shared.loadRewarded()
+        
+        setAdsText()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -85,7 +93,17 @@ class CardsOfDayScreenViewController: UIViewController {
     
     @objc
     private func cardImageViewClick(sender: UITapGestureRecognizer) {
-        self.performSegue(withIdentifier: StoryboardSegue.CardOfDay.cardSegue.rawValue, sender: self)
+        let current = AdsData.getRewardType(type: keySave)
+        
+        if current < maxCount {
+            self.performSegue(withIdentifier: StoryboardSegue.CardOfDay.cardSegue.rawValue, sender: self)
+            AdsData.setRewardType(type: keySave, count: current + 1)
+            setAdsText()
+        } else {
+            AdsManager.shared.showReward(self, count: maxCount, key: keySave) { [weak self] in
+                self?.setAdsText()
+            }
+        }
     }
     
     private func updateTheme() {
@@ -184,5 +202,16 @@ extension CardsOfDayScreenViewController: UICollectionViewDelegate, UICollection
         let imageName = nftCards.content?[numberSection].cards[numberKey].image ?? ""
         let keyImage = "\(imageName)NFT"
         return keyImage.getImage(controller: self)
+    }
+    
+    func setAdsText() {
+        let current = AdsData.getRewardType(type: keySave)
+        if maxCount - current < 1 {
+            adsText.text = "ADS"
+            cardImageView.alpha = 0.5
+        } else {
+            adsText.text = "\(maxCount - current)"
+            cardImageView.alpha = 1
+        }
     }
 }

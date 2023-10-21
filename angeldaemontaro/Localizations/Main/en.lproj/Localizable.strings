@@ -107,3 +107,10 @@
 "lastname_profile" = "Last Name:";
 "bith_profile" = "Birthday:";
 "about_profile" = "About:";
+
+//RewardAlert
+"reward_alert_title" = "Free attempts are over";
+"reward_alert_description" = "Do you want to get %d more attempts? Must watch advertisement";
+"reward_alert_notfound" = "Advertising is not available, try again later";
+"reward_alert_btn_ok" = "Reward";
+"reward_alert_btn_no" = "No, thanks";

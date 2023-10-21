@@ -9,6 +9,7 @@ import UIKit
 
 class TarotSpreadModel {
     struct TarotSpreadJson: Decodable {
+        let key: String
         let title: String
         let image: String
         let storyboard: String

@@ -115,7 +115,8 @@ extension CardDetailViewController {
         let originalTransform = cardImageView.transform
         let scaledTransform = originalTransform.scaledBy(x: 1.05, y: 1.05)
         let scaledAndTranslatedTransform =
-            scaledTransform.translatedBy(x: 0.0, y: -screenHeight + cardImageView.bounds.height / 2)
+        scaledTransform.translatedBy(x: 0.0,
+                                     y: -screenHeight + (cardImageView.bounds.height * 1.05) / 2 + UIViewController.sizeBanner)
         UIView.transition(
             with: cardImageView,
             duration: 1.0,

@@ -8,6 +8,7 @@
 import UIKit
 
 class TarotSpreadsCollectionViewController: UIViewController {
+    let maxCount = 1
     
     let segue = "tarotSegue"
     let tarotSpreads = TarotSpreadModel()
@@ -42,8 +43,18 @@ extension TarotSpreadsCollectionViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedIndex = indexPath.row
+        guard let tarot = tarotSpreads.contents?[selectedIndex] else { return }
         
-        performSegue(withIdentifier: segue, sender: self)
+        let count = AdsData.getRewardType(type: tarot.key)
+        if count >= maxCount {
+            AdsManager.shared.showReward(self, count: maxCount, key: tarot.key) {[weak self] in
+                self?.collectionView.reloadData()
+            }
+        } else {
+            AdsData.setRewardType(type: tarot.key, count: count + 1)
+            performSegue(withIdentifier: segue, sender: self)
+        }
+        
     }
 }
 
@@ -67,9 +78,18 @@ extension TarotSpreadsCollectionViewController: UICollectionViewDataSource {
             
             cell.contentView.clipsToBounds = true
             cell.contentView.layer.cornerRadius = 10
+            
+            cell.countView.clipsToBounds = true
+            cell.countView.layer.cornerRadius = 10
+            cell.countView.backgroundColor = .red
+            let count = maxCount - AdsData.getRewardType(type: tarot.key)
+            cell.textCountView.text = "\(count)"
 
             let isDark = traitCollection.userInterfaceStyle == .dark
             cell.labelView.textColor = isDark ? .white : .black
+            
+            cell.contentView.alpha = count < 1 ? 0.5 : 1
+            
             return cell
         }
         
