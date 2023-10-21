@@ -10,10 +10,11 @@ import UIKit
 class AngelNumbersCardsDayModel {
     struct AngelNumbersSpreadJson: Decodable {
         let title: String
-        let cards: [AngelNumbersCardsJson]
+        var cards: [AngelNumbersCardsJson]
     }
     
     struct AngelNumbersCardsJson: Decodable {
+        let key: String
         let description: String
         let locale: String
         let image: String

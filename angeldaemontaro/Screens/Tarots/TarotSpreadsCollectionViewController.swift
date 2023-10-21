@@ -8,7 +8,7 @@
 import UIKit
 
 class TarotSpreadsCollectionViewController: UIViewController {
-    let maxCount = 1
+    let maxCount = 10
     
     let segue = "tarotSegue"
     let tarotSpreads = TarotSpreadModel()
@@ -26,6 +26,8 @@ class TarotSpreadsCollectionViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationItem.title = getLocale(key: "tarotSpreadsMenu")
         collectionView.reloadData()
+        
+        AdsManager.shared.loadRewarded()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

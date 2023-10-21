@@ -19,6 +19,7 @@
 		C6220E1529EFD60400EAA3BC /* UIViewController+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6220E1429EFD60400EAA3BC /* UIViewController+Video.swift */; };
 		C6220E1729EFDAA300EAA3BC /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6220E1629EFDAA300EAA3BC /* UIViewController+Navigation.swift */; };
 		C6220E1A29EFFB6600EAA3BC /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6220E1929EFFB6600EAA3BC /* Appearance.swift */; };
+		C629F56B2AE444DF009C9FED /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C629F5692AE444DF009C9FED /* NativeAdView.xib */; };
 		C62BC5692A2C709F00D536B8 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62BC54E2A2C709F00D536B8 /* IQTextView.swift */; };
 		C62BC56A2A2C709F00D536B8 /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62BC54F2A2C709F00D536B8 /* IQKeyboardManager+Internal.swift */; };
 		C62BC56B2A2C709F00D536B8 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62BC5512A2C709F00D536B8 /* IQPreviousNextView.swift */; };
@@ -257,6 +258,7 @@
 		C6220E1429EFD60400EAA3BC /* UIViewController+Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Video.swift"; sourceTree = "<group>"; };
 		C6220E1629EFDAA300EAA3BC /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		C6220E1929EFFB6600EAA3BC /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		C629F5692AE444DF009C9FED /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
 		C62BC50C2A2C700F00D536B8 /* IQTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
 		C62BC50D2A2C700F00D536B8 /* IQTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
 		C62BC50F2A2C700F00D536B8 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
@@ -570,6 +572,14 @@
 				C6D20E632ADFC3D000D9908A /* AdsData.swift */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		C629F5682AE444DF009C9FED /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				C629F5692AE444DF009C9FED /* NativeAdView.xib */,
+			);
+			path = Native;
 			sourceTree = "<group>";
 		};
 		C62BC4AD2A2C6F1600D536B8 /* Plugins */ = {
@@ -1114,6 +1124,7 @@
 		C6FB5F3629EEB07800172CAE /* Angels */ = {
 			isa = PBXGroup;
 			children = (
+				C629F5682AE444DF009C9FED /* Native */,
 				C6F275872A07E58F00507F4C /* AngelNumbersCollectionViewController.swift */,
 				C6F275882A07E58F00507F4C /* AngelNumbersCardModel.swift */,
 				C6F275892A07E58F00507F4C /* AngelNumbersDescriptionViewController.swift */,
@@ -1343,6 +1354,7 @@
 				C6FB5F2529ED749700172CAE /* fool.m4a in Resources */,
 				C6FB5F4E29EEBA9100172CAE /* CardOfDay.storyboard in Resources */,
 				C6FB5EFB29ED749700172CAE /* sixOfCups.m4a in Resources */,
+				C629F56B2AE444DF009C9FED /* NativeAdView.xib in Resources */,
 				C6FB5F2E29ED749700172CAE /* empressCard.m4a in Resources */,
 				C6FB5EF929ED749700172CAE /* twoOfCups.m4a in Resources */,
 				C6FB5F0B29ED749700172CAE /* aceOfPentacles.m4a in Resources */,

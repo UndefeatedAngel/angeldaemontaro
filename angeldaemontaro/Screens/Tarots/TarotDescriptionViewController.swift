@@ -6,8 +6,37 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class TarotDescriptionViewController: UIViewController {
+class TarotDescriptionViewController: UIViewController, GADNativeAdLoaderDelegate, GADNativeAdDelegate {
+    func adLoader(_ adLoader: GADAdLoader, didFailToReceiveAdWithError error: Error) {
+        
+    }
+    
+    func adLoader(_ adLoader: GADAdLoader, didReceive nativeAd: GADNativeAd) {
+        nativeAdList.append(nativeAd)
+    }
+
+    func adLoaderDidFinishLoading(_ adLoader: GADAdLoader) {
+        for index in 0..<nativeAdList.count {
+            let nativeAd = nativeAdList[index]
+            let view = AdsManager.shared.getNativeAdView(nativeAd: nativeAd, viewController: self)
+            guard let view = view  else { return }
+            let nativeView = nativeAdsViewList[index]
+            nativeView.addSubview(view)
+            view.translatesAutoresizingMaskIntoConstraints = false
+            view.leftAnchor.constraint(equalTo: nativeView.leftAnchor).isActive = true
+            view.topAnchor.constraint(equalTo: nativeView.topAnchor).isActive = true
+            view.rightAnchor.constraint(equalTo: nativeView.rightAnchor).isActive = true
+            view.bottomAnchor.constraint(equalTo: nativeView.bottomAnchor).isActive = true
+            nativeView.isHidden = false
+        }
+        stackView.layoutIfNeeded()
+    }
+    
+    var nativeAdList: [GADNativeAd] = []
+    var nativeAdsViewList: [UIView] = []
+    
     private let keyMapOfDay = "buttomMapOfDay"
     private let keyMapOfDaySave = "cardOfDaySave"
     
@@ -21,6 +50,7 @@ class TarotDescriptionViewController: UIViewController {
     @IBOutlet weak var space2: UIView!
     @IBOutlet weak var desciptionLabel: UILabel!
     @IBOutlet weak var space3: UIView!
+    @IBOutlet weak var nativeAds: UIView!
     @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
@@ -41,12 +71,14 @@ class TarotDescriptionViewController: UIViewController {
         setupNavTitle(text: getLocale(key: content?.title ?? ""))
         
         updateTheme()
+        
+        let model = getModelJsonFromSave(saveField: currentSave)
+        AdsManager.shared.loadNative(viewController: self, count: model.count)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.backItem?.title = ""
-        
         
         let maxCount = 2
         AdsData.intertitialCount += 1
@@ -103,6 +135,11 @@ class TarotDescriptionViewController: UIViewController {
         if let copySpace3 = space3.createCopy() {
             copySpace3.isHidden = false
             stackView.addArrangedSubview(copySpace3)
+        }
+        
+        if let nativeAds = nativeAds.createCopy() {
+            nativeAdsViewList.append(nativeAds)
+            stackView.addArrangedSubview(nativeAds)
         }
     }
     

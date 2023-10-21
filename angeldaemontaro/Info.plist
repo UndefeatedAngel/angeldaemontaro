@@ -26,6 +26,8 @@
 	<string>ca-app-pub-3940256099942544/3986624511</string>
 	<key>AdsKeyNativeProd</key>
 	<string></string>
+	<key>GADNativeAdValidatorEnabled</key>
+	<false/>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>
