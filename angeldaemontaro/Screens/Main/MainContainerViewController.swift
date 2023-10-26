@@ -33,6 +33,8 @@ class MainContainerViewController: UIViewController {
         bottomConstraint.constant = bannerView.frame.height + 10.0
         
         AdsManager.shared.showOpenAds(self)
+        
+        setUserId(id: UIDevice.current.identifierForVendor?.uuidString ?? "")
     }
     
     private func updateTheme() {

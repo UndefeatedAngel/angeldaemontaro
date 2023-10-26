@@ -43,6 +43,7 @@ class CardDetailViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        logScreen(screenName: "CardsOfDayDetail", screenClass: String(describing: self))
         
         if isFirst {
             AVPlayerManager.playAudio()

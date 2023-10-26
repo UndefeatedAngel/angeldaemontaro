@@ -247,10 +247,14 @@
                                                 </constraints>
                                             </view>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqv-cB-KBB" userLabel="NativeAds">
-                                                <rect key="frame" x="0.0" y="0.0" width="4684" height="500"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="4684" height="0.0"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYD-FH-h6I" userLabel="Space4">
+                                                <rect key="frame" x="0.0" y="0.0" width="4684" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="500" id="RJC-Jr-zr5"/>
+                                                    <constraint firstAttribute="height" constant="50" id="JnE-VH-dTR"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -287,6 +291,7 @@
                         <outlet property="space1" destination="mS0-o6-C1h" id="vS3-ry-zsb"/>
                         <outlet property="space2" destination="xro-Jw-9Fb" id="nyl-me-7CQ"/>
                         <outlet property="space3" destination="jJm-fw-EVZ" id="Ngb-BT-YsC"/>
+                        <outlet property="space4" destination="VYD-FH-h6I" id="AcS-Fy-4MD"/>
                         <outlet property="stackView" destination="tTI-VG-vd4" id="2mX-Nc-q9Y"/>
                         <outlet property="titleLabel" destination="200-me-Ahu" id="kiy-td-saU"/>
                     </connections>

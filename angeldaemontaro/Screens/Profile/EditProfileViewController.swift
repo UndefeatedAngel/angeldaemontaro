@@ -9,6 +9,10 @@ import UIKit
 import AvatarImagePicker
 
 class EditProfileViewController: UIViewController {
+    let borderWirthFields = 1.0
+    let cornerRadiusFields = 10.0
+    var toolbackPicker: UIToolbar?
+    
     @IBOutlet weak var photoImageView: UIImageView! {
         didSet {
             photoImageView.clipsToBounds = true
@@ -35,6 +39,9 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var firstNameTextField: UITextField! {
         didSet {
             firstNameTextField.font = UIFont.systemFont(ofSize: 20)
+            firstNameTextField.clipsToBounds = true
+            firstNameTextField.layer.cornerRadius = cornerRadiusFields
+            firstNameTextField.layer.borderWidth = borderWirthFields
         }
     }
     @IBOutlet weak var lastNameLabel: UILabel! {
@@ -46,6 +53,9 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var lastNameTextField: UITextField! {
         didSet {
             lastNameTextField.font = UIFont.systemFont(ofSize: 20)
+            lastNameTextField.clipsToBounds = true
+            lastNameTextField.layer.cornerRadius = cornerRadiusFields
+            lastNameTextField.layer.borderWidth = borderWirthFields
         }
     }
     @IBOutlet weak var bithdayLabel: UILabel! {
@@ -57,6 +67,9 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var bithdayTextField: UITextField! {
         didSet {
             bithdayTextField.font = UIFont.systemFont(ofSize: 20)
+            bithdayTextField.clipsToBounds = true
+            bithdayTextField.layer.cornerRadius = cornerRadiusFields
+            bithdayTextField.layer.borderWidth = borderWirthFields
         }
     }
     @IBOutlet weak var aboutLabel: UILabel! {
@@ -68,6 +81,9 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var aboutTextView: UITextView! {
         didSet {
             aboutTextView.font = UIFont.systemFont(ofSize: 20)
+            aboutTextView.clipsToBounds = true
+            aboutTextView.layer.cornerRadius = cornerRadiusFields
+            aboutTextView.layer.borderWidth = borderWirthFields
         }
     }
     
@@ -104,6 +120,11 @@ class EditProfileViewController: UIViewController {
         aboutTextView.delegate = self
         
         loadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logScreen(screenName: "EditProfile", screenClass: String(describing: self))
     }
     
     func loadData() {
@@ -175,17 +196,23 @@ class EditProfileViewController: UIViewController {
         navigationItem.leftBarButtonItems?[0].tintColor = colorWhite
         navigationItem.rightBarButtonItems?[0].tintColor = colorWhite
         
-        firstNameLabel.textColor = colorWhite
+        let colorLabel = colorWhite.withAlphaComponent(0.6)
+        firstNameLabel.textColor = colorLabel
         firstNameTextField.textColor = colorWhite
-        lastNameLabel.textColor = colorWhite
+        lastNameLabel.textColor = colorLabel
         lastNameTextField.textColor = colorWhite
-        bithdayLabel.textColor = colorWhite
+        bithdayLabel.textColor = colorLabel
         bithdayTextField.textColor = colorWhite
-        aboutLabel.textColor = colorWhite
+        aboutLabel.textColor = colorLabel
         aboutTextView.backgroundColor = colorDark
         aboutTextView.textColor = colorWhite
         
         editPhotoButton.backgroundColor = colorDark
+        firstNameTextField.tintColor = colorWhite
+        lastNameTextField.tintColor = colorWhite
+        bithdayTextField.tintColor = colorWhite
+        aboutTextView.tintColor = colorWhite
+        toolbackPicker?.tintColor = colorDark
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -202,7 +229,9 @@ class EditProfileViewController: UIViewController {
             // Fallback on earlier versions
         }
         
-        let toolbar = UIToolbar()
+        toolbackPicker = UIToolbar()
+        guard let toolbar = toolbackPicker else  { return }
+        
         toolbar.sizeToFit()
         toolbar.tintColor = .black
         

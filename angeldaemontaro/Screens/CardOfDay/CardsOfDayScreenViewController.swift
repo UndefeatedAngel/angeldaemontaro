@@ -42,6 +42,11 @@ class CardsOfDayScreenViewController: UIViewController {
         setAdsText()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logScreen(screenName: "CardsOfDay", screenClass: String(describing: self))
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavTitle(text: getLocale(key: "cardsOfDayMenu"))
@@ -131,7 +136,7 @@ class CardsOfDayScreenViewController: UIViewController {
             } catch {
                 self.errorCreateNFTModel()
             }
-            
+
         } error: { [weak self] in
             self?.errorCreateNFTModel()
         }
@@ -139,8 +144,8 @@ class CardsOfDayScreenViewController: UIViewController {
     }
     
     func errorCreateNFTModel() {
-//        nftCards = NFTCardsModel()
-//        collectionView.reloadData()
+        nftCards = NFTCardsModel()
+        collectionView.reloadData()
     }
     
     // MARK: - Navigation
@@ -168,6 +173,7 @@ extension CardsOfDayScreenViewController: UICollectionViewDelegate, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        numberSection = indexPath.section
         numberRow = indexPath.row
         performSegue(withIdentifier: nftSegue, sender: self)
     }

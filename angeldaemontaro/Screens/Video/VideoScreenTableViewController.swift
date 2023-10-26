@@ -22,6 +22,11 @@ class VideoScreenTableViewController: UIViewController {
         loadFromServer()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logScreen(screenName: "Video", screenClass: String(describing: self))
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = getLocale(key: "videoMenu")

@@ -50,6 +50,7 @@
 		C645061F2A0A7045004EDD62 /* NFTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645061A2A0A7045004EDD62 /* NFTCollectionViewCell.swift */; };
 		C64506232A0A7707004EDD62 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64506222A0A7707004EDD62 /* UIColor+Hex.swift */; };
 		C64506252A0A7BD4004EDD62 /* TabContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64506242A0A7BD4004EDD62 /* TabContainerViewController.swift */; };
+		C64F9B432AEA44430031926E /* UIVIewController+Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F9B422AEA44430031926E /* UIVIewController+Analytics.swift */; };
 		C6609C662A18DF9900E3E26F /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6609C652A18DF9900E3E26F /* EditProfileViewController.swift */; };
 		C693C8B92A08130700F414F8 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C693C8B82A08130700F414F8 /* VideoTableViewCell.swift */; };
 		C6A08DEE29F7D9ED004D1FCE /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A08DED29F7D9ED004D1FCE /* CardDetailViewController.swift */; };
@@ -318,6 +319,7 @@
 		C645061A2A0A7045004EDD62 /* NFTCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFTCollectionViewCell.swift; sourceTree = "<group>"; };
 		C64506222A0A7707004EDD62 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		C64506242A0A7BD4004EDD62 /* TabContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerViewController.swift; sourceTree = "<group>"; };
+		C64F9B422AEA44430031926E /* UIVIewController+Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Analytics.swift"; sourceTree = "<group>"; };
 		C6609C652A18DF9900E3E26F /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		C693C8B82A08130700F414F8 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		C6A08DED29F7D9ED004D1FCE /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
@@ -1124,7 +1126,6 @@
 		C6FB5F3629EEB07800172CAE /* Angels */ = {
 			isa = PBXGroup;
 			children = (
-				C629F5682AE444DF009C9FED /* Native */,
 				C6F275872A07E58F00507F4C /* AngelNumbersCollectionViewController.swift */,
 				C6F275882A07E58F00507F4C /* AngelNumbersCardModel.swift */,
 				C6F275892A07E58F00507F4C /* AngelNumbersDescriptionViewController.swift */,
@@ -1138,6 +1139,7 @@
 		C6FB5F3729EEB07F00172CAE /* Tarots */ = {
 			isa = PBXGroup;
 			children = (
+				C629F5682AE444DF009C9FED /* Native */,
 				C6B4181B29FBE10E000FB62A /* Types */,
 				C6B4181A29FBE10E000FB62A /* TarotDescriptionViewController.swift */,
 				C6B4182A29FBE10E000FB62A /* TarotContainerViewController.swift */,
@@ -1182,6 +1184,7 @@
 				C64506222A0A7707004EDD62 /* UIColor+Hex.swift */,
 				C6A750F82A41B886000259CA /* UIViewController+FirebaseStorage.swift */,
 				C6D20E5F2ADFAFA000D9908A /* UIViewController+Ads.swift */,
+				C64F9B422AEA44430031926E /* UIVIewController+Analytics.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -1644,6 +1647,7 @@
 				C6A08DEE29F7D9ED004D1FCE /* CardDetailViewController.swift in Sources */,
 				C6FB5F3D29EEB41500172CAE /* UIViewController+TabBar.swift in Sources */,
 				C6B4184D29FBE10E000FB62A /* TarotSpreadModel.swift in Sources */,
+				C64F9B432AEA44430031926E /* UIVIewController+Analytics.swift in Sources */,
 				C6B4184B29FBE10E000FB62A /* TarotSpreadsCollectionViewController.swift in Sources */,
 				C6D8A40A29F7D0A3007B1147 /* R.swift in Sources */,
 				C62BC57E2A2C709F00D536B8 /* IQNSArray+Sort.swift in Sources */,

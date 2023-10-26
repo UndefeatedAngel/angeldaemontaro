@@ -73,6 +73,11 @@ class HighPriestessViewController: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logScreen(screenName: "HighPriestess", screenClass: String(describing: self))
+    }
+    
     @objc
     func backClick() {
         self.dismiss(animated: true)

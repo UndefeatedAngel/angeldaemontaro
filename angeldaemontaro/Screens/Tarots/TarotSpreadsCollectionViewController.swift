@@ -22,6 +22,11 @@ class TarotSpreadsCollectionViewController: UIViewController {
         setupGestureTabBar()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logScreen(screenName: "Tarot", screenClass: String(describing: self))
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = getLocale(key: "tarotSpreadsMenu")

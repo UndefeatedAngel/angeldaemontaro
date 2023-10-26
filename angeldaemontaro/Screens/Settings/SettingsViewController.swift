@@ -36,6 +36,11 @@ class SettingsViewController: UIViewController {
         updateLanguage()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logScreen(screenName: "Settings", screenClass: String(describing: self))
+    }
+    
     @objc
     func backClick() {
         self.dismiss(animated: true)

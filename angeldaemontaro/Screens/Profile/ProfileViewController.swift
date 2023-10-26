@@ -35,7 +35,7 @@ class ProfileViewController: UIViewController {
     }
     @IBOutlet weak var aboutLabel: UILabel! {
         didSet {
-            aboutLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+            aboutLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
             aboutLabel.text = getLocale(key: "about_profile")
         }
     }
@@ -44,19 +44,30 @@ class ProfileViewController: UIViewController {
             aboutText.font = UIFont.systemFont(ofSize: 20, weight: .regular)
         }
     }
-    @IBOutlet weak var selfButton: UIButton! {
-        didSet {
-            
-        }
-    }
+    
     @IBOutlet weak var consultationButton: UIButton! {
         didSet {
+            consultationButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
+            consultationButton.clipsToBounds = true
+            consultationButton.layer.cornerRadius = 10
+            consultationButton.setTitle(getLocale(key: "highprietess_consultation_button"), for: .normal)
             
         }
     }
-    @IBOutlet weak var buyButton: UIButton! {
+    @IBOutlet weak var openSiteButton: UIButton! {
         didSet {
-            
+            openSiteButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
+            openSiteButton.clipsToBounds = true
+            openSiteButton.layer.cornerRadius = 10
+            openSiteButton.setTitle(getLocale(key: "highprietess_site_button"), for: .normal)
+        }
+    }
+    @IBOutlet weak var viewBackground: UIView!
+    
+    @IBOutlet weak var viewCorner: UIView! {
+        didSet {
+            viewCorner.clipsToBounds = true
+            viewCorner.layer.cornerRadius = 25
         }
     }
     
@@ -73,6 +84,11 @@ class ProfileViewController: UIViewController {
         updateTheme()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logScreen(screenName: "Profile", screenClass: String(describing: self))
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -85,7 +101,9 @@ class ProfileViewController: UIViewController {
         if let lastName = ProfileSave.lastName {
             nameText.append(" \(lastName)")
         }
-        nameLabel.text = nameText
+        if !nameText.elementsEqual("") {
+            setupNavTitle(text: nameText)
+        }
         
         let formated = DateFormatter()
         formated.dateStyle = .medium
@@ -95,11 +113,9 @@ class ProfileViewController: UIViewController {
         if let today = ProfileSave.dateBith {
             let all = [Zodiac.aries, .taurus, .gemini, .cancer,
                 .leo, .virgo, .libra, .scorpio, .sagittarius, .capricorn, .aquarius, .pisces]
-            for sign in all {
-                if sign.getRange(now: today).contains(today) {
-                    zodiakLabel.text = getLocale(key: "\(sign.rawValue)_text")
-                    break
-                }
+            for sign in all where sign.getRange(now: today).contains(today) {
+                zodiakLabel.text = getLocale(key: "\(sign.rawValue)_text")
+                break
             }
         }
         
@@ -123,7 +139,7 @@ class ProfileViewController: UIViewController {
         let isDark = traitCollection.userInterfaceStyle == .dark
         
         let colorWhite = isDark ? UIColor.white : UIColor.black
-//        let colorDark = isDark ? UIColor.black : UIColor.white
+        let colorDark = isDark ? UIColor.black : UIColor.white
         
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: colorWhite,
@@ -132,6 +148,20 @@ class ProfileViewController: UIViewController {
         
         navigationItem.leftBarButtonItems?[0].tintColor = colorWhite
         navigationItem.rightBarButtonItems?[0].tintColor = colorWhite
+        viewBackground.backgroundColor = colorDark
+        viewCorner.backgroundColor = colorDark
+        var color = colorWhite
+        color = color.withAlphaComponent(0.6)
+        bithDayLabel.textColor = color
+        aboutLabel.textColor = color
+        aboutText.textColor = colorWhite
+        consultationButton.backgroundColor = colorWhite
+        openSiteButton.backgroundColor = colorWhite
+        consultationButton.tintColor = colorWhite
+        openSiteButton.tintColor = colorWhite
+        
+        consultationButton.setTitleColor(colorDark, for: .normal)
+        openSiteButton.setTitleColor(colorDark, for: .normal)
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -143,12 +173,12 @@ class ProfileViewController: UIViewController {
     private func setup() {
         zodiakLabel.text = generateZodiak()
         photoImageView.image = Assets.Images.emptyProfile.image
-        let firstName = "Александр"
-        let lastName = "Лаптев"
+        let firstName = "First Name"
+        let lastName = "Last Name"
         nameLabel.text = "\(firstName) \(lastName)"
     }
     
     private func generateZodiak() -> String {
-        return "Овен"
+        return "Empty"
     }
 }

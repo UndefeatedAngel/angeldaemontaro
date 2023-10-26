@@ -47,6 +47,11 @@ class NFTDescriptionViewController: UIViewController {
         updateTheme()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logScreen(screenName: "NFTDetail", screenClass: String(describing: self))
+    }
+    
     @objc
     func onBuyClick() {
         

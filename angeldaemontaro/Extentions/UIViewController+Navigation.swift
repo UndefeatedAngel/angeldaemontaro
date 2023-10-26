@@ -17,6 +17,8 @@ extension UIViewController {
     
     func setupNavTitle(text: String) {
         self.navigationItem.title = text
+        let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)]
+        UINavigationBar.appearance().titleTextAttributes = attributes
     }
     
     func setupSoundsNav() {

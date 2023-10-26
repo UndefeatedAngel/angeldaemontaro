@@ -33,6 +33,11 @@ class AngelNumbersDescriptionViewController: UIViewController {
         updateTheme()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logScreen(screenName: "AngelDetail", screenClass: String(describing: self))
+    }
+    
     @IBAction func onCloseClick(_ sender: Any) {
         dismiss(animated: true)
     }

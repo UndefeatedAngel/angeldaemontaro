@@ -162,7 +162,7 @@ class AdsManager {
        }
     }
     
-    func getNativeAdView(nativeAd: GADNativeAd, viewController: GADNativeAdDelegate) -> GADNativeAdView? {
+    func getNativeAdView(nativeAd: GADNativeAd, viewController: GADNativeAdDelegate, textColor: UIColor) -> GADNativeAdView? {
         // Create and place ad in view hierarchy.
         let nibView = Bundle.main.loadNibNamed("NativeAdView", owner: nil, options: nil)?.first
         
@@ -173,6 +173,7 @@ class AdsManager {
         // Populate the native ad view with the native ad assets.
         // The headline and mediaContent are guaranteed to be present in every native ad.
         (nativeAdView.headlineView as? UILabel)?.text = nativeAd.headline
+        (nativeAdView.headlineView as? UILabel)?.textColor = textColor
         nativeAdView.mediaView?.mediaContent = nativeAd.mediaContent
 
         // This app uses a fixed width for the GADMediaView and changes its height to match the aspect
@@ -192,9 +193,16 @@ class AdsManager {
         // These assets are not guaranteed to be present. Check that they are before
         // showing or hiding them.
         (nativeAdView.bodyView as? UILabel)?.text = nativeAd.body
+        (nativeAdView.bodyView as? UILabel)?.textColor = textColor
         nativeAdView.bodyView?.isHidden = nativeAd.body == nil
 
-        (nativeAdView.callToActionView as? UIButton)?.setTitle(nativeAd.callToAction, for: .normal)
+        if let nativeCallButton = nativeAdView.callToActionView as? UIButton {
+            nativeCallButton.setTitle(nativeAd.callToAction, for: .normal)
+            nativeCallButton.setTitleColor(textColor, for: .normal)
+            nativeCallButton.clipsToBounds = true
+            nativeCallButton.layer.cornerRadius = 10
+        }
+        
         nativeAdView.callToActionView?.isHidden = nativeAd.callToAction == nil
 
         (nativeAdView.iconView as? UIImageView)?.image = nativeAd.icon?.image
@@ -204,12 +212,15 @@ class AdsManager {
         nativeAdView.starRatingView?.isHidden = nativeAd.starRating == nil
 
         (nativeAdView.storeView as? UILabel)?.text = nativeAd.store
+        (nativeAdView.storeView as? UILabel)?.textColor = textColor
         nativeAdView.storeView?.isHidden = nativeAd.store == nil
 
         (nativeAdView.priceView as? UILabel)?.text = nativeAd.price
+        (nativeAdView.priceView as? UILabel)?.textColor = textColor
         nativeAdView.priceView?.isHidden = nativeAd.price == nil
 
         (nativeAdView.advertiserView as? UILabel)?.text = nativeAd.advertiser
+        (nativeAdView.advertiserView as? UILabel)?.textColor = textColor
         nativeAdView.advertiserView?.isHidden = nativeAd.advertiser == nil
 
         // In order for the SDK to process touch events properly, user interaction should be disabled.
@@ -220,6 +231,20 @@ class AdsManager {
         // Note: this should always be done after populating the ad views.
         nativeAdView.nativeAd = nativeAd
         nativeAdView.mediaView?.contentMode = .scaleAspectFill
+        
+//        nativeAdView.mediaView?.isHidden = true
+//        nativeAdView.callToActionView?.isHidden = true
+//        nativeAdView.priceView?.isHidden = true
+        nativeAdView.advertiserView?.isHidden = true
+        nativeAdView.starRatingView?.isHidden = true
+//        nativeAdView.storeView?.isHidden = true
+        nativeAdView.backgroundColor = .clear
+        
+        if let stack = nativeAdView.subviews.first {
+            nativeAdView.frame.size.width = stack.frame.size.width
+            nativeAdView.frame.size.height = stack.frame.size.height
+        }
+     
         return nativeAdView
     }
 }

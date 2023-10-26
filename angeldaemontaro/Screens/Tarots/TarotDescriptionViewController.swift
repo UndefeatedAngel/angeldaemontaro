@@ -20,7 +20,10 @@ class TarotDescriptionViewController: UIViewController, GADNativeAdLoaderDelegat
     func adLoaderDidFinishLoading(_ adLoader: GADAdLoader) {
         for index in 0..<nativeAdList.count {
             let nativeAd = nativeAdList[index]
-            let view = AdsManager.shared.getNativeAdView(nativeAd: nativeAd, viewController: self)
+            let space4 = space4ViewList[index]
+            let isDark = traitCollection.userInterfaceStyle == .dark
+            let colorWhite = isDark ? UIColor.white : UIColor.black
+            let view = AdsManager.shared.getNativeAdView(nativeAd: nativeAd, viewController: self, textColor: colorWhite)
             guard let view = view  else { return }
             let nativeView = nativeAdsViewList[index]
             nativeView.addSubview(view)
@@ -30,12 +33,15 @@ class TarotDescriptionViewController: UIViewController, GADNativeAdLoaderDelegat
             view.rightAnchor.constraint(equalTo: nativeView.rightAnchor).isActive = true
             view.bottomAnchor.constraint(equalTo: nativeView.bottomAnchor).isActive = true
             nativeView.isHidden = false
+            space4.isHidden = false
         }
         stackView.layoutIfNeeded()
+        updateTheme()
     }
     
     var nativeAdList: [GADNativeAd] = []
     var nativeAdsViewList: [UIView] = []
+    var space4ViewList: [UIView] = []
     
     private let keyMapOfDay = "buttomMapOfDay"
     private let keyMapOfDaySave = "cardOfDaySave"
@@ -51,6 +57,7 @@ class TarotDescriptionViewController: UIViewController, GADNativeAdLoaderDelegat
     @IBOutlet weak var desciptionLabel: UILabel!
     @IBOutlet weak var space3: UIView!
     @IBOutlet weak var nativeAds: UIView!
+    @IBOutlet weak var space4: UIView!
     @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
@@ -76,11 +83,16 @@ class TarotDescriptionViewController: UIViewController, GADNativeAdLoaderDelegat
         AdsManager.shared.loadNative(viewController: self, count: model.count)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logScreen(screenName: "TarotDetail", screenClass: String(describing: self))
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.backItem?.title = ""
         
-        let maxCount = 2
+        let maxCount = 3
         AdsData.intertitialCount += 1
         if AdsData.intertitialCount > maxCount {
             AdsManager.shared.showInterstitial(self)
@@ -141,6 +153,11 @@ class TarotDescriptionViewController: UIViewController, GADNativeAdLoaderDelegat
             nativeAdsViewList.append(nativeAds)
             stackView.addArrangedSubview(nativeAds)
         }
+        
+        if let copySpace4 = space4.createCopy() {
+            space4ViewList.append(copySpace4)
+            stackView.addArrangedSubview(copySpace4)
+        }
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -153,12 +170,29 @@ class TarotDescriptionViewController: UIViewController, GADNativeAdLoaderDelegat
         let isDark = traitCollection.userInterfaceStyle == .dark
         
         let colorWhite = isDark ? UIColor.white : UIColor.black
-//        let colorDark = isDark ? UIColor.black : UIColor.white
+        let colorDark = isDark ? UIColor.black : UIColor.white
         
         for view in stackView.arrangedSubviews {
             if let label = view as? UILabel {
                 label.textColor = colorWhite
             }
+        }
+        
+        for view in nativeAdsViewList {
+            guard let nativeAdView = view.subviews.first as? GADNativeAdView else { return }
+            (nativeAdView.headlineView as? UILabel)?.textColor = colorWhite
+            (nativeAdView.advertiserView as? UILabel)?.textColor = colorWhite
+            (nativeAdView.bodyView as? UILabel)?.textColor = colorWhite
+            (nativeAdView.storeView as? UILabel)?.textColor = colorWhite
+            (nativeAdView.priceView as? UILabel)?.textColor = colorWhite
+            if let nativeCall = (nativeAdView.callToActionView as? UIButton) {
+                nativeCall.setTitleColor(colorWhite, for: .normal)
+                nativeCall.backgroundColor = colorDark
+            }
+        
+            nativeAdView.clipsToBounds = true
+            nativeAdView.layer.borderWidth = 2
+            nativeAdView.layer.borderColor = colorWhite.cgColor
         }
     }
 }
