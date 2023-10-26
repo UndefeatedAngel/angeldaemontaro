@@ -56,6 +56,7 @@ class AngelNumbersCollectionViewController: UIViewController {
         let backItem = UIBarButtonItem()
         backItem.title = ""
         navigationItem.backBarButtonItem = backItem
+        logEventClick(title: "angel", item: card.key)
     }
     
     func getImage(card: AngelNumbersCardsDayModel.AngelNumbersCardsJson) -> UIImage? {

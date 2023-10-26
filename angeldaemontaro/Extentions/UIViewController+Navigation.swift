@@ -36,5 +36,7 @@ extension UIViewController {
         ? Assets.Images.soundOn.image
         : Assets.Images.soundOff.image
         AVPlayerManager.isSoundUpdate()
+        
+        logEventClick(title: "sounds", item: Settings.isSounds ? "on" : "off")
     }
 }

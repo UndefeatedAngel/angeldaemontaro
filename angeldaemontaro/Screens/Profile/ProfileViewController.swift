@@ -126,11 +126,13 @@ class ProfileViewController: UIViewController {
     
     @objc
     func editClick() {
+        logEventClick(title: "profile", item: "editProfile")
         performSegue(withIdentifier: StoryboardSegue.Profile.editProfileSegue.rawValue, sender: self)
     }
     
     @objc
     func backClick() {
+        logEventClick(title: "profile", item: "back")
         self.dismiss(animated: true)
     }
     

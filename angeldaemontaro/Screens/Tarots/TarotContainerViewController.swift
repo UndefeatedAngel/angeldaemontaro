@@ -112,9 +112,12 @@ class TarotContainerViewController: UIViewController {
                 }
             }
         }
+        
+        logEventClick(title: "tarot", item: "prepare_"+(content?.key ?? ""))
     }
     
     func showDescriptionTarot() {
+        logEventClick(title: "tarot", item: "show_"+(content?.key ?? ""))
         performSegue(withIdentifier: descriptionSegue, sender: self)
     }
     

@@ -172,11 +172,13 @@ class EditProfileViewController: UIViewController {
         ProfileSave.lastName = lastNameTextField.text
         ProfileSave.dateBith = datePicker.date
         ProfileSave.about = aboutTextView.text
+        logEventClick(title: "editProfile", item: "save")
         self.navigationController?.popViewController(animated: true)
     }
     
     @objc
     func backClick() {
+        logEventClick(title: "editProfile", item: "back")
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -247,6 +249,7 @@ class EditProfileViewController: UIViewController {
     }
     
     @IBAction func onPhotoClick(_ sender: Any) {
+        logEventClick(title: "editProfile", item: "changePhoto")
         let picker = AvatarImagePicker.instance
         // optional: custom properties
         picker.dismissAnimated = false // default is true
@@ -256,6 +259,7 @@ class EditProfileViewController: UIViewController {
             guard let self = self else { return }
             self.photoImageView.image = image
             self.saveImage = image
+            logEventClick(title: "editProfile", item: "saveNewPhoto")
             // selected image
         }) {
             // tapped cancel

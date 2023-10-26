@@ -49,20 +49,26 @@ class SettingsViewController: UIViewController {
     @IBAction func languageClick(_ sender: Any) {
         if language == .en {
             language = .ru
+            logEventClick(title: "settings", item: "language_ru")
         } else {
             language = .en
+            logEventClick(title: "settings", item: "language_en")
         }
         
         Bundle.setLanguage(lang: language.rawValue)
 
         updateLanguage()
+        
     }
     
     @IBAction func themeClick(_ sender: Any) {
         if theme == .light {
             theme = .dark
+            logEventClick(title: "settings", item: "theme_dark")
         } else {
             theme = .light
+            
+            logEventClick(title: "settings", item: "theme_light")
         }
         
         UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.overrideUserInterfaceStyle = theme == .dark ? .dark : .light
@@ -76,8 +82,10 @@ class SettingsViewController: UIViewController {
         
         if sounds == .on {
             sounds = .off
+            logEventClick(title: "settings", item: "sounds_off")
         } else {
             sounds = .on
+            logEventClick(title: "settings", item: "sounds_on")
         }
         
         Settings.isSounds = sounds == .on

@@ -39,6 +39,7 @@ class AngelNumbersDescriptionViewController: UIViewController {
     }
     
     @IBAction func onCloseClick(_ sender: Any) {
+        logEventClick(title: "angel", item: "back")
         dismiss(animated: true)
     }
     

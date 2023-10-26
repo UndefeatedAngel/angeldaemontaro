@@ -51,13 +51,16 @@ extension TarotSpreadsCollectionViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedIndex = indexPath.row
         guard let tarot = tarotSpreads.contents?[selectedIndex] else { return }
+        logEventClick(title: "tarot", item: tarot.key)
         
         let count = AdsData.getRewardType(type: tarot.key)
         if count >= maxCount {
+            logEventClick(title: "tarot", item: tarot.key+"_reward")
             AdsManager.shared.showReward(self, count: maxCount, key: tarot.key) {[weak self] in
                 self?.collectionView.reloadData()
             }
         } else {
+            
             AdsData.setRewardType(type: tarot.key, count: count + 1)
             performSegue(withIdentifier: segue, sender: self)
         }

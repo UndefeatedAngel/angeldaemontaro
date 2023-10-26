@@ -95,6 +95,7 @@ class TarotDescriptionViewController: UIViewController, GADNativeAdLoaderDelegat
         let maxCount = 3
         AdsData.intertitialCount += 1
         if AdsData.intertitialCount > maxCount {
+            logEventClick(title: "tarotdetail", item: "interstitial")
             AdsManager.shared.showInterstitial(self)
             AdsData.intertitialCount = 0
         }

@@ -79,6 +79,7 @@ class CardsOfDayScreenViewController: UIViewController {
     func highPriecessClick() {
         let controller = StoryboardScene.HighPriestess.highPriestessSB.instantiate()
         controller.modalPresentationStyle = .fullScreen
+        logEventClick(title: "main", item: "highPriecess")
         self.present(controller, animated: true)
     }
     
@@ -86,6 +87,7 @@ class CardsOfDayScreenViewController: UIViewController {
     func settingsClick() {
         let controller = StoryboardScene.Settings.settingsSB.instantiate()
         controller.modalPresentationStyle = .fullScreen
+        logEventClick(title: "main", item: "settings")
         self.present(controller, animated: true)
     }
     
@@ -93,6 +95,7 @@ class CardsOfDayScreenViewController: UIViewController {
     func profileClick() {
         let controller = StoryboardScene.Profile.profileSB.instantiate()
         controller.modalPresentationStyle = .fullScreen
+        logEventClick(title: "main", item: "profile")
         self.present(controller, animated: true)
     }
     
@@ -101,10 +104,12 @@ class CardsOfDayScreenViewController: UIViewController {
         let current = AdsData.getRewardType(type: keySave)
         
         if current < maxCount {
+            logEventClick(title: "main", item: "cardofday")
             self.performSegue(withIdentifier: StoryboardSegue.CardOfDay.cardSegue.rawValue, sender: self)
             AdsData.setRewardType(type: keySave, count: current + 1)
             setAdsText()
         } else {
+            logEventClick(title: "main", item: "cardofday_reward")
             AdsManager.shared.showReward(self, count: maxCount, key: keySave) { [weak self] in
                 self?.setAdsText()
             }
@@ -154,6 +159,7 @@ class CardsOfDayScreenViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let descruptionController = segue.destination as? NFTDescriptionViewController {
             descruptionController.json = self.nftCards.content?[numberSection].cards[numberRow]
+            logEventClick(title: "main", item: "nft")
         }
         
         let backItem = UIBarButtonItem()

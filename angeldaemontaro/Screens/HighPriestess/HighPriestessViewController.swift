@@ -161,17 +161,22 @@ class HighPriestessViewController: UIViewController {
     private func onClickSocialButton(sender: UIButton) {
         if let urlString = buttonsSocial[sender.tag][1] as? String {
             UIApplication.shared.open(URL(string: urlString)!)
+            if let item = buttonsSocial[sender.tag][0] as? String {
+                logEventClick(title: "highprietess", item: item)
+            }
         }
     }
     
     @objc
     private func onClickConsultationButton(sender: UIButton) {
         UIApplication.shared.open(URL(string: "https://t.me/angeldaemontaro_bot")!)
+        logEventClick(title: "highprietess", item: "consultation")
     }
     
     @objc
     private func onClickOpenSiteButton(sender: UIButton) {
         UIApplication.shared.open(URL(string: "https://angeldaemontaro.com/")!)
+        logEventClick(title: "highprietess", item: "opensite")
     }
     
     @objc
@@ -181,6 +186,7 @@ class HighPriestessViewController: UIViewController {
         pauseButton.setImage(Assets.Images.playerPlay.image, for: .normal)
         avPlayer.seek(to: .zero)
         isPauseVideo = true
+        logEventClick(title: "highprietess", item: "finishVideo")
     }
     
     @objc
@@ -198,10 +204,12 @@ class HighPriestessViewController: UIViewController {
             
             AVPlayerManager.playVideo()
             AVPlayerManager.playSpeak(text: "highprietess_description")
+            logEventClick(title: "highprietess", item: "resumeVideo")
         } else {
             pauseButton.setImage(Assets.Images.playerPlay.image, for: .normal)
             AVPlayerManager.pauseSpeak()
             avPlayer.pause()
+            logEventClick(title: "highprietess", item: "pauseVideo")
         }
         
         isPauseVideo = !isPauseVideo

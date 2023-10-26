@@ -54,7 +54,7 @@ class NFTDescriptionViewController: UIViewController {
     
     @objc
     func onBuyClick() {
-        
+        logEventClick(title: "main", item: "buy")
     }
     
     // MARK: Update Theme
